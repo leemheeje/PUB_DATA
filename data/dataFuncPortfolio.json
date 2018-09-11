@@ -6,7 +6,6 @@
                 "subImgs": ["//leemheeje.github.io/PUB_DATA/images/pp_img24_01.jpg", "//leemheeje.github.io/PUB_DATA/images/pp_img24_02.jpg", "//leemheeje.github.io/PUB_DATA/images/pp_img24_03.jpg"],
                 "tit": "카카오게임즈-음양사",
                 "subj": "1주년 기념 혜택 가득한 新음양사에서 만나요!",
-                "detailsubj": "YBM-READERS  길 건너는 게임입니다. \n100% 순수 자바스크립트로 구현된 프로젝트로, 자바스크립트의 동적 마크업 생성 및 컨트롤 조작을 따로 하여, 유지 보수 편에서 수월하게 제작되었습니다. \n각 장애물의 interval 구현으로 움직임을 표현하며, keybind 와 click으로 조작 가능합니다. \n토끼 엘리먼트의 움직임과 동시에 장애물의 안에 별의 위치값을 찾아 포이트획득 할 수 있습니다.",
                 "mode": "cms,js,IE10++",
                 "href": "http://onmyoji.game.kakao.com/",
                 "chat": 100
@@ -17,7 +16,6 @@
                 "subImgs": ["//leemheeje.github.io/PUB_DATA/images/pp_img23_01.jpg", "//leemheeje.github.io/PUB_DATA/images/pp_img23_02.jpg"],
                 "tit": "국가교육회의",
                 "subj": "대입제도개편 국민소통 플랫폼",
-                "detailsubj": "YBM-READERS  길 건너는 게임입니다. \n100% 순수 자바스크립트로 구현된 프로젝트로, 자바스크립트의 동적 마크업 생성 및 컨트롤 조작을 따로 하여, 유지 보수 편에서 수월하게 제작되었습니다. \n각 장애물의 interval 구현으로 움직임을 표현하며, keybind 와 click으로 조작 가능합니다. \n토끼 엘리먼트의 움직임과 동시에 장애물의 안에 별의 위치값을 찾아 포이트획득 할 수 있습니다.",
                 "mode": "cms,js,IE10++",
                 "href": "https://www.edutalk.go.kr/",
                 "chat": 60
