@@ -307,7 +307,14 @@
         ]
     },
     {
-        "name": "기타 경력사항",
-        "data": []
+        "name": "_STUDY",
+        "data": [{
+            "img": "//leemheeje.github.io/PUB_DATA/images/pp_img18.jpg",
+            "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img18.jpg",
+            "tit": "네이버API-이미지검색",
+            "subj": "",
+            "mode": "IE8++,js",
+            "href": "http://pb.makeulike.co.kr/study/search2/"
+        }]
     }
 ]
