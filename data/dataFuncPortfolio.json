@@ -1,8 +1,8 @@
 [{
         "name": "(주)메큐라이크",
         "data": [{
-                "img": "//www.fortnite-event.com/resources/images/share2.jpg",
-                "thumbnail": "//www.fortnite-event.com/resources/images/share2.jpg",
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img24.jpg",
+                "thumbnail": "http://www.fortnite-event.com/resources/images/share2.jpg",
                 "subImgs": [],
                 "tit": "에픽게임즈-포트나이트",
                 "subj": "전 세계 플레이어 2억 명의 세계 NO.1 배틀로얄 게임 포트나이트가 대한민국에 본격 런칭합니다! 크리스 프랫이 등장하는 TVCF 감상하시고, 11월 8일부터 PC방에서 진행되는 다양한 이벤트도 참여해보세요!",
@@ -10,7 +10,7 @@
                 "href": "http://onmyoji.game.kakao.com/",
                 "chat": 100
             }, {
-                "img": "http://lookism.kakaogame.com/images/sns_img.jpg",
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img24.jpg",
                 "thumbnail": "http://lookism.kakaogame.com/images/sns_img.jpg",
                 "subImgs": [],
                 "tit": "카카오게임즈-외모지상주의",
