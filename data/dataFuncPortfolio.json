@@ -1,6 +1,24 @@
 [{
         "name": "(주)메큐라이크",
         "data": [{
+                "img": "//www.fortnite-event.com/resources/images/share2.jpg",
+                "thumbnail": "//www.fortnite-event.com/resources/images/share2.jpg",
+                "subImgs": [],
+                "tit": "에픽게임즈-포트나이트",
+                "subj": "전 세계 플레이어 2억 명의 세계 NO.1 배틀로얄 게임 포트나이트가 대한민국에 본격 런칭합니다! 크리스 프랫이 등장하는 TVCF 감상하시고, 11월 8일부터 PC방에서 진행되는 다양한 이벤트도 참여해보세요!",
+                "mode": "cms,js,IE10++",
+                "href": "http://onmyoji.game.kakao.com/",
+                "chat": 100
+            }, {
+                "img": "http://lookism.kakaogame.com/images/sns_img.jpg",
+                "thumbnail": "http://lookism.kakaogame.com/images/sns_img.jpg",
+                "subImgs": [],
+                "tit": "카카오게임즈-외모지상주의",
+                "subj": "1주년 기념 혜택 가득한 新음양사에서 만나요!",
+                "mode": "cms,js,IE10++",
+                "href": "http://onmyoji.game.kakao.com/",
+                "chat": 100
+            }, {
                 "img": "//leemheeje.github.io/PUB_DATA/images/pp_img24.jpg",
                 "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img24.jpg",
                 "subImgs": ["//leemheeje.github.io/PUB_DATA/images/pp_img24_01.jpg", "//leemheeje.github.io/PUB_DATA/images/pp_img24_02.jpg", "//leemheeje.github.io/PUB_DATA/images/pp_img24_03.jpg"],
