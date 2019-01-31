@@ -4,6 +4,16 @@
                 "img": "//leemheeje.github.io/PUB_DATA/images/pp_img24.jpg",
                 "thumbnail": "http://www.fortnite-event.com/resources/images/share2.jpg",
                 "subImgs": [],
+                "tit": "라인콩코리아-난세 사전예약",
+                "subj": "100일간의 천하쟁탈 MMORPG! 난세: 영웅의 탄생",
+                "mode": "js,IE9++",
+                "href": "http://onmyoji.game.kakao.com/",
+                "chat": 100
+            },
+            {
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img24.jpg",
+                "thumbnail": "http://www.fortnite-event.com/resources/images/share2.jpg",
+                "subImgs": [],
                 "tit": "에픽게임즈-포트나이트",
                 "subj": "전 세계 플레이어 2억 명의 세계 NO.1 배틀로얄 게임 포트나이트가 대한민국에 본격 런칭합니다! 크리스 프랫이 등장하는 TVCF 감상하시고, 11월 8일부터 PC방에서 진행되는 다양한 이벤트도 참여해보세요!",
                 "mode": "cms,js,IE10++",
@@ -327,12 +337,28 @@
     {
         "name": "_STUDY",
         "data": [{
-            "img": "//leemheeje.github.io/PUB_DATA/images/pp_img18.jpg",
-            "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img18.jpg",
-            "tit": "네이버API-이미지검색",
-            "subj": "",
-            "mode": "IE8++,js",
-            "href": "http://pb.makeulike.co.kr/study/search2/"
-        }]
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img18.jpg",
+                "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img18.jpg",
+                "tit": "공공데이타활용-네이버MAP",
+                "subj": "",
+                "mode": "IE8++,js",
+                "href": "http://pb.makeulike.co.kr/front/api/template/naver_map/"
+            }, {
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img18.jpg",
+                "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img18.jpg",
+                "tit": "네이버API-이미지검색",
+                "subj": "",
+                "mode": "IE8++,js",
+                "href": "http://pb.makeulike.co.kr/front/api/template/search2/"
+            },
+            {
+                "img": "//leemheeje.github.io/PUB_DATA/images/pp_img18.jpg",
+                "thumbnail": "//leemheeje.github.io/PUB_DATA/images/thumbnail/pp_img18.jpg",
+                "tit": "카카오스토리API-로그인기반 데이타",
+                "subj": "",
+                "mode": "IE8++,js",
+                "href": "http://pb.makeulike.co.kr/front/sns/template/kakao/"
+            }
+        ]
     }
 ]
