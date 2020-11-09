@@ -1,0 +1,175 @@
+랜딩편집관련 작업파일
+
+- 랜딩관련하여 사용하는 파일
+	- /WEB-INF/jsp/admin/landing/regist.jsp							//랜딩신규생성 페이지
+	- /WEB-INF/jsp/admin/landing/info.jsp							//랜딩수정 페이지
+	- /WEB-INF/jsp/admin/landing/copy.jsp							//랜딩복사 페이지
+	- /WEB-INF/tiles/tiles-script_imageupload.jsp					//랜딩 신규생성|수정|복사 에서만 사용되는 "이미지업로드"구문이 있는 tiles
+	- /WEB-INF/tiles/tiles-script_landingsubmit.jsp					//랜딩 신규생성|수정|복사 에서만 사용되는 랜딩저장할때 사용하는 js구문이 있는 tiles
+	- /webapp/resourcesadmin/assets/js/fn.Create.DefaultInfo.js		//랜딩편집에서 기본정보의 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Document.js		//랜딩편집에서 기본정보의 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Footer.js			//랜딩디자인탭(STEP)에서 풋터 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Form.js			//랜딩디자인탭(STEP)에서 신청서 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Image.js			//랜딩디자인탭(STEP)에서 이미지 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Media.js			//랜딩디자인탭(STEP)에서 동영상 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Slide.js			//랜딩디자인탭(STEP)에서 슬라이드이미지 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Text.js			//랜딩디자인탭(STEP)에서 텍스트 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.Utills.js			//랜딩편집에서 데이타편집을 위해 필요한 utills들을 선언하는 js
+	- /webapp/resourcesadmin/assets/js/fn.Create.MediaForm.js		//랜딩편집에서 매체관리의 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/htmlLandingTemplate.js		//랜딩편집에서 기본정보의 데이타를 수집하기위한 js
+	- /webapp/resourcesadmin/assets/js/cmmFileUpload.js				//랜딩디자인탭(STEP)에서 이미지 미리보기를 위한 js
+	- /webapp/resourcesadmin/assets/js/frontInCustomTags.js			//사용자 랜딩페이지에서 신청서|휴대폰인증번호전송|휴대폰인증확인 기능을 넣은 js
+	- /webapp/resourcesadmin/assets/js/design.cmmValidator.js		//사용자 랜딩페이지에서 신청서작성시 폼의 유효성체크
+
+- jsp 작업파일경로
+	등록 : /WEB-INF/jsp/admin/landing/regist.jsp
+	수정 : /WEB-INF/jsp/admin/landing/info.jsp
+	복사 : /WEB-INF/jsp/admin/landing/copy.jsp
+	(3개 파일 모두 html문서는 거~의 동일하다 수정이냐 등록이냐에 따른 값들의 차이가 잇긴하지만 html은 동일)
+- jstl tiles 
+	이미지업로드				  : /WEB-INF/tiles/tiles-script_imageupload.jsp (등록,수정,복사 모두 동일하게 감)
+	랜딩등록수정복사			: /WEB-INF/tiles/tiles-script_landingsubmit.jsp (등록,수정,복사 페이지의 url에 따라서 넘기는값, 선언하는 값이 다름 파일내부에 조건값 확인)
+	
+	1. 랜딩디자인탭에서 이미지를 추가하려할때(이미지,슬라이드) 
+		* cmmFileUpload.js(input[file]에서 바인딩된 input.file을 타입및용량 체크 후 base64로 뽑아서 결과값으로 리턴해주는 기능)
+		1. input[file] change 바인딩
+		2. 파일이 추가됏을때 타입(image?) 및 용량(현재는 5MB이하만) 체크
+		3. 2번조건에 통과되면 base64코드 생성 FileReader
+		4. img.src 에 선언
+		5. 결과값 리턴 
+			{IMAGE_COUNT_${카운팅넘버} = {
+				file: input.file || 빈값 (이미지를 파일서버에 보내기위해 필요한 값이므로 CDN서버에서 받은 이미지라면 값 필요없음)
+	 		   	imagePreview: base64코드 || DB에서 받앗던 CDN이미지
+			},..}
+			*${카운팅넘버} 슬라이드등록 input.multiple 에서는 솔테이블기능이있기때문에 카운팅을 넣어 index값을 조정하기위해 사용
+		
+		6. cmmFileUpload.js 에서 받은 결과값을 fn.Create.Image | Slide 의 콜백함수에 넣어서 사용(img.src, DB전송 등등)
+			
+		   
+	2. 랜딩 등록|수정|복사
+		1. fn.Create.Image.js | Slide | Form .. 등등 생성js 의 데이타들
+			var obj = {
+			 "frontDefaultInfo": fn.Create.frontDefaultInfo, //기본정보 관련데이타들
+			 "frontFormData": JSON.stringify(fn.Create.frontFormData),//신청서편집 관련데이타들
+			 "frontFormOption": fn.Create.frontFormOption,//신청서편집의 질문, 필수체크 유무 등등 관련데이타들
+			 "frontLandingDesign": JSON.stringify(fn.Create.frontLandingDesign), //랜딩디자인관련데이타들
+			 "frontMediaFormData": fn.Create.frontMediaFormData,//매체관리 관련데이타들
+		 }
+		 obj변수에 담아 api서버에 전송(등록|수정|복사 모두 똑같음 다만 ajax호출시 메서드나 필수값들은 조금씩다름 https://api.swais.co.kr/swagger-ui.html 필수값 참고)
+
+
+
+- js 작업파일경로 /webapp/resourcesadmin/assets/js/
+	* 랜딩편집에서 사용하는 각 항목이 저장될때는!
+		fn.Create.frontDefaultInfo = {};		//기본정보 데이타
+		fn.Create.frontFormData = {};			//신청서폼 데이타
+		fn.Create.frontFormOption = {};			//신청서의 옵션들(질문,답변,스타일) 데이타
+		fn.Create.frontLandingDesign = {};		//랜딩디자인 데이타
+		fn.Create.frontMediaFormData = {};		//매체관리 데이타
+	각 요소에 데이타들만! 담기게된다.(다른 함수요소들은 merge안시킴(init(), update() 등등..))
+	각요소에 담긴 데이타 중..
+		- fn.Create.frontDefaultInfo(STEP1기본정보의 데이타)
+		- fn.Create.frontMediaFormData(STEP4매체관리 데이타)
+	위 2개 객체는 "htmlLandingTemplate.js" 파일로 보내서 사용자랜딩페이지에 필요한 정보를 그려준다(랜딩디자인탭 아님)
+
+
+	1. 랜딩관리>랜딩편집>STEP1기본정보
+		- fn.Create.DefaultInfo.js
+		- 기본정보의 각 항목들(랜딩제목, 제목표시줄, 약관, 체크박스 등등.. 단 파트너,종목,항목은 서버사이드쪽에서 뿌림)을 선언하는곳
+		- 각 입력필드들은 keyup change blur 로 바인딩. blur시 replace('",＂) 로 치환(사용자랜딩페이지에서 JSON.stringify시 따옴표 종복오류로인한 오류 막기위해)
+		- *입력필드의 keyup change 시 fn.Create.frontDefaultInfo 의 merge 시킴
+		
+		
+
+	2. 랜딩관리>랜딩편집>STEP2신청서편집
+		- fn.Create.Document.js
+		- 신청서편집, 랜딩디자인 탭에서는 각 요소들(신청서편집이면 이름,연락처,주관식,객관식 등등 랜딩디자인이면 이미지,슬라이드,신청서 등등)부터는 *고유키(total_key 로 변수명 지음)작업이 필요
+		  	DB에 보내서 나중에 수정페이지에서 사용하고 각 요소별 컨트롤하기위해(요소의 필수값유무, 요소의 객수체크하여 중복방지, 요소의 id == for 등등)
+			1. 신청서편집의 고유키선정 기준
+			  documentKeys: [ //신청서에 필요한 key값들 "total_key" 등등 생성시 필요 
+			    /**
+			     * ex : D0_P0 (이름_1번째)
+			     * ex : D6_P2 (주관식_3번째)
+			     * ex : D7_P5 (객관식_6번째)
+			     */
+			    "D0",//이름
+			    "D1",//연락처
+			    "D2",//나이
+			    "D3",//성별
+			    "D4",//상담가능시간
+			    "D5",//거주지역
+			    "D6",//주관식
+			    "D7",//객관식
+			    "D8",//휴대폰인증
+			  ],
+			2. 랜딩디자인의 고유키선정 기준
+			  keys: [ //랜딩디자인에 필요한 key값들 "total_key" 등등 생성시 필요
+			  	/**
+			  	 * ex : C1_P0 (이미지_1번째)
+			  	 * ex : C3_P2 (텍스트_3번째)
+			  	 * ex : C5_P5 (신청서폼_6번째)
+			  	 */
+			  	"C1",//이미지추가
+			  	"C2",//슬라이드추가
+			  	"C3",//텍스트추가
+			  	"C4",//동영상추가
+			  	"C5",//신청서추가
+			  	"C6",//풋터추가
+			  ],
+		  
+		- *신청서의 요소들 수정 또는 추가시 fn.Create.frontFormData 의 merge 시킴
+		- *신청서양식의 스타일요소(글자변경, 버튼숨김체크박스 포함), 객관식/주관식 질문그룹(배열) 변경시 fn.Create.frontFormOption의 merge
+		  (fn.Create.frontFormData 객체에는 순수하게 요소(이름,연락처 등등)들의 데이타만 담기위해 옵션요소(스타일 질문 등등)는 fn.Create.frontFormOption에 따로 담음)
+		
+		
+		  
+	3. 랜딩관리>랜딩편집>STEP3랜딩디자인
+		- fn.Create.Image.js		 = 이미지요소 등록 및 수정시
+		  fn.Create.Slide.js		 = 슬라이드요소 등록 및 수정시
+		  fn.Create.Text.js			 = 텍스트요소 등록 및 수정시
+		  fn.Create.Media.js		 = 영상요소 등록 및 수정시
+		  fn.Create.Form.js			 = 신청서요소 등록 및 수정시
+		  fn.Create.Footer.js		 = 풋터요소 등록 및 수정시
+		- 각요소의 솔테이블시 데이타 재정렬. 재정렬과정에서 fn.Create.frontLandingDesign에 merge
+		- *랜딩요소의 수정 또는 추가시 fn.Create.frontLandingDesign 의 merge 시킴
+
+
+
+	4. 랜딩관리>랜딩편집>STEP4매체관
+		- "매체" 셀렉트박스는 서버에서 뿌려줌
+		- 추적코드2, 전환코드2 모두 key change 바인딩시 fn.Create.frontMediaFormData 의 merge 시킴
+		
+		
+		
+	5.★★★★★랜딩생성 및 랜딩콜백함수
+		*html문자열 만드는 파일 /webapp/resourcesadmin/assets/js/htmlLandingTemplate.js
+		*사용자랜딩페이지에서 사용할 js파일 /webapp/resourcesadmin/assets/js/frontInCustomTags.js
+		
+		1. STEP1기본정보 ~ STEP4매체관리까지 다 하면 랜딩페이지를 생성해야함 실제로 XXX.html 파일을 만드는거는 서버사이드에서 처리.
+		   우리쪽에서는 xxx.html에 들어갈 doctype ~ /html; 까지를 문자열로 만들어서 전송만해주면됨.
+		2. 위 1번에서 문자열로 만들때 어드민쪽에서 생성했던 랜딩페이지의 정보들을 랜딩페이지의 콜백함수"frontInCustomTags('신청서또는인증할때 api요청할 데이타들', '랜딩생성때만들었던"랜딩기본정보"데이타들','db_conversion')"에 인자로 넣어주기
+		3. 랜딩페이지가 열리면 "신청하기 | 인증번호전송 | 인증번호확인" 3가지의 기능만있음 
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	  
