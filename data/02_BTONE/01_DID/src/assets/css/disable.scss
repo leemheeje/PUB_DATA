@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.disableCont {
+    .titleWrap {
+        padding-top: rem(136px);
+
+        div.img {
+            margin-top: rem(212px);
+            img {
+                border-radius: rem(10px);
+            }
+        }
+    } 
+}

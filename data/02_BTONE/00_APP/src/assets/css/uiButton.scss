@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.btnType1:not(.init):not(.text){font-size:rem(35px); border-radius:rem(12px); width: 100%; display: block; text-align: center; color:#fff; background:$color_red; line-height:rem(35px); border: 1px solid transparent; padding: rem(32.5px) rem(10px); font-weight: 700; box-shadow: rem(7px) rem(7px) rem(29px) rgba(120,120,128,.58); }
+.btnType1:not(.init):not(.text):disabled,
+.btnType1:not(.init):not(.text).none {background: $color_gray; color:#b4b4bc; box-shadow:none; cursor:default;}
+.btnType1:not(.init):not(.text).yellowBtn {background: $color_yellow;}
+.btnType1:not(.init):not(.text).yellowBtn2 {background: $color_yellow; color: $color_yellow2;}
+.btnType1:not(.init):not(.text).miniWhite {background:#fff; width:rem(170px); line-height:rem(25px); color:#362727; font-size:rem(25px); font-weight: 700; padding-top: rem(20px); padding-bottom: rem(20px);}
+.btnType1:not(.init):not(.text).xxs{font-size: rem(20px); line-height: rem(20px); font-weight: normal; border-radius: rem(7px); padding: rem(5px);}
+.btnType1:not(.init):not(.text).xs{font-size: rem(25px); line-height: rem(25px); padding-top: rem(10px); padding-bottom: rem(10px); font-weight: normal;}
+.btnType1:not(.init):not(.text).md{font-size: rem(25px); line-height: rem(25px); font-weight: bold; min-width: rem(160px); padding-top: rem(20px); padding-bottom: rem(20px);}
+.btnType1:not(.init):not(.text).inline{display: inline-block; vertical-align: middle; width: auto;}
+.btnType1:not(.init):not(.text).block{display: block;}
+.btnType1:not(.init):not(.text).shadowNone{box-shadow: none;}
+.btnType1:not(.init):not(.text).red{background-color: $color_red; color: #fff;}
+.btnType1:not(.init):not(.text).outline{border-color: $color_gray5; background-color: transparent; color: $color_gray5;}
+.btnType1:not(.init):not(.text).outline.red{border-color: $color_red; background-color: transparent; color: $color_red;}
+.btnType1:not(.init):not(.text).outline:disabled{border-color: $color_gray5; background-color: transparent; color: $color_gray5;}
+.btnType1:not(.init):not(.text).textLink{font-size: rem(35px);}
+.btnType1:not(.init):not(.text).ordersBtn{position: relative; padding-right: rem(224px);}
+.btnType1:not(.init):not(.text).ordersBtn .orbLt{font-size: 0; height: 100%; width: 100%; display: table; text-align: center;}
+.btnType1:not(.init):not(.text).ordersBtn .orbLt .ttx{font-weight: normal; font-size: rem(30px); display: table-cell; vertical-align: middle;}
+.btnType1:not(.init):not(.text).ordersBtn .orbLt .ttx .roboto{font-weight: bold;}
+.btnType1:not(.init):not(.text).ordersBtn .orbRt{width: rem(224px); position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: rem(35px); font-weight: bold;}
+.btnType1:not(.init):not(.text).ordersBtn .orbRt:before,
+.btnType1:not(.init):not(.text).ordersBtn .orbRt:after{content: ''; width: 1px; height: 60%; position: absolute; top: 20%;}
+.btnType1:not(.init):not(.text).ordersBtn .orbRt:before{left: 0; background: #ff9b99;}
+.btnType1:not(.init):not(.text).ordersBtn .orbRt:after{left: -1px; background: #640200;}
+.btnType1.text{outline: none; background: transparent; border: none;}
+
+.btnType1 .btnLeft {display: inline-block; width: 58.5%;}
+.btnType1 .btnLeft .won {display: inline-block; padding-left: rem(4px); font-weight: normal;}
+.btnType1 .btnRight {position: relative; display: inline-block; width: 41.5%;}
+.btnType1 .btnRight::before {position: absolute; left: 0; top: 50%; content: ''; width: 1px; height:66%; background: #640200; transform: translateY(-50%);}
+.btnType1:not(.init):not(.text).none .btnRight::before {background: #c4c4cf;}
+
+.btnType1.lst {display: table-cell; vertical-align: middle; position: relative; width: 100%; padding-left: rem(45px); border: none; border-bottom: 1px solid $color_gray; background: none; 
+    text-align: left; font-size: rem(25px); color: $color_black2;}
+.btnType1.lst:disabled {cursor: default;}
+.btnType1.lst .btnArrow {position: absolute; right: rem(40px); top: 50%; width: rem(13px); height: rem(22px); transform: translateY(-50%);}

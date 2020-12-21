@@ -1,0 +1,18 @@
+@import "./utills.scss";
+
+/* 카운트 추가삭제 공통요소 */
+$btn_width : 40px;
+$btn_height : 35px;
+$btn_radius : 7px;
+
+.uiFormCount{padding: 0 rem($btn_width) 0; position: relative; }
+.uiFormCount .rem,
+.uiFormCount .add{outline: none; width: rem($btn_width); height: rem($btn_height); border: none; border-radius: rem($btn_radius); background: $color_yellow no-repeat center center; text-indent: -999em; position: absolute; top: 50%; transform: translateY(-50%);}
+.uiFormCount .rem{left: 0; background-image: url(../images/common/icoMinWhite.png); background-size: 45%;}
+.uiFormCount .add{ right: 0; background-image: url(../images/common/icoPlusWhite.png); background-size: 45%;}
+.uiFormCount .ufcInput{border-radius: 0; border: none; outline: none; width: 100%; height: rem($btn_height); text-align: center; font-size: rem(35px); color: $color_gray3; font-weight: bold;}
+.uiFormCount .rem:disabled,
+.uiFormCount .add:disabled{background-color: #fff; border: rem(2px) solid #909096;}
+.uiFormCount .rem:disabled{background-image: url(../images/common/icoMinGray.png);}
+.uiFormCount .add:disabled{background-image: url(../images/common/icoPlusGray.png);}
+// 

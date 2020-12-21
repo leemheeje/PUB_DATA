@@ -1,0 +1,1085 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+// 마이페이지 공통
+.container.mypage {
+    padding-bottom: 0;
+    letter-spacing: -0.03em;
+}
+.topTxts {
+    position: relative;
+    margin-bottom: rem(20px);
+    .tit {
+        font-weight: bold;
+        font-size: rem(35px);
+        color: $color_black2;
+    }
+    .stit {
+        display: block;
+        padding-bottom: rem(5px);
+        font-weight: normal;
+        font-size: rem(25px);
+        color: $color_gray3;
+    }
+    .point {
+        display: block;
+        font-weight: bold;
+    }
+}
+.btnChange, .btnListShow {
+    button, a {
+        border: none;
+        background: none;
+        font-size: rem(28px);
+        color: $color_gray5;
+        line-height: rem(28px);
+        outline: none;
+    }
+}
+.clearfix {
+    *zoom:1;
+    &:before, &:after {
+        display: block;
+        content: '';
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// pages
+// 마이페이지 메인
+.mypage.main {
+    padding-bottom: 0;
+    background: $background_color;
+
+    .mypageWrap {
+        background: $color_white;
+
+        .loginBox {
+            position: relative;
+            width: 100%;
+            min-height: rem(263px);
+            padding: rem(55px) rem(55px) rem(70px);
+            border-bottom: 1px solid $color_gray;
+            .profileArea {
+                position: relative;
+                .welcomeText {
+                    font-weight: bold;
+                    font-size: rem(55px);
+                    color: $color_black2;
+                }
+                .sTxt {
+                    font-size: rem(35px);
+                    line-height: rem(45px);
+                    color: $color_black2;
+                }
+                .profileImgBox  {
+                    right: 0;
+                    top: 0;
+                    transform: none;
+                }
+            }
+            .btnWrap {
+                margin-top: rem(100px);
+                >div {
+                    float: left;
+                    width: 48.5%;
+
+                    &.btnRight {
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .myProfile {
+            position: relative;
+            display: table;
+            width: 100%;
+            height: rem(263px);
+
+            .btnType1.goMyModify {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                padding: 0 rem(55px);
+                background: #fff;
+                text-align: left;
+                color: $color_black2;
+                line-height: normal;
+                border-radius: 0 !important;
+                
+                .profileText {
+                    .welcomeText {
+                        font-weight: normal;
+                        font-size: rem(35px);
+                        line-height: rem(35px);
+                    }
+                    .profileName {
+                        font-size: rem(60px);
+                        .nim {
+                            font-weight: normal;
+                            font-size: rem(60px);
+                        }
+                        &.default {
+                            font-size: rem(73px);
+                        }
+                    }
+                }
+            }
+        }
+        .mypageList01 {
+            border-top: 1px solid $color_gray;
+            border-bottom: 1px solid $color_gray;
+    
+            .list {
+                overflow: hidden;
+                >li {
+                    float: left;
+                    display: table;
+                    width: 50%;
+                    height: rem(150px);
+    
+                    .btnType1 {
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 100%;
+                        background: #fff;
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: rem(25px);
+                        color: $color_black2;
+    
+                        img {
+                            display: block;
+                            max-width: 100%;
+                            margin: 0 auto;
+                        }
+                        span {
+                            display: block;
+                            margin-top: rem(20px);
+                            line-height: rem(25px);
+                        }
+                    }
+                }
+                .myBenefit {
+                    img {
+                        width: rem(44px);
+                        height: rem(37px);
+                    }
+                }
+                .myReview {
+                    border-left: 1px solid $color_gray;
+                    img {
+                        width: rem(38px);
+                        height: rem(37px);
+                    }
+                }
+            }
+        }
+        .mypageList02 {
+            padding: rem(30px) 0 rem(100px);
+            border-bottom: 1px solid $color_gray;
+            background: #f7f6fb;
+            .list{
+				li{
+					padding: rem(35px) 0
+				}
+			}
+            .btnType1 {
+                padding: 0 rem(55px);
+                background: #f7f6fb;
+                text-align: left;
+                font-weight: normal;
+                color: $color_black;
+            }   
+        }
+        .mypageBottom {
+            padding: rem(25px) 0;
+            background: #f7f6fb;
+    
+            .list {
+                li {
+                    &.version {
+                        padding: rem(25px) rem(55px);
+                        font-size: rem(32px);
+                        color: $color_black;
+                        .verState {
+                            margin-left: rem(5px);
+                            font-size: rem(25px);
+                            color: $color_gray5;
+                        }
+                    }
+                    &.btnLogout {
+                         button {
+                            width: 100%;
+                            border: none;
+                            padding: rem(25px) rem(55px);
+                            background: none;
+                            text-align: left;
+                            font-size: rem(30px);
+                            color: $color_gray5;
+                            outline: none;
+                         }
+                    }
+                }
+            }        
+        }
+    }
+}
+
+// 나의 정보
+.myModifyWrap {
+    padding: rem(47px) rem(60px);
+    >div {
+        margin-bottom: rem(85px);
+    }
+    .profileBox {
+        position: relative;
+        margin-bottom: rem(25px);
+		text-align: center;
+		.profileBoxInner{
+			display: inline-block;
+			position: relative;
+		}
+        .profileImgArea {
+            position: relative;
+			width: rem(130px);
+			display: inline-block;
+
+            .profileImgBox {
+                position: relative;
+                margin: 0 auto;
+            }
+            .profileDelete {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: rem(53px);
+                height: rem(53px);
+				cursor: pointer;
+				z-index: 1;
+			}
+        }
+		.btnChange{
+			position: relative;
+			overflow: hidden;
+			display: inline-block;
+			width: 100%;
+		}
+		.uiInput.file{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			.cmmInputFile{
+				height: 100%;
+				.ip{
+					padding-left: 0;
+					line-height: normal;
+					height: 100%;
+					.icofile{
+						display: none;
+					}
+				}
+				.filename{
+					height: 100%;
+				}
+			}
+		}
+    }
+
+    .phoneNumberBox {
+        .btnChange {
+            position: absolute;
+            right: rem(20px);
+            top: 50%;
+            transform: translateY(-50%);
+			img{
+				position: absolute;
+                right: rem(-20px);
+				top: 55%;
+				width: rem(8px);
+                transform: translateY(-55%);
+			}
+        }
+    }
+
+    .newPasswordBox {
+        .passwordBox {
+            .list {
+                margin-bottom: rem(45px);
+                .uiInput {
+                    .ip {
+                        position: relative;
+                        padding-right: rem(25px);
+                    }
+                }
+            }
+        }
+    }
+
+    .genderBox {
+        .genderRadio {
+            overflow: hidden;
+            .list {
+                float: left;
+                width: 47.5%;
+                height: 100%;
+
+                &:last-child {
+                    float: right;
+                }
+               
+                .uiInput {
+                    display: table;
+                    width: 100%;
+                    
+                    .lb {
+                        display: table-cell;
+                        vertical-align: middle;
+                        width: 100%;
+                        height: rem(100px);
+                        padding-left: 0;
+                        border: 1px solid $color_gray5;
+                        border-radius: rem(15px);
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: rem(35px);
+                        color: #b4b4bc;
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    input:checked {
+                        +.lb {
+                            width: 100%;
+                            padding-left: 0;
+                            text-align: center;
+                            border: rem(2px) solid $color_red;
+                            color: $color_red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .areaBox {
+        overflow: hidden;
+        .list {
+            float: left;
+            width: 47.8%;
+
+            &.area2 {
+                float: right;
+            } 
+
+            &.area3 {
+                width: 100%;
+                margin-top: rem(44px);
+            }
+        }
+    }
+
+
+    .btnWithdraw {
+        margin: rem(70px) 0 0;
+        text-align: right;
+        .btnType1 {
+            font-size: rem(28px);
+            color: $color_gray5;
+        }
+    }
+    
+}
+
+// 나의 정보 - 회원탈퇴
+.myWithdrawWrap {
+    padding: rem(75px) rem(60px);
+    >div {
+        margin-bottom: rem(65px);
+    }
+
+    .topTxts {
+        .list {
+            padding-bottom: rem(80px);
+            margin-top: rem(20px);
+            border-bottom: 1px solid #a6a6ab;
+            font-size: rem(25px);
+			color: $color_gray6;
+			word-break: keep-all;
+            li {
+                position: relative;
+                padding-left: rem(13px);
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: rem(16px);
+                    content: '';
+                    width: rem(6px);
+                    height: rem(6px);
+                    border-radius: 50%;
+                    background: $color_gray6;
+                }
+            }
+        }
+    }
+    .reasonBox {
+        margin-bottom: rem(95px);
+    }
+}
+
+.modalHeader {
+    position: relative;
+    z-index: 100;
+    height: rem(98px);
+    border-bottom: 1px solid #a6a6ab;
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: rem(32px);
+    line-height: rem(98px);
+}
+.myWithdrawWrap.step2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    .topTxts {
+        margin-bottom: rem(140px);
+        .icon {
+            width: rem(214px);
+            height: rem(57px);
+            margin: 0 auto rem(50px);
+        }
+        .stit {
+            margin-top: rem(25px);
+            color: $color_gray6;
+            line-height: rem(35px);
+        }
+    }
+    .btnType1 {
+        width: rem(481px);
+        margin: 0 auto;
+    }
+}
+
+// 나의 혜택
+.container.mybenefit {
+    padding: 0;
+    letter-spacing: -0.03em;
+
+    .myBenefitWrap {
+        position: relative;
+        min-height: 100vh;
+        background: $background_color;
+        .benefitTabs {
+            height: 100%;
+            .baseTab {
+                position: fixed;
+                left: 0;
+                top: rem(98px);
+                z-index: 100;
+                width: 100%;
+                background: $color_white;
+                li {
+                    width: 50%;
+                    span.roboto {
+                        display: inline;
+                    }
+                }
+            }
+            .diviTabs {
+                height: 100%;
+                padding-top: rem(185px);
+
+                .myBenefitBox {
+                    height: 100%;
+                    padding: rem(50px) rem(40px);
+                    &.point {
+                        padding: rem(50px) 0;
+                        .btnListShow {
+                            padding: 0 rem(40px);
+                        }
+                    }
+
+                    .btnListShow {
+                        text-align: right;
+                        margin-bottom: rem(50px);
+                        button {
+                            position: relative;
+                            font-size: rem(25px);
+                            line-height: rem(25px);
+                            vertical-align: top;
+							img{
+								position: absolute;
+								right: rem(-20px);
+								top: 50%;
+								width: rem(8px);
+								transform: translateY(-50%);
+							}
+                        }
+                    }
+                    .benefitList {
+                        .list {
+                            .storeName {
+                                font-weight: bold;
+                                font-size: rem(25px);
+								color: $color_black2;
+								&.gray{
+									color: #b5b4bc;
+								}
+                            }
+                            .period {
+                                font-size: rem(23px);
+                                color: $color_gray5;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        &.couponList {   
+                            .list {
+								padding: rem(30px);
+                                margin-bottom: rem(30px);
+                                border-radius: rem(15px);
+                                background: $color_white;
+                                box-shadow: 3px 3px 9px 0px rgba(120, 120, 128, 0.34);
+
+                                .title {
+                                    padding: rem(10px) 0 rem(6px);
+                                    font-size: rem(30px);
+                                    color: $color_black;
+                                    line-height: rem(40px);
+                                }
+                                .btnStore {
+                                    margin-top: rem(50px);
+                                    a {
+                                        position: relative;
+                                        font-weight: bold;
+                                        font-size: rem(25px);
+                                        color: $color_black2;
+										img{
+											position: absolute;
+											right: rem(-18px);
+											top: 50%;
+											width: rem(9px);
+											margin-top: rem(2px);
+											transform: translateY(-50%);
+										}
+                                    }
+                                }
+                            }
+                            &.end {
+                                .list {
+                                    color: #b4b4bc;
+                                    .title, .period {
+                                        color: #b4b4bc;
+                                    }
+                                    .couponState {
+                                        font-size: rem(25px);
+                                        margin-top: rem(50px);
+                                    }
+                                }
+                            }
+                        }
+                        &.pointList {
+                            .list {
+                                overflow: hidden;
+                                height: rem(190px);
+                                margin-bottom: rem(24px);
+                                border-top: 1px solid $color_gray;
+                                border-bottom: 1px solid $color_gray;
+                                background: $color_white;
+								display: block;
+                                >div {
+                                    float: left;
+                                    height: 100%;
+                                }
+                                .thumb {
+                                    width: 49.2%;
+                                    img{
+                                        height: 100%;
+                                    }
+                                }
+                                .txts {
+                                    position: relative;
+                                    width: 50.8%;
+                                    padding: rem(25px) rem(20px) rem(20px);
+                                    .point {
+                                        position: absolute;
+                                        right: rem(40px);
+                                        bottom: rem(20px);
+                                        font-weight: bold;
+                                        font-size: rem(30px);
+                                        color: $color_black2;
+                                    }
+                                    
+                                }
+                            }
+                            &.sorting {
+                                .list {
+                                    position: relative;
+                                    height: auto;
+                                    padding: rem(53px) rem(40px);
+                                    margin-bottom: 0;
+                                    border-top: none;
+
+                                    >div {
+                                        float: none;
+                                    }
+                                    .period {
+                                        margin-top: rem(10px);
+                                    }
+                                    .point {
+                                        position: absolute;
+                                        right: rem(40px);
+                                        top: 50%;
+                                        height: auto;
+                                        font-weight: bold;
+                                        font-size: rem(30px);
+                                        color: $color_black2;
+                                        transform: translateY(-50%);
+
+                                        &.plus {
+                                            img {
+                                                width: rem(18px);
+                                                height: rem(18px);
+                                                margin-right: rem(5px);
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                        &.minus {
+                                            img {
+                                                width: rem(18px);
+                                                height: rem(3px);
+                                                margin-right: rem(5px);
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                    }
+
+                                    &:first-child {
+                                        border-top: 1px solid $color_gray;
+                                    }
+                                }
+                            }
+                        }
+
+                    }          
+                    .emptyList {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100%;
+                        text-align: center;
+                        transform: translate(-50%, -50%);
+                        img {
+                            &.icoCoupon {
+                                width: rem(102px);
+                                height: rem(88px);
+                            }
+                            &.icoPoint {
+                                width: rem(120px);
+                                height: rem(93px);
+                            }
+                        }
+                        .txt {
+                            display: block;
+                            margin-top: rem(25px);
+                            font-weight: bold;
+                            font-size: rem(35px);
+                            color: $color_black2;
+                        }
+                    }
+
+                    .uiModal {
+                        background: $background_color;
+                        overflow-y: auto;
+                        .uiModalInner {
+                            .couponList {
+								padding: rem(50px) rem(40px);
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}  
+
+// 나의 리뷰
+.myReviewWrap {
+    padding: rem(40px);
+    .myReviewNum {
+        overflow: hidden;
+        padding: rem(45px) 0 rem(90px);
+        border-bottom: 1px solid $color_gray;
+        font-weight: bold;
+        font-size: rem(30px);
+        color: $color_black2;
+
+        >div {
+            float: left;
+        }
+        .txt {
+            padding-left: rem(30px);
+            line-height: rem(70px);
+        }
+    }
+    .motReviewList {
+        .motReviewListTp {
+            position: relative;
+            margin-top: rem(70px);
+            padding-bottom: rem(45px);
+            .uiReviewList {
+                .urvTop {
+                    padding-left: 0;
+                    .thumb {
+                        display: none;
+                    }
+                    .txts {
+                        .urvTit {
+                            padding-bottom: rem(12px);
+                        }
+                    }
+                }
+            }
+            .btnDelete {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: none;
+                background: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+// 이용내역
+.myHistoryWrap {
+    .sortingPop {
+        width: 100%;
+        .title {
+            padding-right: rem(40px);
+            text-align: right;
+            background: $background_color;
+            border-bottom: 1px solid $color_gray;
+
+            span {
+                padding-right: rem(35px);
+            }
+        }
+
+        ul {
+            left: auto;
+            right: 0;
+            width: 29%;
+        }
+    }
+
+    .storeService {
+        font-size: rem(28px);
+        >div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            &.icon1 {
+                width: rem(27px);
+                height: rem(28px);
+            }
+            &.icon2 {
+                width: rem(27px);
+                height: rem(29px);
+            }
+            &.icon3 {
+                width: rem(30px);
+                height: rem(30px);
+            }
+            &.icon4 {
+                width: rem(28px);
+                height: rem(28px);
+            }
+            &.icon5 {
+                width: rem(22px);
+                height: rem(32px);
+            }
+        }
+        .service {
+            padding-left: rem(5px);
+        }
+    }
+    .storeName {
+        padding-top: rem(20px);
+        padding-bottom: rem(3px);
+        font-weight: bold;
+        font-size: rem(35px);
+		color: $color_black2;
+		&.gray{
+			color: #b5b4bc;
+		}
+    }
+    .date {
+        font-size: rem(25px);
+        color: $color_gray5;
+    }
+
+    // index
+    .historyList {
+        color: $color_black2;
+
+        .list {
+            padding: rem(55px) rem(40px) rem(65px);
+            border-bottom: 1px solid $color_gray;  
+        }
+        .btnWrap {
+            overflow: hidden;
+            height: rem(100px);
+            margin-top: rem(45px);
+            border-radius: rem(15px);
+            border: 1px solid $color_gray5;
+            >div {
+                float: left;
+                width: 50%;
+                text-align: center;
+                font-size: rem(30px);
+                color: #434343;
+                line-height: rem(100px);
+                a {
+                    display: block;
+                }
+            }
+            .btnLeft {
+                border-right: 1px solid $color_gray5;
+                .disabled {
+                    color: $color_gray;
+                    pointer-events: none;
+                    cursor: default;
+                }
+            }
+        }
+       
+    }
+
+    // detail
+    .myHistoryDetail {
+        padding-top: rem(60px);
+
+        .topArea {
+            padding: 0 rem(40px) rem(50px);
+            margin-bottom: rem(50px);
+            border-bottom: 1px solid $color_gray;
+            .storeName {
+                overflow: hidden;
+                padding-bottom: rem(60px);
+                font-size: rem(30px);
+
+                >div {
+                    float: left;
+
+                    &.reservState {
+                        float: right;
+                        font-weight: bold;
+                        color: $color_red;
+                    }    
+                }
+
+                
+            }
+        }
+
+        .middleArea {
+            padding: 0 rem(40px) rem(90px);
+
+            .subTitle {
+                padding-bottom: rem(30px);
+                font-weight: bold;
+                font-size: rem(30px);
+                color: $color_black2;
+            }
+        }
+
+        .infoList {
+            >li {
+                overflow: hidden;
+                padding-bottom: rem(20px);
+                font-size: rem(25px);
+                color: $color_gray3;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                >span {
+                    display: block;
+                    float: left;
+                }
+                .tit {
+                    width: 21.5%;
+                    font-weight: bold;
+                    font-size: rem(25px);
+                    color: $color_black2;
+                }
+                .desc {
+                    width: 78.5%;
+                }
+            }
+        }
+
+        .btnTableOrder {
+            border-top: rem(2px) solid $color_gray;
+            text-align: center;
+            a {
+                display: block;
+                padding: rem(40px) 0 rem(45px);
+                font-weight: bold;
+                font-size: rem(35px);
+                color: $color_red;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .bottomArea {
+            padding: rem(50px) rem(40px) rem(60px);
+            border-top: rem(2px) solid $color_gray;
+            background: $background_color;
+
+            .infoList {
+                padding-bottom: rem(20px);
+
+                li {
+                    padding-bottom: rem(30px);
+
+                    .tit {
+                        font-size: rem(30px);
+                        line-height: rem(35px);
+                    }
+                    .price {
+                        float: right;
+                        font-size: rem(35px);
+                        font-weight: bold;
+                        color: $color_black2;
+                        line-height: rem(35px);
+                        .won {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .btnWrap {
+                overflow: hidden;
+                >div {
+                    display: block;
+                    float: left;
+                    width: 49%;
+    
+                    &.btnReceipt {
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    
+}
+
+// 환경설정
+.mySettingWrap {
+    font-size: rem(29px);
+    .list {
+        position: relative;
+        display: table;
+        width: 100%;
+        
+        .btnType1.lst {
+            height: rem(150px);
+            font-weight: bold;
+            font-size: rem(29px);
+        }
+
+        .btnOnOff {
+            position: absolute;
+            right: rem(40px);
+            top: 50%;
+            padding-left: 0;
+            border-radius: 30%;
+            transform: translateY(-50%);
+
+            .uiInput.radiochk [type="checkbox"] {
+                +.lb {
+                    display: block;
+                    width: rem(111px);
+                    height: rem(62px);
+                    padding-left: 0;
+                    border-radius: 30px;
+                    background: $color_gray;
+                    font-weight: bold;
+                    font-size: rem(28px);
+                    color: $color_white;
+                    line-height: rem(62px);
+                    transition: 0.3s ease-out all;
+
+                    &::before {
+                        left: auto;
+                        right: rem(13px);
+                        content: 'Off';
+                        width: auto;
+                        height: auto;
+                        border: none;
+                        background: none;
+                    }
+                    &::after {
+                        position: absolute;
+                        left: rem(10px);
+                        top: 50%;
+                        content: '';
+                        width: rem(43px);
+                        height: rem(42px);
+                        border-radius: 50%;
+                        background: $color_white;
+                        transform: translateY(-50%);
+                        transition: 0.2s ease-out all;
+                    }
+                }
+
+                &:checked {
+                    +.lb { 
+                        background: $color_red;
+						.active{display: none;}
+                        &::before {
+                            right: auto;
+                            left: rem(16px);
+                            content: 'On'
+                        }
+                        &::after {
+                            left: rem(59px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.uiModal .container.mypage.main{padding-top: rem(98px);}

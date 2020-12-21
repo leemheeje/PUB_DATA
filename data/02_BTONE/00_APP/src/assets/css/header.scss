@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 200;
+}
+
+.header .in {
+    position: relative;
+    border-bottom: 1px solid $color_gray;
+    height: rem(98px);
+    background: #fff;
+
+    &.none {
+        border: none;
+    }
+}
+
+.header .in:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header .in .btnMenu {
+    float: left;
+    padding: rem(30px) 0 0 rem(40px);
+}
+
+.header .in .btnMenu span {
+    display: inline-block;
+    vertical-align: top;
+    width: rem(43px);
+    height: rem(37px);
+}
+
+.header .in .h1Logo {
+    float: left;
+    padding: rem(27px) 0 0 rem(47px);
+}
+
+.header .in .h1Logo img {
+    width: rem(150px);
+}
+
+
+.header .in .rightArea,
+.uiModalHeader .subHeader .rightArea {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header .in .rightArea .btnAlarm,
+.uiModalHeader .subHeader .rightArea .btnAlarm {
+    float: left;
+    padding: rem(25px) rem(45px) 0 0;
+}
+
+.header .in .rightArea .btnAlarm .btnType1,
+.uiModalHeader .subHeader .rightArea .btnAlarm .btnType1 {
+    position: relative;
+    width: rem(42px);
+    height: rem(45px);
+	border: none;
+	display: inline-block;
+}
+
+.header .in .rightArea .btnAlarm.active .btnType1 .new,
+.uiModalHeader .subHeader .rightArea .btnAlarm.active .btnType1 .new {
+    position: absolute;
+    right: rem(-10px);
+    top: rem(-3px);
+    width: rem(27px);
+    height: rem(27px);
+}
+
+.header .in .rightArea .btnSearch,
+.uiModalHeader .subHeader .rightArea .btnSearch {
+    float: left;
+    padding: rem(26px) rem(40px) 0 0;
+}
+
+.header .in .rightArea .btnSearch .btnType1,
+.uiModalHeader .subHeader .rightArea .btnSearch .btnType1 {
+    position: relative;
+    width: rem(39px);
+    height: rem(39px);
+	border: none;
+	display: inline-block;
+}
+.header .subHeader{position: relative; padding-left: rem(124px); padding-right: rem(124px); text-align: center; min-height: rem(98px);}
+.header .in .subHeader .h1Logo{padding: 0; float: none; }
+.header .in .subHeader .h1Logo h1{line-height: rem(98px);}
+.header .in .subHeader .h1Logo img{display: inline; vertical-align: middle;}
+.header .noPaddingRight{padding-right: 0;}
+.header .btnBack{height: rem(98px); width: rem(124px); position: absolute; left: 0; top: 0;}
+.header .btnBack img{width: rem(43px); @include absolute_center_center;}
+.header .pageName{font-size: rem(32px); font-weight: bold; line-height: rem(98px);}
+.header .pageName .hin{}
+.header .pageName .hin .pan{display: inline-block; vertical-align: top; max-width: rem(272px); text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.header .headerSearch{}
+.header .headerSearch .uiInput.field .ip{border: none; padding-right: rem(124px);}
+.header .headerSearch .uiInput.field .ip input{height: rem(98px); padding-top: 0; padding-bottom: 0; padding-left: 0;}
+.header .headerSearch .uiInput.field .ipBtns{width: rem(124px);}
+.header .headerSearch .uiInput.field .ipBtns .icos.search{background-size: rem(42px);}
+.header .headerSearch .uiInput.field .ipBtns .icos.close{background-size: rem(27px);}
+.header .btnClose {position: absolute; left: 0; top: 0; width: rem(124px); height: rem(98px);}
+.header .btnClose img{@include absolute_center_center; width: rem(37px);}

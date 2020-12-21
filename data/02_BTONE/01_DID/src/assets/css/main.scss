@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+#main {
+	position: relative;
+
+	.btnMain {
+		position: absolute;
+		left: 0;
+		top: rem(1365px);
+		width: 100%;
+		text-align: center;
+
+		.in {
+			margin: 0 auto;
+
+			.tit {
+				margin-bottom: rem(64px);
+
+				em {
+					display: inline-block;
+					vertical-align: bottom;
+					font-size: rem(70px);
+					line-height: rem(70px);
+					color: #fff;
+					font-weight: 700;
+				}
+			}
+
+			.btnOp {
+				margin-bottom:20px;
+				p {
+					display: inline-block;
+					vertical-align: top;
+					width: rem(387px);
+
+					&+p {
+						margin-left: rem(80px);
+					}
+
+					button {
+						display: block;
+						width: 100%;
+						height: rem(165px);
+						line-height: rem(165px);
+						font-size: rem(45px);
+						font-weight: 700;
+						background: $color_red;
+						color: #fff;
+						border: none;
+						border-radius: rem(15px);
+						box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+						outline:none;
+
+						span {
+							display: inline-block;
+							padding-left: rem(57px);
+							background: url('../images/main/icoStore.png') left center no-repeat;
+							background-size: rem(44px) auto;
+						}
+					}
+
+					&.solo {
+						width:rem(587px);
+						button {
+							font-size: rem(35px);
+							height: rem(155px);
+							line-height: rem(155px);
+							span {
+								display: inline-block;
+								vertical-align: top;
+								margin-top:rem(24px);
+								padding: rem(74px) 0 0 0;
+								background: url('../images/main/icoStoreSolo.png') center top no-repeat;
+								background-size: rem(62px) auto;
+								line-height: rem(35px);
+							}
+						}
+					}
+
+					&.take {
+						button {
+							span {
+								padding-left: rem(53px);
+								background: url('../images/main/icoTake.png') left center no-repeat;
+								background-size: rem(42px) auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.adminLink {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: rem(200px);
+		height: rem(200px);
+		text-indent: -999em;
+		z-index: 10;
+		cursor: pointer;
+	}
+}

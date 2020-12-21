@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.myOrderList{}
+.myOrderList .plList{}
+.myOrderList .plList .plTp{}
+.myOrderList .plList .plTp+.plTp{margin-top: rem(20px);}
+.myOrderList .plList .plTp .detailSlide{box-shadow: none;}
+.myOrderList .molSortSelect{background-color: $background_color; border-bottom: 1px solid #dbd9e4;}
+.myOrderList .molSort{padding: rem(30px) 0;}
+.myOrderList .molSort .molSortInner{margin: rem(-8px);}
+.myOrderList .molSort .molSortInner .molBtns{padding: rem(8px); display: inline-block; vertical-align: middle;}

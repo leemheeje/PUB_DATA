@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.btnType1 {font-size:rem(35px); border-radius:rem(10px); width: 100%; display: block; text-align: center; color:#fff; background:$color_red; height:rem(100px); line-height:rem(100px); border:none; padding:0 10px; font-weight: 700; box-shadow: 0 rem(2px) rem(10px) rgba(120,120,128,.58); }
+.btnType1:disabled,.btnType1.none {background: $color_gray; color:#b4b4bc; box-shadow:none; cursor:default;}
+.btnType1.yellowBtn {background: $color_yellow;}

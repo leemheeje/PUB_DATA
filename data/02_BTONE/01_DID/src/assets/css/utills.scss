@@ -1,0 +1,39 @@
+@charset "utf-8";
+$color_red		 : #e43939;
+$color_yellow	 : #ffd029;
+$color_yellow2 	 : #594a16;
+$color_gray	 	 : #dadae3;
+$color_gray2 	 : #bebec7;
+$color_gray3 	 : #5c5c5c;
+$color_gray4 	 : #b5b5bd;
+$color_gray5 	 : #909096;
+$color_gray6 	 : #444444;
+$color_gray7 	 : #bcbcbc;
+$color_gray8 	 : #ebebf5;
+$color_gray9   : #545353;
+$color_black 	 : #000;
+$color_black2 	 : #2d2d2d;
+$color_white 	 : #fff;
+$background_color : #f6f6fa;
+$innerWrap : 70px;
+@media (max-width:360px){html{font-size:10px;}}
+@media (min-width:361px) and (max-width:399px){html{font-size:11px;}}
+@media (min-width:400px) and (max-width:439px){html{font-size:12px;}}
+@media (min-width:440px) and (max-width:479px){html{font-size:13px;}}
+@media (min-width:480px) and (max-width:519px){html{font-size:14px;}}
+@media (min-width:520px) and (max-width:559px){html{font-size:15px;}}
+@media (min-width:560px) and (max-width:599px){html{font-size:16px;}}
+@media (min-width:600px) and (max-width:639px){html{font-size:17px;}}
+@media (min-width:640px) and (max-width:679px){html{font-size:18px;}}
+@media (min-width:680px) and (max-width:719px){html{font-size:19px;}}
+@media (min-width:720px) and (max-width:759px){html{font-size:20px;}}
+@media (min-width:760px) and (max-width:849px){html{font-size:21px;}}
+@media (min-width:850px) and (max-width:939px){html{font-size:22px;}}
+@media (min-width:940px) and (max-width:1079px){html{font-size:23px;}}
+@media (min-width:1080px){html{font-size:24px;}}
+
+
+// Function
+@function rem($size) {
+  @return $size / 24px * 1rem;
+}

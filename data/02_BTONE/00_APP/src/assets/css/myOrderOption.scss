@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.myOrderOption{}
+.myOrderOption .mooImage{text-align: center; background: $background_color;}
+.myOrderOption .mooInfo{}
+.myOrderOption .mooInfo .tit{font-size: rem(30px); font-weight: bold; color: $color_black2; text-align: left; line-height: 1;}
+.myOrderOption .mooInfo .mooInfoText{}
+.myOrderOption .mooInfo .mooOptions{border-top: 2px solid $color_gray;}
+.myOrderOption .mooInfo .mooOptions .tit{padding-top: rem(34px);}
+.myOrderOption .mooInfo .optList{padding-top: rem(17px); padding-bottom: rem(17px);}
+.myOrderOption .mooInfo .optList .tp{padding-top: rem(17px); padding-bottom: rem(17px); position: relative; padding-right: rem(200px);}
+.myOrderOption .mooInfo .optList .tp .inp{}
+.myOrderOption .mooInfo .optList .tp .iva{position: absolute; right: 0; top: 50%; transform: translateY(-50%); color: $color_black2; font-size: rem(25px); text-align: right;}
+.myOrderOption .mooInfo .optList .tp .iva .roboto{font-weight: bold; font-size: rem(32px);}
+.myOrderOption .mooInfo .mooLng{border-top: 1px solid $color_gray;}
+.myOrderOption .mooInfo .mooLng .optList .tp{padding-right: 0; text-align: right;}
+.myOrderOption .mooInfo .mooLng .optList .tp .iva{position: static; transform: translateY(0); max-width: rem(200px); display: inline-block;}
+.myOrderOption .mooInfo .mooLng .optList .inp{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.myOrderOption .mooInfo .mooLng .tit{}
+.myOrderOption .mooInfo .mooLng {}
+.myOrderOption .mooInfo .mooLng .optList .tp .iva .roboto{font-size: rem(53px); height: auto;}
+.myOrderOption .mooBottom{position: fixed; left: 0; bottom: 0; width: 100%; background: #fff;}
+.myOrderOption .mooBottom .innerWrap{padding-bottom: rem(35px);}

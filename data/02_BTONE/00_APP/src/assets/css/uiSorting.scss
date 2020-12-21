@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.sortingPop {position: relative; display: inline-block; vertical-align: top; min-width:rem(190px); z-index: 1;}
+.sortingPop .title {padding-left: rem(30px); cursor:pointer;}
+.sortingPop .title span { position: relative; display: inline-block;  color:#2d2d2d; vertical-align: top; font-size:rem(25px); line-height:rem(75px); padding-right:rem(30px);}
+.sortingPop .title span img {position: absolute; right:rem(8px); top:50%; margin-top:rem(-1px); width:rem(15px); transition:.3s all; }
+.sortingPop ul {position: absolute; left:0; top:rem(75px); width: 100%; opacity:0; visibility:hidden; transform:translate(0,10px); background:#fff; transition:.3s all; border:1px solid #909096; border-radius:rem(3px); padding:rem(43px) 0 rem(43px) rem(30px); }
+.sortingPop ul li {display: block; color:#909096;  font-size:rem(25px); line-height:rem(25px); margin-bottom:rem(55px); text-align: left;}
+.sortingPop ul li:last-child {margin-bottom:0;}
+.sortingPop ul li input {position: absolute; visibility:hidden;}
+.sortingPop ul li input:checked + label {color:#2d2d2d}
+.sortingPop.active ul {opacity:1; visibility:visible; transform:translate(0,0); }
+.sortingPop.active .title span img {transform:rotate(180deg);}
+
+.uiModal .uiModalInner .container .sortingPop {width: 100%;}
+.uiModal .uiModalInner .container .sortingPop .title {position: relative; z-index: 30; padding-left: rem(39px); border-bottom: 1px solid $color_gray; background: $background_color;}
+.uiModal .uiModalInner .container .sortingPop .title span {display: block; font-size: rem(30px);}
+.uiModal .uiModalInner .container .sortingPop .title span img {right: rem(40px); width: rem(25px);}
+.uiModal .uiModalInner .container .sortingPop ul {border: none;}
+.uiModal .uiModalInner .container .sortingPop.active ul {overflow-y: auto; position: fixed; top: 0; z-index: -1; height: 100%; padding-top: rem(220px); border: none; background: #fff;}

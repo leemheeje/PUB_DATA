@@ -1,0 +1,120 @@
+$delay : 800ms;
+
+/**/
+.my-node-enter{position: absolute; left: 0; top: 0; width: 100%; min-height: 100vh; background: #fff;}
+.my-node-exit{position: absolute; left: 0; top: 0; width: 100%; min-height: 100vh; background: #fff;}
+.my-node-enter {
+	left: 100%;
+  }
+  .my-node-enter-active {
+	left: 0;
+	transition: left $delay;
+  }
+  .my-node-exit {
+	left: 0;
+  }
+  .my-node-exit-active {
+	left: -100%;
+	transition: left $delay;
+  }
+.my-node-enter+.my-node-revers-exit {
+	left: 0;
+  }
+  .my-node-enter+.my-node-revers-exit-active {
+	left: -100%;
+	transition: left $delay;
+  }
+
+.my-node-revers-enter{position: absolute; left: 0; top: 0; width: 100%; min-height: 100vh; background: #fff;}
+.my-node-revers-exit{position: absolute; left: 0; top: 0; width: 100%; min-height: 100vh; background: #fff;}
+.my-node-revers-enter {
+	left: -100%;
+  }
+  .my-node-revers-enter-active {
+	left: 0;
+	transition: left $delay;
+  }
+  .my-node-revers-exit {
+	left: 0;
+  }
+  .my-node-revers-exit-active {
+	left: 100%;
+	transition: left $delay;
+  }
+  
+
+.my-node-revers-enter+.my-node-exit {
+	left: 0;
+  }
+  
+.my-node-revers-enter+.my-node-exit-active {
+	left: 100%;
+	transition: left $delay;
+  }
+  
+/**/
+
+
+
+.my-tnd-enter{position: absolute; left: 0; top: 0; width: 100%; min-height: 100vh; background: #fff;}
+.my-tnd-exit{position: absolute; left: 0; top: 0; width: 100%;min-height: 100vh; background: #fff;}
+.my-tnd-enter {
+	left: 100%;
+  }
+  .my-tnd-enter-active {
+	left: 0;
+	z-index: 3;
+	transition: left $delay;
+  }
+  .my-tnd-exit {
+	left: 0;
+  }
+  .my-tnd-exit-active {
+	left: -0%;
+	z-index: 2;
+	transition: all $delay;
+  }
+.my-tnd-enter+.my-tnd-revers-exit {
+	left: 0;
+  }
+  .my-tnd-enter+.my-tnd-revers-exit-active {
+	left: -0%;
+	z-index: 2;
+	transition: left $delay;
+  }
+  .my-tnd-enter-done+*{display: none;}
+
+.my-tnd-revers-enter{position: absolute; left: 0; top: 0; width: 100%;min-height: 100vh;  background: #fff;}
+.my-tnd-revers-exit{position: absolute; left: 0; top: 0; width: 100%;min-height: 100vh;  background: #fff;}
+.my-tnd-revers-enter {
+	left: -100%;
+  }
+  .my-tnd-revers-enter-active {
+	left: -0%;
+	position: static;
+	transition: left $delay;
+  }
+  .my-tnd-revers-exit {
+	left: 0;
+  }
+  .my-tnd-revers-exit-active {
+	left: 100%;
+	transition: left $delay;
+  }
+  
+
+.my-tnd-revers-enter+.my-tnd-exit {
+	left: 0;
+	position: absolute;
+  }
+  
+.my-tnd-revers-enter+.my-tnd-exit-active {
+	left: 100%;
+	transition: left $delay;
+  }
+
+
+  .menu{position:fixed; top:0; right:0; overflow-y: auto; z-index: 1000;}
+  .menu.active{background: red; bottom:0;}
+  .menu button{}
+  .menu a {font-size: 20px;display: block; color:#fff;}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.myOrderWaiting{}
+.myOrderWaiting .mowaTop{margin-top: rem(120px);}
+.myOrderWaiting .mowaTop .mrt{float: right; font-size: rem(27px); color: #a6a6ab; position: relative; padding-right: rem(30px); text-align: right;}
+.myOrderWaiting .mrcont{background: $background_color; border-radius: rem(10px); padding: rem(40px) rem(45px); clear: both; position: relative;}
+.myOrderWaiting .mrcont .mrt{font-size: rem(27px); color: #a6a6ab; position: relative; padding-right: rem(30px); text-align: right; position: absolute; right: 0; bottom: 100%;}
+.myOrderWaiting .mrcont .mrt img{width: rem(25px); position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.myOrderWaiting .mrcont .inf{line-height: rem(33px); font-size: rem(23px); padding-left: rem(33px); font-weight: normal; color: $color_red !important; display: block; position: relative;}
+.myOrderWaiting .mrcont .inf img{width: rem(21px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.myOrderWaiting .mrcont .inner{}
+.myOrderWaiting .mrcont .inner .lst{color: #434149; position: relative; }
+.myOrderWaiting .mrcont .inner .lst .ltp{padding-left: rem(340px);}
+.myOrderWaiting .mrcont .inner .lst .ltp+.ltp{margin-top: rem(15px);}
+.myOrderWaiting .mrcont .inner .lst .ltp .lb{font-size: rem(40px); text-align: left; font-weight: normal; position: absolute; left: 0;}
+.myOrderWaiting .mrcont .inner .lst .ltp .vl{font-size: rem(45px); text-align: right;}
+.myOrderWaiting .mrcont .inner .lst .ltp .vl .roboto{font-weight: bold; font-size: rem(50px);}
+.myOrderWaiting .mowaCont .tit{font-size: rem(35px); font-weight: bold; color: $color_black2;}
+.myOrderWaiting .mowaCont .stit{font-size: rem(27px); line-height: rem(35px); font-weight: normal; color: $color_gray3; margin-top: rem(5px);}
+.myOrderWaiting .mowaCont .stit.rel{position: relative; padding-right: rem(250px);}
+.myOrderWaiting .mowaCont .stit.rel .mucount{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: rem(250px);}
+.myOrderWaiting .mowaCont .copyCheck{display: inline-block; vertical-align: -webkit-baseline-middle;}
+.myOrderWaiting .mowaCont .copyCheck .uiInput.radiochk .lb{color: $color_gray5;}
+.myOrderWaiting .mowaCont .copyBtn{display: inline-block; margin-left: rem(15px); vertical-align: -webkit-baseline-middle;}
+.myOrderWaiting .mowaCont .copyBtn .text{font-size: rem(18px); color: $color_gray5; position: relative; padding-right: rem(14px);}
+.myOrderWaiting .mowaCont .copyBtn .text img{position: absolute; right: 0; top: rem(10px); width: rem(8px);}
+.myOrderWaiting .mywsCnt{margin-top: rem(60px);}
+.myOrderWaiting .mywsCnt .gtit{font-weight: bold; font-size: rem(45px); text-align: left; color: $color_black2; line-height: 1;}
+.myOrderWaiting .mywsCnt .gtit .pint{color: $color_red; margin-top: rem(15px);}
+.myOrderWaiting .mywsCnt .gtit .pint .sinf{font-size: rem(23px); padding-left: rem(30px); position: relative; margin-left: rem(15px);}
+.myOrderWaiting .mywsCnt .gtit .pint .sinf img{width: rem(21px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.myOrderWaiting .mywsCnt .mylst{padding-bottom: rem(40px); margin-bottom: rem(40px); border-bottom: 1px solid $color_gray; margin-top: rem(60px); color: $color_black2;}
+.myOrderWaiting .mywsCnt .mylst .mytp{position: relative; padding-left: rem(200px); font-size: rem(28px); color: $color_black2; text-align: left;}
+.myOrderWaiting .mywsCnt .mylst .mytp+.mytp{margin-top: rem(25px);}
+.myOrderWaiting .mywsCnt .mylst .mytp .lb{position: absolute; left: 0; top: 0; font-weight: bold;}
+.myOrderWaiting .mywsCnt .mylst .mytp .vl{font-weight: normal;}
+.myOrderWaiting .mywsCnt .mylst .mytp.lg{margin-bottom: rem(50px);}
+.myOrderWaiting .mywsCnt .mylst .mytp.lg .lb{font-size: rem(30px);}
+.myOrderWaiting .mywsCnt .mylst .mytp.lg .vl{font-size: rem(100px); line-height: 1;}
+.myOrderWaiting .mywsCnt .inf{text-align: left; line-height: rem(30px); font-size: rem(23px); color: $color_black2;}
+.myOrderWaiting .innerWrap {margin-bottom: rem(160px);}
+.myOrderWaiting>div:last-child {margin-bottom: 0;}

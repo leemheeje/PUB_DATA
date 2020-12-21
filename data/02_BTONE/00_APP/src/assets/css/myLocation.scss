@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.myLocation{}
+.myLocation .mylTop{padding: rem(65px) 0;}
+.myLocation .mylTop .tit{font-size: rem(35px); font-weight: bold; color: $color_black2;}
+
+
+.myLocation .searchResult{}
+.myLocation .serchList{}
+.myLocation .serchList .serchTp{padding: rem(60px) 0; border-bottom: rem(1px) solid $color_gray; position: relative;}
+.myLocation .serchList .serchTp .serTxts{cursor: pointer; padding-right: rem(60px);}
+.myLocation .serchList .serchTp .serTxts .tit{font-size: rem(30px); line-height: rem(35px); color: $color_black2; text-align: left; @include ellipsis;}
+.myLocation .serchList .serchTp .serTxts .adr{font-size: rem(24px); line-height: rem(31px); color: $color_gray5; padding-left: rem(80px); position: relative; margin-top: rem(12px);}
+.myLocation .serchList .serchTp .serTxts .adr .adrLabel{position: absolute; left: 0; top: 0;}
+.myLocation .serchList .serchTp .listDelete{width: rem(105px); height: rem(105px); position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: none; border: none; outline: none;}
+.myLocation .serchList .serchTp .listDelete img{width: rem(25px); @include absolute_center_center;}
+.myLocation .resultNull{margin-top: rem(200px);}
+.myLocation .resultNull .rltInner{text-align: center;}
+.myLocation .resultNull .tit{font-size: rem(35px); color: $color_black2; font-weight: bold; padding-top: rem(113px); position: relative;}
+.myLocation .resultNull .tit img{position: absolute; left: 50%; transform: translateX(-50%); top: 0; height: rem(96px);}
+.myLocation .resultNull .stit{font-size: rem(35px); color: $color_black2;}
+
+.myLocationSetting .myLocation .searchResult .serchList .serchTp{border-bottom: none;}
+.myLocationSetting .map{background: $background_color; position: fixed; left: 0; top: 0; width: 100%; bottom: 0;}
+.myLocationSetting .map>*{height: 100%;}
+.myLocationSetting .info{background: #fff; padding-bottom: rem(110px); position: fixed; left: 0; width: 100%; bottom: 0;}

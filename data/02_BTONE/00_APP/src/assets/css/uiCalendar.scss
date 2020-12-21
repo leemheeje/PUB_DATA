@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+
+.uiCalendar{}
+.uiCalendar .uiCalTop{text-align: center; margin-bottom: rem(15px);}
+.uiCalendar .uiCalTop .uiCalTopInner{display: inline-block; padding: 0 rem(45px); position: relative;}
+.uiCalendar .uiCalTop .contr{width: rem(45px); height: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+.uiCalendar .uiCalTop .contr img{width: rem(11px); @include absolute_center_center;}
+.uiCalendar .uiCalTop .contr.uiCalPrev{ left: 0;}
+.uiCalendar .uiCalTop .contr.uiCalNext{ right: 0;}
+.uiCalendar .uiCalTop .uiCalTit{font-size: rem(40px); font-weight: bold; height: rem(60px); line-height: rem(60px); text-align: center; min-width: rem(220px); text-align: center; display: block;}
+.uiCalendar .uiCalCont{}
+.uiCalendar .uiCalCont .uiCalLabel{}
+.uiCalendar .uiCalCont .uiCalDays{}
+.uiCalendar .uiCalCont .uiCalCols{width: 14.285%; display: inline-block; text-align: center; vertical-align: top;}
+.uiCalendar .uiCalCont .uiLabel{font-size: rem(24px); line-height: rem(62px); min-height: rem(100px);}
+.uiCalendar .uiCalCont .uiLabel.active{position: relative; color: #fff !important;}
+.uiCalendar .uiCalCont .uiLabel.active:before{content: ''; width: rem(62px); height: rem(62px); position: absolute; left: 50%; transform: translateX(-50%); top: 0; z-index: -1; background: $color_red; border-radius: 50%;}
+.uiCalendar .uiCalCont .uiCalLabel .uiLabel{color: $color_gray3; }
+.uiCalendar .uiCalCont .uiCalDays .uiLabel{color: $color_black2; }
+.uiCalendar .uiCalCont .uiLabel.uiLabelGray{color: $color_gray !important; }
+.uiCalendar .uiCalCont .uiLabel.uiLabelBlue{color: #5498f4; }
+.uiCalendar .uiCalCont .uiLabel.uiLabelRed{color: #ec625e; }
+.uiCalendar .uiCalCont .uiLabel .uiLabelMem{display: block; font-size: rem(20px); line-height: rem(23px); color: $color_black2; font-weight: bold; margin-top: rem(10px);}
+.uiCalendar .uiCalCont .uiLabel.active .uiLabelMem{color: #ec625e;}
+.uiCalendar .uiCalCont .uiCalLabel .uiCalCols{}
+.uiCalendar .uiCalCont .uiCalDays .uiCalCols{}
+
+
+.uiCalendar.datepicker{border:1px solid #a4a4a4;  background:#fff; border-radius:rem(15px); border-top: none; border-top-left-radius:0px; border-top-right-radius:0px; padding:0 rem(20px) rem(30px) rem(20px);}
+.uiCalendar.datepicker .uiCalTop{text-align: center;}
+.uiCalendar.datepicker .uiCalTop .uiCalTopInner{position: relative;}
+.uiCalendar.datepicker .uiCalTop .contr{width: rem(9px); height:rem(14px); position: absolute; top: 50%; transform: translateY(-50%);}
+.uiCalendar.datepicker .uiCalTop .contr img{width: rem(9px); @include absolute_center_center;}
+.uiCalendar.datepicker .uiCalTop .contr.uiCalPrev{left:rem(66px);}
+.uiCalendar.datepicker .uiCalTop .contr.uiCalNext{right: rem(66px);}
+.uiCalendar.datepicker .uiCalTop .uiCalTit{font-size: rem(25px); color:#2d2d2d; font-weight: 700; height: rem(86px); line-height: rem(87px); text-align: center; min-width: rem(220px); text-align: center; display: block;}
+.uiCalendar.datepicker .uiCalCont{}
+.uiCalendar.datepicker .uiCalCont .uiCalLabel{padding-bottom:rem(17px); }
+.uiCalendar.datepicker .uiCalCont .uiCalLabel .uiCalCols .uiLabel{line-height:rem(18px); min-height:auto;}
+.uiCalendar.datepicker .uiCalCont .uiLabel{font-size: rem(18px); line-height: rem(39px); min-height: rem(39px);}
+.uiCalendar.datepicker .uiCalCont .uiLabel.active{position: relative; color: #fff !important; z-index: 10;}
+.uiCalendar.datepicker .uiCalCont .uiLabel.active:before{content: ''; width: rem(39px); height: rem(39px); position: absolute; left: 50%; transform: translateX(-50%); top: 0; z-index: -1; background: $color_red; border-radius: 50%;}

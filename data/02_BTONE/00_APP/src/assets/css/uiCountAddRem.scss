@@ -1,0 +1,26 @@
+@import "./utills.scss";
+
+/* 카운트 추가삭제 공통요소 */
+$btn_width : 45px;
+$btn_height : 45px;
+$btn_radius : 10px;
+
+.uiFormCount{padding: 0 rem($btn_width) 0; position: relative; }
+.uiFormCount .rem,
+.uiFormCount .add{outline: none; width: rem($btn_width); height: rem($btn_height); border: none; border-radius: rem($btn_radius); background: $color_yellow; position: absolute; top: 50%; transform: translateY(-50%);}
+.uiFormCount .rem img,
+.uiFormCount .add img{width: 45%; @include absolute_center_center;}
+.uiFormCount .rem{left: 0;}
+.uiFormCount .add{ right: 0;}
+.uiFormCount .ufcInput{border-radius: 0; border: none; outline: none; width: 100%; height: rem($btn_height); text-align: center; font-size: rem(35px); color: $color_gray3; font-weight: bold;}
+.uiFormCount .rem:disabled,
+.uiFormCount .add:disabled{background-color: #fff; border: rem(2px) solid #909096;}
+.uiFormCount .rem .on{display: block;}
+.uiFormCount .add .on{display: block;}
+.uiFormCount .rem .disabled{display: none;}
+.uiFormCount .add .disabled{display: none;}
+.uiFormCount .rem:disabled .on{display: none;}
+.uiFormCount .add:disabled .on{display: none;}
+.uiFormCount .rem:disabled .disabled{display: block;}
+.uiFormCount .add:disabled .disabled{display: block;}
+// 

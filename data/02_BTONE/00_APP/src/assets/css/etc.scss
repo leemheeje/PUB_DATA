@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.etcCenter{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center;}
+.etcCenter .tit{font-size: rem(45px); font-weight: bold; color: $color_black2;  padding-top: rem(150px); background: no-repeat center top; position: relative;}
+.etcCenter .tit.error404 img{position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: rem(211px);}
+.etcCenter .stit{font-size: rem(25px); font-weight: normal; color: #444444;}
+.etcCenter .tit.endService{ padding-top: rem(130px); color: $color_gray3;}
+.etcCenter .tit.endService img{position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: rem(92px);}
+.etcCenter .tit.endService+.stit{font-size: rem(35px); color: $color_black2;}
+.etcCenter .btnsWrap{}
+.etcCenter .btnsWrap .btnType1{min-width: rem(480px);}

@@ -1,0 +1,276 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+// 1:1 문의
+.container.myquestion {
+    padding-top: 0;
+
+    .loginBox {
+        clear: both;
+        padding-top: rem(205px);
+        font-weight: bold;
+        text-align: center;
+        font-size: rem(35px);
+        color: $color_black2;
+        line-height: rem(49px);
+        span {
+            font-size: rem(38px);
+        }
+    }
+}
+.myQuestionWrap {
+    position: relative;
+    min-height: 100vh;
+    padding-top: rem(98px);
+
+    .questionTabs {
+        height: 100%;
+        .baseTab {
+            position: fixed;
+            left: 0;
+            top: rem(98px);
+            z-index: 100;
+            width: 100%;
+            background: $color_white;
+            li {
+                width: 50%;
+                span.roboto {
+                    display: inline;
+                }
+            }
+        }
+        .diviTabs {
+            height: 100%;
+            padding-top: rem(130px);
+
+            .myQuestionBox {
+                overflow: hidden;
+                padding-bottom: rem(130px);
+                &.faq {
+                    padding-bottom: 0;
+                }
+
+                // 1:1 문의
+                .btnWrite {
+                    float: right;
+                    margin-right: rem(40px);
+                    a {
+                        width: rem(182px);
+                        height: rem(65px);
+                        border-width: rem(2px);
+                        font-weight: bold;
+                        line-height: rem(63px);
+                    }
+                }
+                .myQuestionList {
+                    float: none;
+                    display: table;
+                    width: 100%;
+                    padding-top: rem(20px);
+                    .list {
+                        width: 100%;
+                        a {
+                            display: block;
+                            padding: rem(40px);
+
+                            .category {
+                                font-weight: bold;
+                            }
+                            .tit {
+                                padding-bottom: rem(12px);
+                            }
+                            .date {
+                                font-size: rem(20px);
+                                color: $color_gray5;
+                            }
+                            .answerState {
+                                position: absolute;
+                                right: rem(40px);
+                                top: rem(40px);
+                                text-align: center;
+                                
+                                >div {
+                                    width: rem(96px);
+                                    height: rem(35px);
+                                    border-radius: rem(10px);
+                                    font-size: rem(20px);
+                                    color: $color_white;
+                                    line-height: rem(35px);
+
+                                    &.ing {
+                                        background: #b4b4bc;
+                                    }
+                                    &.complete {
+                                        background: $color_red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .customerCenter {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: rem(130px);
+                    background: $color_gray;
+                    text-align: center;
+                    a {
+                        display: block;
+                        font-size: rem(30px);
+                        color: $color_gray5;
+                        line-height: rem(130px);
+                    }
+                }
+
+                // 자주 묻는 질문
+                .searchBox {
+                    position: relative;
+                    margin: rem(12px) rem(40px);
+                }
+                .sortingPop {
+                    width: 100%;
+                    .title {
+                        padding-right: rem(40px);
+                        text-align: right;
+            
+                        span {
+                            padding-right: rem(35px);
+                        }
+                    }
+            
+                    ul {
+                        left: auto;
+                        right: 0;
+                        width: 29%;
+                    }
+                }
+                .myFaqList {
+                    display: table;
+                    width: 100%;
+                    padding-top: rem(7px);
+                    .list {
+                        width: 100%;
+
+                        &:first-child {
+                            a {
+                                border-top: 1px solid $color_gray;
+                            }
+                        }
+                        a {
+                            display: block;
+                            padding-left: 0;
+                        }
+                    }
+
+                    // .noResult {
+                        
+                    // }
+                }
+            }
+        }
+    }
+}
+
+// 1:1문의 작성
+.myQuestionWriteWrap {
+    padding: rem(40px);
+
+    >div {
+        padding-bottom: rem(60px);
+        .sTit {
+            margin-bottom: rem(20px);
+            font-weight: bold;
+            font-size: rem(35px);
+            color: $color_black2;
+        }
+    }
+
+    .btnWrap {
+        padding-bottom: 0;
+        *zoom:1;
+        &:before, &:after {
+            display: block;
+            content: '';
+            line-height: 0;
+        }
+        &:after {
+            clear: both;
+        }
+        >div {
+            float: left;
+            width: 48.5%;
+
+            &.btnRight {
+                float: right;
+            }
+        }
+    }
+    .uiTextarea.field .ip textarea {
+        height: rem(410px);
+        padding: rem(25px) rem(20px);
+    }
+}
+
+.myQuestionDetailWrap {
+    position: relative;
+    min-height: 100vh;
+    padding: rem(138px) rem(40px) rem(180px);
+
+    .questionDetailList {
+        li {
+            overflow: hidden;
+            margin-bottom: rem(30px);
+            >span {
+                display: block;
+                float: left;
+            }
+            .tit {
+                width: 18.8%;
+                font-weight: bold;
+                font-size: rem(25px);
+                color: $color_black2;
+            }
+            .desc {
+                width: 81.2%;
+                font-size: rem(25px);
+                color: $color_gray3;
+                word-break: keep-all;
+            }
+        }
+    }
+    .answerBox {
+        padding: rem(20px);
+        margin: rem(100px) 0 rem(40px);
+        border-radius: rem(10px);
+        background: $background_color;
+        color: $color_black2;
+
+        .tit {
+            padding-bottom: rem(15px);
+            .name {
+                font-weight: bold;
+                font-size: rem(30px);
+                
+            }
+            .date {
+                display: inline-block;
+                margin-left: rem(5px);
+                font-size: rem(23px);
+                color: $color_gray5;
+            }
+        }
+        .desc {
+            font-size: rem(25px);
+            word-break: keep-all;
+        }
+    }
+    .btnBack {
+        position: absolute;
+        left: 0;
+        bottom: rem(80px);
+        width: 100%;
+        padding: 0 rem(40px);
+    }
+}

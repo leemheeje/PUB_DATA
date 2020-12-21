@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+
+.myOrderTabsReview{}
+.myOrderTabsReview .motTop{padding-bottom: rem(35px); border-bottom: 1px solid $color_gray;}
+.myOrderTabsReview .motTop .txts{text-align: left; position: relative; padding-right: rem(180px); display: block;}
+.myOrderTabsReview .motTop .txts .tit{font-size: rem(35px); font-weight: bold; display: block;}
+.myOrderTabsReview .motTop .txts .tit .roboto{font-size: rem(37px);}
+.myOrderTabsReview .motTop .txts .btnType1{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.myOrderTabsReview .motTop .sort{position: relative; padding-right: rem(180px); margin-top: rem(60px);}
+.myOrderTabsReview .motTop .sort .btnsGroup{display: block;}
+.myOrderTabsReview .motTop .sort .btnType1{}
+.myOrderTabsReview .motTop .sort .btnType1+.btnType1{margin-left: rem(20px);}
+.myOrderTabsReview .motTop .sort .sortingPop{width: rem(220px); margin-right: rem(-40px); padding-right: rem(40px); position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.myOrderTabsReview .motTop .sort .sortingPop .title{text-align: right;}
+.myOrderTabsReview .motReview{padding-top: rem(64px); padding-bottom: rem(64px);}
+.myOrderTabsReview .motReview .motReviewList{}
+.myOrderTabsReview .motReview .motReviewList{}
+.myOrderTabsReview .motReview .motReviewList .motReviewListTp{}
+.myOrderTabsReview .motReview .motReviewList .motReviewListTp+.motReviewListTp{margin-top: rem(90px);}

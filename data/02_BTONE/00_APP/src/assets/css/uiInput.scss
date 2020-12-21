@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+input{border: none; outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.uiInput.field{position: relative;}
+.uiInput.field .lb{position: absolute; width: 0; height: 0; font-size: 0; visibility: hidden; left: -999em; top: -999em;}
+.uiInput.field .ip{display: block; position: relative; text-align: left; border: 1px solid #a4a4a4; border-radius: rem(15px); font-size: 0;}
+.uiInput.field .ip .icoValidityComplete{display: none;}
+.uiInput.field .ip.validityComplete .icoValidityComplete{position: absolute; right: rem(25px); top: 50%; transform: translateY(-50%); width: rem(30px); display: block;}
+.uiInput.field .ip input{background-color: transparent; font-size: rem(35px); height: rem(96px); padding-left: rem(24px); display: block; width: 100%; color: $color_gray6; }
+.uiInput.field .ip input:focus{outline: none;}
+.uiInput.field .ip input::placeholder{color: $color_gray5; font-size: rem(28px); }
+.uiInput.field .ip input::placeholder{color: $color_gray5;}
+.uiInput.field .ip.focus{border-color: $color_red;}
+.uiInput.field .ip.onFailureMessage input{color: $color_red;}
+.uiInput.field .errMsg, .uiInput.field .sucMsg{line-height: rem(34px); font-size: rem(23px); position: absolute; left: 0; top: 100%; padding-left: rem(33px); font-weight: normal; padding-top: rem(5px); padding-bottom: rem(5px);}
+.uiInput.field .errMsg{color: $color_red;}
+.uiInput.field .sucMsg{color: $color_black2;}
+.uiInput.field .errMsg img, .uiInput.field .sucMsg img{width: rem(20px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.uiInput.field.readonly .ip{background: $background_color; border-color: $background_color;}
+.uiInput.field.readonly .ip input{color: $color_gray3;}
+.uiInput.field.readonly{padding-bottom: 0;}
+.uiInput.field.sm .ip input{height: rem(70px); padding-left: rem(10px);}
+
+.uiInput.field{position: relative;}
+.uiInput.field .ip{padding-right: rem(80px);}
+.uiInput.field .ipBtns{position: absolute; right: 0; top: 0; height: 100%; width: rem(80px);}
+.uiInput.field .ipBtns .icos{width: 100%; height: 100%; display: block; }
+.uiInput.field .ipBtns .icos.search img,
+.uiInput.field .ipBtns .icos.close img{@include absolute_center_center; }
+.uiInput.field .ipBtns .icos.search img{width: rem(38px);}
+.uiInput.field .ipBtns .icos.close img{width: rem(24px);}
+
+/*라디오&체크박스 공통요소*/
+$chkrdo_width : 45px;
+$chkrdo_height : 45px;
+$chkrdo_sm_width : 35px;
+$chkrdo_sm_height : 35px;
+.uiInput.radiochk{position: relative; padding-bottom: 0;}
+.uiInput.radiochk [type="checkbox"],
+.uiInput.radiochk [type="radio"]{position: absolute; left: 0; top: 0; width: 0; height: 0;}
+.uiInput.radiochk .lb{position: relative; padding-left: rem(70px); font-size: rem(30px);}
+.uiInput.radiochk .lb:before{content: ''; width: rem($chkrdo_width); height: rem($chkrdo_height); position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: no-repeat center center; background-size: 100% auto;}
+.uiInput.radiochk [type="checkbox"]+.lb:before{border: 1px solid $color_gray5; border-radius: rem(10px); background-color: transparent;}
+.uiInput.radiochk [type="checkbox"]+.lb .active{display: none;}
+.uiInput.radiochk [type="checkbox"]:checked+.lb:before{background-color: $color_yellow; border-color: $color_yellow;}
+.uiInput.radiochk [type="checkbox"]:checked+.lb .active{display: block; width: rem(21px); position: absolute; left: rem(15px); top: 50%; transform: translateY(-50%);}
+.uiInput.radiochk [type="radio"]+.lb:before{border: 1px solid $color_gray5; border-radius: rem(10px); background-color: transparent;}
+.uiInput.radiochk [type="radio"]+.lb .active{display: none;}
+.uiInput.radiochk [type="radio"]:checked+.lb:before{background-color: $color_yellow; border-color: $color_yellow;}
+.uiInput.radiochk [type="radio"]:checked+.lb .active{display: block; width: rem(21px); position: absolute; left: rem(15px); top: 50%; transform: translateY(-50%);}
+.uiInput.radiochk.sm .lb{padding-left: rem(50px); font-size: rem(20px);}
+.uiInput.radiochk.sm .lb:before{width: rem($chkrdo_sm_width); height: rem($chkrdo_sm_height);}
+.uiInput.radiochk.sm [type="checkbox"]:checked+.lb .active{left: rem(10px)}
+.uiInput.radiochk.box .lb{padding-left: 0; background: #f7f6fb; color: #909096; font-size: rem(35px); text-align: center; border-radius: rem(10px); height: rem(74px); line-height: rem(74px); display: block;}
+.uiInput.radiochk.box.disabled .lb,
+.uiInput.radiochk.box input:disabled+.lb{background: #dadae4; color: #b4b4bc;}
+.uiInput.radiochk.box input:checked+.lb{background: $color_red; color: #fff;}
+.uiInput.radiochk.box .lb:before{content: none;}
+
+
+
+.uiInput.file .cmmInputFile{position: relative;}
+.uiInput.file .cmmInputFile .ip{display: block; position: relative; text-align: left; border: 1px solid #a4a4a4; border-radius: rem(15px); padding-left: rem(190px); line-height: rem(98px); }
+.uiInput.file .cmmInputFile .ip .icofile{width: rem(190px); height: 100%; position: absolute; left: 0; top: 0; text-align: center;}
+.uiInput.file .cmmInputFile .ip .icofile .txt{display: inline-block; vertical-align: top; font-size: rem(30px); color: $color_gray5; font-weight: bold; position: relative; padding-left: rem(37px);}
+.uiInput.file .cmmInputFile .ip .icofile .txt img{width: rem(32px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.uiInput.file .cmmInputFile .filename{display: block;  min-height: rem(98px); font-size: rem(24px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: $color_gray5}
+.uiInput.file .cmmInputFile input{position: absolute; left: 0; top: 0; width: 0; height: 0; overflow: hidden;}
+

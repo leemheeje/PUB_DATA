@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.userIdentity{}
+.userIdentity .innerWrap{padding-left: rem(60px); padding-right: rem(60px);}
+.userIdentity .usfPassInner{padding-top: rem(100px);}
+.userIdentity .usfPassInner .topTxts{text-align: left;}
+.userIdentity .usfPassInner .topTxts .tit{font-size: rem(45px); font-weight: bold; margin-bottom: rem(10px); color: $color_black2;}
+.userIdentity .usfPassInner .topTxts .stit{font-size: rem(25px); line-height: rem(38px); font-weight: normal; color: $color_gray3;}
+.userIdentity .usfPassInner .topTxts .strong{font-weight: bold;}
+.userIdentity .usfPassInner .midCont{position: relative; padding-right: rem(200px); margin-top: rem(40px);}
+.userIdentity .usfPassInner .midCont.nopad{padding-right: 0;}
+.userIdentity .usfPassInner .midCont .lt{}
+.userIdentity .usfPassInner .midCont .rt{position: absolute; right: 0; top: 0; width: rem(180px);}
+.userIdentity .usfPassInner .midCont .list{}
+.userIdentity .usfPassInner .midCont .list+.list{margin-top: rem(50px);}
+.userIdentity .usfPassInner .fotAre{margin-top: rem(110px);}
+
+.userIdentity .usfPassInner .midCont .rt .none {pointer-events: none; cursor: default;}
+.userIdentity .usfPassInner .midCont .alertTxt {position: relative; margin-top: rem(7px);}
+.userIdentity .usfPassInner .midCont .alertTxt span {position: absolute; left: 0; top: 0; padding-left: rem(29px); width: 100%; font-size: rem(23px);}
+.userIdentity .usfPassInner .midCont .alertTxt img {position: absolute; left: 0; top: rem(6px); max-width: 100%; width: rem(23px); height: rem(23px);}
+
+.userIdentity .usfPassInner .uiInput.field .ip{padding-right: 0;}

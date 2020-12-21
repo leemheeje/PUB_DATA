@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+
+.myOrderTabsMenu{}
+.myOrderTabsMenu .tbmTop{text-align: left; margin-bottom: rem(94px);}
+.myOrderTabsMenu .tbmTop .tit{font-size: rem(35px); color: $color_black2; font-weight: bold; margin-bottom: rem(50px); line-height: 1;}
+.myOrderTabsMenu .tbmList .innerWrap+.innerWrap{border-top: 1px solid $color_gray;}
+.myOrderTabsMenu .tbmInfo{background: #eee; padding-top: rem(24px); padding-bottom: rem(40px); color: #848484; overflow: hidden;}
+.myOrderTabsMenu .tbmInfo .tbmiTit{font-weight: bold; font-size: rem(23px);}
+.myOrderTabsMenu .tbmInfo .tbmiTxts{font-size: rem(24px); line-height: rem(30px); display: block; margin-top: rem(8px); @include ellipsis;}
+.myOrderTabsMenu .tbmInfo .tbmiTxts.active{ -webkit-box-orient: inherit; word-wrap: inherit; overflow: inherit; text-overflow: inherit; display: inherit; -webkit-line-clamp: inherit; }
+.myOrderTabsMenu .tbmInfo .tbmiMore{float: right; margin-top: rem(20px); font-size: rem(25px); text-decoration: underline; display: inline-block;}

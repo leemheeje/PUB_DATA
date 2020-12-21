@@ -1,0 +1,490 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+.paymentWrap {
+    padding: rem(45px) rem(40px);
+
+    .paymentBox {
+        .title {
+            padding-bottom: rem(20px);
+            font-weight: bold;
+            font-size: rem(35px);
+            color: $color_black2;
+		}
+		.stoName{
+			font-size: rem(30px);
+			color: $color_black2;
+			font-weight: bold;
+		}
+		.stoResInfo{
+			margin-top: rem(15px);
+			.striTp{
+				position: relative;
+				padding-left: rem(75px);
+				font-size: rem(28px);
+				.lb{position: absolute; left: 0; width: rem(75px); top: 0; color: $color_gray3}
+				.vl{color: $color_black2;}
+			}
+        }
+        
+        .loginBox {
+            .midCont {
+                .lt {
+                    float: left;
+                    width: 70%;
+                    .uiInput {
+                        .ip {
+                            padding-right: rem(25px);
+                        }
+                    }
+                }
+                .rt {
+                    float: right;
+                    width: 27%;
+                    .btnType1 {
+						border-width: rem(2px);
+						padding-top: rem(31px);
+						padding-bottom: rem(31px);
+                        &:disabled {
+                            border-color: $color_red;
+                            color: $color_red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .requestBox {
+            .uiInput {
+                .ip {
+                    padding-right: rem(25px);
+                }
+            }
+        }
+
+        .paymentPrice {
+            font-size: rem(25px);
+            color: $color_gray3;
+            li {
+                padding-bottom: rem(5px);
+
+                span {
+                    display: inline-block;
+
+                    &.price {
+                        float: right;
+                    }
+                }
+
+                &.salePrice {
+                    .price {
+                        position: relative;
+                        span::before {
+                            position: absolute;
+                            left: rem(-30px);
+                            top: rem(19px);
+                            content: '';
+                            width: rem(18px);
+                            height: rem(3px);
+                            background: $color_gray3;
+                        }
+                    }
+                }
+
+                &.resultPrice {
+                    padding: rem(15px) 0 rem(26px);
+                    margin-top: rem(10px);
+                    border-top: 1px solid $color_gray; 
+                    font-weight: bold;
+                    font-size: rem(30px);
+                    color: $color_red;
+                }
+            }
+        }
+
+        .paymentWay {
+            min-height: rem(376px);
+            font-size: rem(30px);
+            color: $color_gray5;
+
+            .paymentwayList {
+                padding: rem(35px) rem(30px);
+                background: $background_color;
+                border-radius: rem(15px);
+
+                li {
+                    position: relative;
+                    margin-bottom: rem(42px);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .uiInput.radiochk {
+                        position: relative;
+                        .lb {
+                            display: block;
+                            width: 100%;
+                            padding-left: rem(50px);
+							line-height: rem(41px);
+							position: relative;
+							.on,.active{
+								position: absolute;
+								left: 0;
+								top: 50%;
+								transform: translateY(-50%);
+								width: rem(41px);
+							}
+							.icoChk{display: none;}
+                        }
+                        [type="radio"] {
+                            +.lb {
+                                &::before {
+									content: none;
+                                    border: none;
+								}
+								.on{display: block;}
+								.active{display: none;}
+                            }
+                        }
+                        [type="radio"]:checked {
+                            +.lb {
+								color: $color_red;
+								.on{display: none;}
+								.active{display: block;}
+                                .icoChk {
+									display: block;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    width: rem(26px);
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+        .agreeWrap {
+            position: relative;
+            margin: rem(28px) 0 rem(62px);
+        
+            .uiInput.radiochk {
+                position: relative;
+                display: inline-block;
+                max-width: 331px;
+                width: 50.69%;
+                vertical-align: top;
+                .lb {
+                    position: absolute;
+                    left: 0;
+                    max-width: 331px;
+                    width: 100%;
+                    padding-left: rem(49px);
+                    line-height: rem(35px);
+
+                    &:before {
+                        width: rem(35px);
+                        height: rem(35px);
+                        box-sizing: border-box;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                    box-sizing: border-box;
+                }
+                [type="checkbox"] + .lb:before {
+                    border: rem(2px) solid $color_gray;
+                }
+                [type="checkbox"]:checked + .lb:before {
+                    border: none;
+                }
+            }
+
+            .btnDetail {
+                display: inline-block;
+                position: absolute;
+                width: 14.573%;
+                margin-left: rem(9px);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.paymentResult {
+    padding-top: rem(235px);
+    text-align: center;
+
+    .titleWrap {
+        .icon {
+            width: rem(100px);
+            height: rem(73px);
+            margin: 0 auto;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+			}
+			&.logo{
+				width: rem(214px);
+				height: rem(57px);
+				margin: 0 auto rem(30px);
+			}
+        }
+        .title {
+            padding: rem(13px) 0 rem(20px);
+            font-weight: bold;
+            font-size: rem(45px);
+			color: $color_black2;
+			&.sm{
+   		    	font-size: rem(35px);
+			}
+        }
+        .text {
+            font-size: rem(30px);
+            color: $color_gray6;
+            line-height: rem(40px);
+            span {
+                font-weight: bold;
+			}
+			&.sm{
+				font-size: rem(25px);
+				line-height: rem(35px);
+        		color: $color_gray3;
+			}
+        }
+    }
+    .btnWrap {
+        width: 64%;
+        margin: rem(134px) auto;
+        a {
+            width: 100%;
+            margin-bottom: rem(39px);
+        }
+    }
+}
+
+.container.payment {
+    .uiModal {
+        .uiModalInner {
+            .uiModalHeader {
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 10;
+                width: 100%;
+                height: rem(98px);
+                background: #fff;
+                border-bottom: 1px solid #a6a6ab;
+                text-align: center;
+                font-weight: bold;
+                font-size: rem(32px);
+                color: $color_black;
+                line-height: rem(98px);
+            }
+            .container {
+                padding: 0 0 rem(45px);
+                background: #fff;
+                .ucTit {
+                    padding-bottom: rem(13px);
+                    font-weight: bold;
+                    font-size: rem(35px);
+                    color: $color_gray6;
+                }
+                .ucContBox {
+                    padding-bottom: rem(10px);
+
+                    .scrollWrap {
+                        .ScrollbarsCustom {
+                            height: rem(164px) !important;
+                            font-size: rem(20px);
+                            line-height: rem(28px);
+
+                            .ScrollbarsCustom-Scroller {
+                                margin: rem(10px) 0;
+                                .scText {
+                                    padding-top: 0;
+                                    padding-bottom: rem(10px);
+                                    padding-right: rem(25px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .uiDialog {
+        .uiDialogContBox {
+            padding-bottom: rem(50px);
+        }
+    }
+}
+
+.container.completion {
+    padding: rem(62px) 0 rem(32px);
+    margin: 0;
+    background: $color_red;
+    letter-spacing: -0.03em;
+
+    .paymentWrap {
+        position: relative;
+        height: rem(1240px);
+        padding: 0;
+
+        .paymentResultWrap {
+            width: rem(705px);
+            height: rem(1152px);
+            padding: rem(30px) rem(35px);
+			margin: 0 auto;
+			position: relative;
+			.bg{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+            .paymentResult {
+				position: relative;
+                padding: 0 rem(74px);
+                .titleWrap {
+                    .num{
+                        font-size: rem(93px);
+                        font-weight: bold;
+                    }
+                    .icon {
+                        margin: 0 auto rem(30px);
+                    }
+                    .title {
+                        height: rem(169px);
+                        line-height: rem(169px);
+                    }
+                    .midCont {
+                        position: relative;
+                        height: rem(497px);
+            
+                        .in {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 100%;
+                            padding-top: rem(25px);
+                            transform: translate(-50%, -50%);
+                        }
+            
+                        &.waiting {
+                            text-align: left;
+                            .tit {
+                                font-weight: bold;
+                                font-size: rem(35px);
+                                color: $color_black2;
+                                line-height: rem(40px);
+                                >div {
+                                    display: inline-block;
+                                }
+                                .num {
+                                    margin-left: rem(25px);
+                                }
+                            }
+                            .text {
+                                margin-top: rem(60px);
+                                margin-bottom: rem(60px);
+                                font-size: rem(30px);
+                                span {
+                                    color: $color_black2;
+                                }
+                            }
+                            .list {
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    width: 33.3333%;
+            
+                                    .sTit {
+                                        font-size: rem(20px);
+                                        color: #a2a2a2;
+                                    }
+                                    .sTxt {
+                                        font-size: rem(30px);
+                                        color: $color_black2;
+                                        span {
+                                            font-weight: bold;
+                                            font-size: rem(33px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .btnWrap {
+                    width: 100%;
+                    margin: rem(72px) auto;
+                }
+            }
+        }
+
+        .loginBox {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            transform: translateX(-50%);
+            >div {
+                display: inline-block;
+            }
+            .text {
+                margin-right: rem(27px);
+                font-size: rem(25px);
+                color: $color_white;
+            }
+        }
+    }
+    
+}
+
+.myPaymentDetail{}
+.myPaymentDetail .mypdCont{padding-top: rem(50px);}
+.myPaymentDetail .mypdCont .mypdContTop{}
+.myPaymentDetail .mypdCont .mypdContTop .ico{padding-left: rem(40px); position: relative; font-size: rem(28px); font-weight: normal; text-align: left; display: block;}
+.myPaymentDetail .mypdCont .mypdContTop .ico img{position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: rem(30px);}
+.myPaymentDetail .mypdCont .mypdContTop .stoinf{padding-right: rem(150px); position: relative; margin-top: rem(10px);}
+.myPaymentDetail .mypdCont .mypdContTop .stRest{font-size: rem(35px); line-height: rem(45px); text-align: left; font-weight: normal; display: block; color: $color_black2;}
+.myPaymentDetail .mypdCont .mypdContTop .stoinf .tit{font-size: rem(35px); font-weight: bold; color: $color_black2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.myPaymentDetail .mypdCont .mypdContTop .stoinf .stt{position: absolute; right: 0; bottom: 0; text-align: right; width: rem(150px); font-weight: bold; font-size: rem(30px);}
+.myPaymentDetail .mypdCont .mypdContTop .stoinf .stt.red{color: $color_red;}
+.myPaymentDetail .mypdCont .mypdContMid{padding-top: rem(45px); margin-top: rem(45px); border-top: 1px solid $color_gray;}
+.myPaymentDetail .mypdCont .mypdContMid .tit{font-size: rem(30px); font-weight: bold; text-align: left;}
+.myPaymentDetail .mypdCont .mypdContMid .minf{font-size: rem(25px); color: $color_black2;}
+.myPaymentDetail .mypdList{}
+.myPaymentDetail .mypdList .mypdTp{padding-left: rem(160px); position: relative; font-size: rem(25px); line-height: rem(40px);}
+.myPaymentDetail .mypdList .mypdTp+.mypdTp{margin-top: rem(30px);}
+.myPaymentDetail .mypdList .mypdTp .lb{position: absolute; left: 0; top: 0; width: rem(160px); font-weight: bold; color: $color_black2;}
+.myPaymentDetail .mypdList .mypdTp .slb{font-size: rem(20px); color: $color_gray5; line-height: rem(30px);}
+.myPaymentDetail .mypdList .mypdTp .slb:first-child{margin-top: rem(5px);}
+.myPaymentDetail .mypdList .mypdTp .vl{color: $color_gray3;}
+.myPaymentDetail .mypdList.lg .mypdTp{font-size: rem(30px);}
+.myPaymentDetail .mypdList.lg .mypdTp+.mypdTp{margin-top: rem(15px);}
+.myPaymentDetail .mypdList.lg .mypdTp .vl{color: $color_black2;}
+.myPaymentDetail .mypdList.justify .mypdTp .vl{text-align: right;}
+.myPaymentDetail .mypdList.justify.justifyTp2 .mypdTp{padding-left: 0; padding-right: rem(300px);}
+.myPaymentDetail .mypdList.justify.justifyTp2 .lb{font-weight: normal; position: static; width: 100%; display: block;}
+.myPaymentDetail .mypdList.justify.justifyTp2 .vl{position: absolute; right: 0; top: 0; color: $color_black2;}
+.myPaymentDetail .mypdFoot{}
+.myPaymentDetail .mypdFoot .mypdLink{border-top: 1px solid $color_gray;}
+.myPaymentDetail .mypdFoot .mypdLink .mypLink{display: block; width: 100%; border: none; outline: none; text-align: center; padding: rem(40px) 0;}
+.myPaymentDetail .mypdFoot .mypdLink .mypLink .mypLinkInner{font-size: rem(35px); font-weight: bold; color: $color_red; display: inline-block; padding-left: rem(70px); position: relative;}
+.myPaymentDetail .mypdFoot .mypdLink .mypLink .mypLinkInner img{position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: rem(50px);}
+.myPaymentDetail .mypdFoot .mypdBt{background: $background_color; border-top: 1px solid $color_gray; padding: rem(45px) 0;}
+.myPaymentDetail .reserCancelDialogArea{}
+.myPaymentDetail .reserCancelDialogArea .diagSubTit{margin-top: rem(5px);}
+.myPaymentDetail .reserCancelDialogArea .diagScrollBox{margin-top: rem(35px); margin-bottom: rem(10px); text-align: left;}
+.myPaymentDetail .reserCancelDialogArea .diagScrollBox .ScrollbarsCustom  {height:rem(150px) !important;}
+.myPaymentDetail .reserCancelDialogArea .uiInput{text-align: left;}
+.myPaymentDetail .reserCancelDialogArea .uiInput .lb{color: $color_gray5; font-weight: normal;}

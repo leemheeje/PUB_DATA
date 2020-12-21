@@ -1,0 +1,264 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+#login {
+    position: relative;
+    height: 100%;
+
+    .front {
+        position: relative;
+        height: 100%;
+        background: #f6f6fa;
+        border: rem(25px) solid $color_red;
+
+        .in {
+            width: rem(462px);
+            margin: 0 auto;
+
+            .logoBox {
+                position: absolute;
+                left: 0;
+                top: rem(485px);
+                width: 100%;
+                text-align: center;
+
+                img {
+                    max-height: 250px;
+                    max-width: 600px;
+                }
+            }
+
+            .loginBox {
+                padding-top: rem(730px);
+
+                &.text .line:nth-child(1):after {
+                    border: 2px solid $color_red;
+                    top:-1px;
+                    left:-1px;
+                }
+
+                &.password .line:nth-child(2):after {
+                    border: 2px solid $color_red;
+                    top:-1px;
+                    left:-1px;
+                }
+
+                .line {
+                    margin-bottom: rem(60px);
+                    position: relative;
+
+                    &:first-child {
+                        margin-bottom: rem(40px);
+                    }
+
+                    input {
+                        height: rem(95px);
+                        width: 100%;
+                        padding: 0 rem(110px) 0 rem(36px);
+                        outline: none;
+                        font-size: rem(30px);
+                        background: none;
+                        border:none;
+                        position: relative; z-index: 10;
+                    }
+
+
+                    #idValue {
+                        background: url('../images/login/icoId.png') rem(405px) center no-repeat;
+                        background-size: rem(31px) auto;
+                    }
+
+                    #pwValue {
+                        background: url('../images/login/icoPw.png') rem(405px) center no-repeat;
+                        background-size: rem(31px) auto;
+                    }
+
+                    &:after {content:''; position: absolute; left:0; top:0; width: 100%; height: 100%; border-radius: rem(15px);                    border: 1px solid #a4a4a4;}
+                }
+
+                .btnLogin {
+                    text-align: center;
+                    margin-bottom: 40px;
+
+                    button {
+                        background-color: $color_red;
+                        box-shadow: 0 15px 15px -5px rgba(0, 0, 0, .2);
+                        color: #fff;
+                        font-size: rem(35px);
+                        font-weight: 700;
+                        display: inline-block;
+                        border-radius: rem(15px);
+                        vertical-align: top;
+                        border: none;
+                        width: rem(462px);
+                        height: rem(95px);
+                        line-height: rem(95px);
+                        outline:none;
+                    }
+                }
+
+                .loginOption {
+                    &:after {
+                        content: '';
+                        display: block;
+                        clear: both;
+
+                    }
+
+                    .uiChkrdo  label {
+                        font-size: rem(25px);
+                        line-height: rem(25px);
+                        padding-left: rem(58px);
+                        color: #909096;
+                    }
+
+                    .uiChkrdo  label:before {
+                        width: rem(42px);
+                        height: rem(42px);
+                    }
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #909096;
+    font-weight: normal;
+    font-size: rem(30px);
+    position: relative;
+    font-weight: 400;
+}
+
+:-moz-placeholder {
+    color: #909096;
+    opacity: 1;
+    font-weight: normal;
+    font-size: rem(30px);
+    font-weight: 400;
+}
+
+::-moz-placeholder {
+    color: #909096;
+    opacity: 1;
+    font-weight: normal;
+    font-size: rem(30px);
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {
+    color: #909096;
+    font-weight: normal;
+    font-size: rem(30px);
+    font-weight: 400;
+}
+
+.keypad {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: rem(10px) rem(10px) rem(20px) rem(10px);
+	background: #c5c2c9;
+	font-size: 0;
+	z-index: 10;
+	text-align: center;
+	&.active {
+		display: block;
+	}
+	.keyList {
+		position: relative;
+		ul {
+			margin-left: -1.2%;
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			li {
+				float: left;
+				width: 8.8%;
+				vertical-align: top;
+				margin: 0 0 rem(13px) 1.2%;
+				button {
+					display: block;
+					width: 100%;
+					height: rem(120px);
+					background: #fcfcfc;
+					text-align: center;
+					color: #626260;
+					font-family: 'Roboto', sans-serif;
+					font-size: rem(40px);
+					font-weight: 700;
+					border: none;
+					border-radius: rem(10px);
+					outline: none;
+					box-shadow: 4px 4px #8c8792;
+					&:active {
+						position: relative;
+						transform: scale(.9);
+						transition: .3s all;
+					}
+				}
+			}
+			li[data-value="a"] {
+				margin-left: 6%;
+			}
+			li[data-value="z"] {
+				margin-left: 6%;
+			}
+		}
+		.btnDel {
+			position: absolute;
+			right: 5%;
+			bottom: rem(13px);
+			display: block;
+			width: 19%;
+			height: rem(120px);
+			text-align: center;
+			border: none;
+			border-radius: rem(10px);
+			text-indent: -999em;
+			background: #fcfcfc url('../images/login/icoDel.png') center no-repeat;
+			background-size: rem(58px) auto;
+			box-shadow: 4px 4px #8c8792;
+			outline: none;
+			&:active {
+				transform: scale(.9);
+				transition: .3s all;
+			}
+		}
+	}
+	.btnClose {
+		text-align: center;
+		button {
+			display: block;
+			margin: rem(5px) auto 0 auto;
+			width: 49%;
+			font-size: 40px;
+			font-weight: 700;
+			color: #fff;
+			height: rem(121px);
+			background: #99969d;
+			border: none;
+			border-radius: rem(10px);
+			background-size: rem(54px) auto;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+			outline: none;
+			&:active {
+				transform: scale(.9);
+				transition: .3s all;
+			}
+		}
+	}
+}

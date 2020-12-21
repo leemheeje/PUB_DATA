@@ -1,0 +1,240 @@
+@charset "utf-8";
+@import "./utills.scss";
+@import url(fonts.css);
+
+
+/* Reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button {
+    margin: 0;
+    padding: 0
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+input,
+button,
+select {
+    font-family: 'Noto Sans KR', '돋움', Dotum, Helvetica, 'Apple SD Gothic Neo', Sans-serif;
+    font-size: 16px;
+    color: #000
+}
+
+body {
+    background: #f6f6fa;
+    text-align: left;
+    word-break: break-word;
+    background-color: #f6f6fa;
+    letter-spacing: -.3px;
+}
+
+img,
+fieldset,
+iframe {
+    border: 0 none
+}
+
+li {
+    list-style: none
+}
+
+input,
+select,
+button {
+    vertical-align: middle
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+i,
+em,
+address {
+    font-style: normal
+}
+
+label,
+button {
+    cursor: pointer
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+hr {
+    display: none
+}
+
+legend {
+    *width: 0
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption {
+    font-size: 0;
+    line-height: 0;
+    height: 0
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+/* Mobile Form Default */
+input[type='text'],
+input[type='password'],
+input[type='image'],
+input[type='search'] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0
+}
+
+
+/* 임시 프레임 */
+#root {
+    max-width: 1080px;
+	height: 1920px;
+	overflow: hidden;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+/* 임시 메뉴 */
+#menu {
+    position: fixed;
+    right: 60px;
+    top: 0;
+    background: $color_yellow;
+    z-index: 1000;
+
+    ul {
+        display: none;
+    }
+
+    &.active ul {
+        display: block;
+    }
+
+    li {
+        a {
+            display: block;
+            padding: 10px 30px;
+            color: #000;
+
+            &.active {
+                font-weight: bold;
+                background: #000;
+                color:#fff;
+            }
+        }
+    }
+
+    .btnToggle {
+        position: fixed;
+        right: 10px;
+        top: 70px;
+    }
+
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.uiRow {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: block;
+    font-size: 0;
+}
+
+.uiRow [class^="uiCol"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.uiRow .uiCol2 {
+    width: 16.666%;
+}
+
+.uiRow .uiCol3 {
+    width: 25%;
+}
+
+.uiRow .uiCol4 {
+    width: 33.333%;
+}
+
+.uiRow .uiCol5 {
+    width: 41.666%;
+}
+
+.uiRow .uiCol6 {
+    width: 50%;
+}
+
+.uiRow .uiCol7 {
+    width: 58.334%;
+}
+
+.uiRow .uiCol8 {
+    width: 66.667%;
+}
+
+.uiRow .uiCol9 {
+    width: 75%;
+}
+
+.uiRow .uiCol10 {
+    width: 83.334%;
+}
+
+.uiRow .uiCol12 {
+    width: 100%;
+}
+
+
+
+.innerWrap {
+    display: block;
+    padding-left: rem($innerWrap);
+    padding-right: rem($innerWrap);
+}

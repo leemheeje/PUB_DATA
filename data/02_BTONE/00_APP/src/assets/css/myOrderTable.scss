@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.myOrderTable{}
+.myOrderTable .myOrderTableQRCode{}
+.myOrderTable .myOrderTableQRCode{}
+.myOrderTable .myOrderTableQRCode .qrArea{height: rem(743px); background: $background_color no-repeat center center; background-size: 100%; display: block; transform: translateY(0); position: relative;}
+.myOrderTable .myOrderTableQRCode .qrArea .ang{}
+.myOrderTable .myOrderTableQRCode .inf{text-align: center; margin-top: rem(100px);}
+.myOrderTable .myOrderTableQRCode .inf .tit{font-size: rem(45px); line-height: rem(60px); color: $color_black2; padding-top: rem(120px); font-weight: bold; position: relative;}
+.myOrderTable .myOrderTableQRCode .inf .tit img{position: absolute; left: 50%; transform: translateX(-50%); top: 0; width: rem(89px);}
+.myOrderTable .myOrderTableType{}
+.myOrderTable .myOrderTableType .gtit{text-align: center; display: block; font-size: rem(45px); color: $color_black2; font-weight: bold; margin-top: rem(162px); margin-bottom: rem(122px);}
+.myOrderTable .myOrderTableType .chbox .btnType1{height: inherit; line-height: normal; }
+.myOrderTable .myOrderTableType .chbox .chboxinp{text-align: center; }
+.myOrderTable .myOrderTableType .chbox.checked .chboxinp .uiInput.radiochk input:checked+.lb,
+.myOrderTable .myOrderTableType .chbox .chboxinp .uiInput.radiochk .lb{padding-left: 0; display: block; padding-top: rem(63px); padding-bottom: rem(37px); border-radius: rem(12px); background: $color_red; color: #fff; font-weight: bold; box-shadow: rem(7px) rem(7px) rem(29px) rgba(120,120,128,.58);}
+.myOrderTable .myOrderTableType .chbox.checked .chboxinp .uiInput.radiochk .lb{background: $color_gray; color: $color_gray2; box-shadow: none;}
+.myOrderTable .myOrderTableType .chbox.checked .chboxinp .uiInput.radiochk .lb .active{display: none;}
+.myOrderTable .myOrderTableType .chbox .chboxinp .uiInput.radiochk .lb:before{content: none;}
+.myOrderTable .myOrderTableType .chbox .icos{display: block; padding-top: rem(100px); position: relative;}
+.myOrderTable .myOrderTableType .chbox .icos img{position: absolute; left: 50%; transform: translateX(-50%); top: 0; width: rem(74px);}
+.myOrderTable .myOrderTableType .ivpbox{position: relative; padding-right: rem(200px);}
+.myOrderTable .myOrderTableType .ivpbox .lt{}
+.myOrderTable .myOrderTableType .ivpbox .rt{position: absolute; right: 0; top: 0; width: rem(180px);}

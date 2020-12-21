@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.reservationWrap{}
+.reservationWrap .reserTop{background: $background_color; padding: rem(35px) 0; border-bottom: 1px solid $color_gray;}
+.reservationWrap{padding-top: rem(98px);}
+.reservationWrap .reserTop{position: fixed; top: rem(98px); left: 0; width: 100%; z-index: 1;}
+.reservationWrap .reserTop [class^="uiCol"]{position: relative;}
+.reservationWrap .reserTop [class^="uiCol"]+[class^="uiCol"]:before{content: ''; width: 1px; height: rem(45px); position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: $color_gray;}
+.reservationWrap .reserTop .mnt,
+.reservationWrap .reserTop .tim,
+.reservationWrap .reserTop .peo{font-size: rem(25px); color: $color_black2; text-align: center; padding-left: rem(45px); position: relative; height: rem(24px); line-height: rem(24px);}
+.reservationWrap .reserTop .mnt{padding-left: 0;}
+.reservationWrap .reserTop .mnt img,
+.reservationWrap .reserTop .tim img,
+.reservationWrap .reserTop .peo img{width: rem(25px); position: absolute; left: rem(20px); top: 0;}
+.reservationWrap .reserTop .mnt img{left: 0;}
+.reservationWrap .reserCont{margin-top: rem(65px); margin-bottom: rem(160px);}
+.reservationWrap .reserCont .rscTit{font-size: rem(35px); font-weight: bold; text-align: left;}
+.reservationWrap .reserCont .rscCal{margin-left: rem(-40px); margin-right: rem(-40px); margin-top: rem(30px);}
+.reservationWrap .reserCont .rscChi{}
+.reservationWrap .reserCont .rscChi .rsccLb{font-weight: bold; font-size: rem(25px); color: $color_gray3;}
+.reservationWrap .reserCont .rscChi .rsccVl [class^="uiCol"]{margin-top: rem(10px); margin-bottom: rem(10px);}
+.reservationWrap .reserCont .rscPrs{position: relative; padding-right: rem(220px);}
+.reservationWrap .reserCont .rscPrs .lt{font-size: rem(25px); color: $color_gray3; text-align: left; line-height: rem(45px);}
+.reservationWrap .reserCont .rscPrs .rt{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: rem(220px);}
+.reservationWrap .copyCheck{display: inline-block; vertical-align: -webkit-baseline-middle;}
+.reservationWrap .copyCheck .uiInput.radiochk .lb{color: $color_gray5;}
+.reservationWrap .copyBtn{display: inline-block; margin-left: rem(15px); vertical-align: -webkit-baseline-middle;}
+.reservationWrap .copyBtn .text{font-size: rem(18px); color: $color_gray5; position: relative; padding-right: rem(14px);}
+.reservationWrap .copyBtn .text img{width: rem(8px); position: absolute; right: 0; top: rem(11px);}
+.reservationWrap>div:last-child {margin-bottom: 0;}

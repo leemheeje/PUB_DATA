@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+/*탑배너 공통요소*/
+$innerWrap : $innerWrap - 10px;
+.popVisible {display: none;}
+.popVisible.active {display: block;}
+.orderProductList{border-bottom: rem(20px) solid $color_red;}
+.orderProductList .uiSwiper{padding-bottom: rem(110px); height: rem(1024px);}
+.orderProductList .swiper-container{position: static;}
+.orderProductList .uiItemWrap{margin: rem(10px); margin-left: 0; margin-right: 0;}
+.orderProductList.orderListCol5 .uiRow{margin-top: -8px; padding-right: -8px;}
+.orderProductList.orderListCol5 .uiRow [class^="uiCol"]{padding-left: 8px; padding-right: 8px;}
+.orderProductList.orderListCol5 .uiItemWrap{margin-top: rem(6px); margin-bottom: rem(6px);}
+.orderProductList.orderListCol5 .uiItemWrap .uiItemInner{padding-bottom: rem(10px);}
+.orderProductList.orderListCol5 .uiItemWrap .uiItemInner .uiItem .uitTxts .uitT{margin-top: rem(8px);}
+.orderProductList .swiper-container-horizontal > .swiper-pagination-bullets{bottom: rem(38px);}
+.orderProductList .uiRow{margin-top: -10px; margin-bottom: -10px;}
+.orderProductList .uiRow .uiCol6{padding-left: 15px; padding-right: 15px;}
+.orderProductList .uiRow .uiCol6 .uiItemWrap{margin-top: rem(15px); margin-bottom: rem(15px);}
+.orderProductList {}
+.orderCartList{padding-top: rem(35px); height: rem(336px);}
+.orderCartList .innerWrap{padding-left: rem($innerWrap + 10px); padding-right: rem($innerWrap+10px);}
+.orderCartList [class^="uiCol"]{padding-bottom: 10px; padding-bottom: 10px;}
+.orderCartList .uiSwiper .swiper-container{position: static;}
+.orderCartList .uiSwiper .uiSwiperContrNext,
+.orderCartList .uiSwiper .uiSwiperContrPrev{width: rem($innerWrap+10px);}
+.orderCartList .uiSwiper .uiSwiperContrPrev{left: rem(-$innerWrap);}
+.orderCartList .uiSwiper .uiSwiperContrNext{right: rem(-$innerWrap);}
+.orderCartList .uiItemWrap:focus{transform: scale(.9);}
+.orderCartList .nullmsg{font-size: rem(40px); line-height: rem(245px); display: block; text-align: center; color: $color_gray4; font-weight: bold;}
+.cartWrap .uiItemWrap.favorite .uiItemInner:after{content: none;}
+.priceWrap{padding-bottom: rem(40px);}
+.priceWrap .pricetext{}
+.priceWrap .inBox{padding-right: rem(520px); position: relative; min-height: rem(85px);}
+.priceWrap .pricetext .lb{display: block; font-size: rem(28px); color: $color_gray5; font-weight: bold;}
+.priceWrap .pricetext .total{color: $color_red; display: block; text-align: left; }
+.priceWrap .pricetext .total .won{font-size: rem(65px); display: inline-block; line-height: rem(70px); vertical-align: top; margin-top: rem(4px);}
+.priceWrap .pricetext .total .roboto{font-size: rem(80px); font-weight: bold; display: inline-block; vertical-align: top; line-height: rem(85px);}
+.priceWrap .btnWrap{position: absolute; right: 0; bottom: 0;}
+.priceWrap .btnWrap .btns {height:rem(113px); line-height:rem(113px)}
+.priceWrap .btnWrap .btns.red{min-width: rem(300px);}

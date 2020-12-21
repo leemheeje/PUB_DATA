@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.uiInfoList{padding-top: rem(40px); padding-bottom: rem(40px); display: block;}
+.uiInfoList.isThumb{padding-right: rem(244px); min-height: rem(146px); position: relative;}
+.uiInfoList+.uiInfoList{border-top: 1px solid $color_gray;}
+.uiInfoList .uiListTit{font-size: rem(30px); color: $color_black2; font-weight: bold; }
+.uiInfoList .uiListDescript{font-size: rem(25px); line-height: rem(31px); color: $color_gray5; font-weight: normal; display: block; margin-top: rem(5px); }
+.uiInfoList:not(.lg) .uiListDescript{@include ellipsis; height: rem(62px);}
+.uiInfoList .uiListPrice{display: block; margin-top: rem(5px);}
+.uiInfoList .uiListPrice .roboto{font-size: rem(31px); line-height: rem(33px); font-weight: bold; color: $color_black2; vertical-align: middle;}
+.uiInfoList .uiListPrice .lb{font-size: rem(24px); line-height: rem(24px); color: $color_black2; margin-left: rem(3px); vertical-align: middle;}
+.uiInfoList .uiListThumb{position: absolute; right: 0; top: rem(47px); width: rem(224px); height: rem(146px); overflow: hidden;}
+.uiInfoList .uiListThumb img{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+.uiInfoList.lg .uiListTit{font-size: rem(35px);}
+.uiInfoList.lg .uiListDescript{font-size: rem(28px); line-height: rem(35px); margin-top: rem(15px);}
+.uiInfoList.lg .uiListPrice{margin-top: rem(25px);}
+.uiInfoList.lg .uiListPrice .roboto{font-size: rem(35px);}

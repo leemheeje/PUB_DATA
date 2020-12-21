@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.uiDialog{position: fixed; left: 0; top: 0; bottom: 0; z-index: 9999; width: 100%;}
+.uiDialog .uiDialogBox{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); padding: 0 rem(30px); font-size: rem(30px); min-width: rem(650px); border-radius: rem(10px); background: #fff; color: #000; text-align: center; font-weight: bold; overflow: hidden;}
+.uiDialog .uiDialogBox .uiDialogContBox{padding: rem(70px) 0;}
+.uiDialog .uiDialogBox .uiDialogContBox .uiDialogCont{font-size: rem(35px); color: $color_black2; padding: 0 rem(10px); word-break: keep-all;}
+.uiDialog.confirm .uiDialogBox .uiDialogContBox{padding: rem(60px) 0;}
+.uiDialog.confirm .uiDialogBox .txt {margin-top: rem(25px); font-weight: normal; font-size: rem(30px); color: $color_gray3; line-height: rem(40px);}
+.uiDialog.confirm .uiDialogBox .txt span {font-weight: bold;}
+.uiDialog.confirm .uiDialogBox .uiDialogBtnsWrap{padding-bottom: rem(70px);}
+.uiDialog.confirm .uiDialogBox .uiDialogBtnsWrap .uiDiagCancelBtn{font-weight: normal;}
+.uiDialog.alert .uiDialogBox{padding: 0;}
+.uiDialog.alert .uiDialogBox .uiDialogContBox{min-height: rem(204px); box-sizing: content-box; display: table; width: 100%;}
+.uiDialog.alert .uiDialogBox .uiDialogContBox .uiDialogCont{display: table-cell; vertical-align: middle; }
+.uiDialog.alert .uiDialogBox .uiDialogBtnsWrap{border-top: 1px solid $color_gray5;}
+.uiDialog.alert .uiDialogBox .uiDialogBtnsWrap .uiDiagConfirmBtn{outline: none; border: none; font-size: rem(35px); color: $color_black2; text-align: center; font-weight: bold; padding: rem(28px) 0; display: block; width: 100%; background: #fff;}
+.uiDialog .dimm{position: fixed; left: 0; top: 0; bottom: 0; background: #000; opacity: .85; width: 100%; }
+.uiDialog .pmeList{text-align: center; display: inline-block; font-weight: normal; margin-top: rem(30px); color: $color_gray3;}
+.uiDialog .diagTit{font-size: rem(35px); color: $color_black2; font-weight: bold; line-height: rem(45px);}
+.uiDialog .diagSubTit{font-size: rem(30px); color: $color_gray3; font-weight: normal; margin-top: rem(30px);}
+.uiDialog .pmeList .tp{font-size: rem(30px); position: relative; padding-left: rem(120px); text-align: left; }
+.uiDialog .pmeList .tp .dt{position: absolute; left: 0; top: 0; width: rem(110px); padding-right: rem(10px);}
+.uiDialog .pmeList .tp .dt:after{content: ':'; position: absolute; right: 0; top: 0;}
+.uiDialog .pmeList .tp .dd{}
+
+.uiDialog .bnCls{margin: rem(-30px) 0;}
+.uiDialog .bnCls .bnImg{border-radius: rem(10px); overflow: hidden; margin-bottom: rem(35px);}
+.uiDialog .bnCls .bnTit{}

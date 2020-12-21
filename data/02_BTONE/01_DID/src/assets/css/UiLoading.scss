@@ -1,0 +1,22 @@
+@import "./utills.scss";
+
+.loadingPop {position: fixed; left:0; top:0; width: 100%; height: 100%; z-index: 500;}
+.loadingPop .img {position: fixed; left:50%; top:50%; margin:rem(-163px) 0 0 rem(-109px); padding-top:rem(33px); text-align: center; width:rem(219px); height:rem(326px); background:url('../images/common/loading.png') center no-repeat; background-size:rem(219px) auto; z-index: 500;}
+.loadingPop .img .txt {display: inline-block; vertical-align: middle; font-size:rem(45px); line-height:rem(45px); color:$color_red; font-weight: 700;}
+.loadingPop .img .txt span {display: inline-block; animation-name:txt01; animation-duration:.9s; animation-iteration-count: infinite; animation-direction: alternate;  transform:translateY(0); }
+.loadingPop .img .txt span:nth-child(1) {animation-delay:0;}
+.loadingPop .img .txt span:nth-child(2) {animation-delay:150ms;}
+.loadingPop .img .txt span:nth-child(3) {animation-delay:300ms;}
+.loadingPop .img .dot {display: inline-block; vertical-align: middle; font-size:rem(49px); line-height:rem(40px); color:$color_red; font-weight: 700;}
+.loadingPop .img .dot span {display: inline-block; animation-name:txt01; animation-duration:.9s; animation-iteration-count: infinite; animation-direction: alternate; transform:translateY(0); }
+.loadingPop .img .dot span:nth-child(1) {animation-delay:450ms;}
+.loadingPop .img .dot span:nth-child(2) {animation-delay:600ms;}
+.loadingPop .img .dot span:nth-child(3) {animation-delay:750ms;}
+
+
+@keyframes txt01 {
+    50%, 100% {
+        transform:translateY(5px);
+      }
+}
+

@@ -1,0 +1,63 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+.container.mynotice {
+    padding-bottom: 0;
+    font-size: rem(25px);
+    color: $color_black2;
+    letter-spacing: -0.03em;
+    .date {
+        margin-top: rem(15px);
+        font-size: rem(20px);
+        color: $color_gray5;
+    }
+    
+    .myNoticeWrap {
+        .myNoticeList {
+            .list {
+                display: table;
+                width: 100%;
+                .btnType1.lst {
+                    height: rem(173px);
+                    padding-right: rem(105px);
+                }
+                
+                .tit {
+                    word-break: keep-all;
+                }
+                .btnArrow {
+                    position: absolute;
+                    right: rem(40px);
+                    top: 50%;
+                    width: rem(13px);
+                    height: rem(22px);
+					transform: translateY(-50%);
+					img{
+						@include absolute_center_center;
+					}
+                }
+            }
+        }
+
+        .myNoticeDetail {
+            padding: rem(60px) rem(40px);
+
+            .titArea {
+                padding-bottom: rem(40px);
+                border-bottom: rem(2px) solid $color_gray;
+            }
+            .descArea {
+                min-height: rem(850px);
+                height: 90%;
+                padding: rem(40px) 0;
+                font-size: rem(26px);
+                color: $color_gray3;
+            }
+            .btnBack {
+                position: relative;
+                bottom: 0;
+            }
+        }
+    }
+    
+}

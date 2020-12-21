@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.uiReviewList{}
+.uiReviewList .urvTop{position: relative; padding-left: rem(100px); padding-right: rem(50px);}
+.uiReviewList .urvTop .thumb{position: absolute; left: 0; top: 0; border-radius: 50%; overflow: hidden; border: 1px solid $color_gray5; width: rem(72px); height: rem(72px)}
+.uiReviewList .urvTop .thumb img{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.uiReviewList .urvTop .txts{}
+.uiReviewList .urvTop .txts .urvTit{font-size: rem(30px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: bold; line-height: 1; padding: rem(3px) 0}
+.uiReviewList .urvTop .txts .urvTit img{display: inline-block; width: rem(8px); height: rem(14px);  vertical-align: middle; margin-left: rem(6px); line-height: 1; padding: rem(3px) 0; margin-top: rem(-5px);}
+.uiReviewList .urvTop .txts .urvGradeArea{padding-left: rem(220px); text-align: left; position: relative;}
+.uiReviewList .urvTop .txts .urvGradeArea .urvGrade{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.uiReviewList .urvTop .txts .urvGradeArea .rrvgRt{vertical-align: middle; display: inline-block; color: $color_gray5;}
+.uiReviewList .urvTop .txts .urvGradeArea .rrvgRt .date{font-size: rem(23px); line-height: rem(34px); vertical-align: middle; display: inline-block;}
+.uiReviewList .urvTop .txts .urvGradeArea .rrvgRt .type{font-size: rem(23px); line-height: rem(34px); vertical-align: middle; display: inline-block; margin-left: rem(5px);}
+.uiReviewList .urvCont{margin: rem(30px) 0;}
+.uiReviewList .urvCont .imgFiles{background: $background_color; border-radius: rem(10px); overflow: hidden; padding-bottom: 51.64%; position: relative; height: 0; margin-bottom: rem(30px);}
+.uiReviewList .urvCont .imgFiles img{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.uiReviewList .urvBot{}
+.uiReviewList .urvBot .urvBotInner{background: $background_color; border-radius: rem(10px); padding: rem(22px);}
+.uiReviewList .urvBot .urvBotTp{}
+.uiReviewList .urvBot .urvBotTp .urvBotTit{font-size: rem(30px); color: $color_black2; font-weight: bold; display: inline-block; vertical-align: bottom; line-height: 1;}
+.uiReviewList .urvBot .urvBotTp .urvBotTit .nm{font-size: rem(30px); margin-right: rem(5px);}
+.uiReviewList .urvBot .urvBotTp .date{display: inline-block; vertical-align: bottom; font-size: rem(23px); color: $color_gray5; margin-left: rem(10px); line-height: 1;}
+.uiReviewList .txtDescription{word-break: break-all; font-size: rem(25px); line-height: rem(35px); color: $color_black2;}
+.uiReviewList .urvBot .txtDescription{margin-top: rem(25px);}
+.uiReviewList .urvTop .urvDeleteBtn{position: absolute; right: 0; top: 0; width: rem(50px); display: block; height: 100%; border: none; outline: none; background: none;}
+.uiReviewList .urvTop .urvDeleteBtn img{width: rem(25px); position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.uiReviewList .oriThumb{}
+.uiReviewList .oriThumb img{max-width: 100%; width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.uiReviewList .uiModal{background: #000;}
+.uiReviewList .uiModal .uiModalInner .uiModalHeader .subHeader{border-bottom: none;}
+.uiReviewList .uiModal .uiModalInner .uiModalHeader .subHeader .pageName{display: none;}
+.uiReviewList .uiModal .uiModalInner .uiModalHeader .btnClose img{display: none;}
+.uiReviewList .uiModal .uiModalInner .uiModalHeader .btnClose img.white{display: block;}

@@ -1,0 +1,24 @@
+@import "./utills.scss";
+
+/*스와이퍼 공통요소*/
+$min_padding : 40px;
+$min_height : 85px;
+$border_width : 1px;
+$border_radius : 10px;
+$font_size : 35px;
+/*lg*/
+$lg_min_padding : 40px;
+$lg_min_height : 143px;
+$lg_font_size : 40px;
+$lg_border_radius : 20px;
+.btns{display: inline-block; vertical-align: middle; padding-left: rem($min_padding); padding-right: rem($min_padding); height: rem($min_height); line-height: rem($min_height); text-align: center; border: rem($border_width) solid transparent; color: $color_gray5; border-radius: rem($border_radius); font-size: rem($font_size);}
+.btns+.btns{margin-left: rem(10px);}
+.btns.outline{border-color: $color_gray5; background-color: transparent;}
+.btns.red{background-color: $color_red; color: $color_white;}
+.btns.yellow{background-color: $color_yellow; color: $color_white;}
+.btns.lg{font-size: rem($lg_font_size); height: rem($lg_min_height); line-height: rem($lg_min_height); border-radius: rem($lg_border_radius);}
+.btns.bold{font-weight: bold;}
+.btns.shadow{box-shadow: rem(9px) rem(9px) rem(24px) rgba(120,120,128,.58);}
+.btns.block{display: block; width: 100%;}
+.btns:disabled,.btns.disabled{background: $color_gray; color:$color_gray4; border-color: $color_gray; box-shadow: none !important; pointer-events: none;}
+.btns.nopadding{padding-left: 0; padding-right: 0;}

@@ -1,0 +1,118 @@
+@import "./utills.scss";
+
+/*아이템박스 공통요소*/
+/*메뉴썸네일 이미지 비율*/
+$thumbnail_width : 224px;
+$thumbnail_height : 145px;
+$row1_thumbnail_width : 939px;
+$row1_thumbnail_height : 332px;
+$row11_thumbnail_width : 939px;
+$row11_thumbnail_height : 802px;
+$box_padding_y : 15px;
+$box_padding_x : 35px;
+$img_box_height : 195px;
+$font_size_menu_name : 23px;
+$font_size_menu_price : 28px;
+
+//작은사이즈
+$sm_img_box_height : 159px;
+$sm_font_size_menu_name : 17px;
+$sm_font_size_menu_price : 20px;
+//큰사이즈
+$lg_box_padding_y : 30px;
+$lg_img_box_height : 310px;
+$lg_font_size_menu_name : 35px;
+$lg_font_size_menu_price : 42px;
+//주문쪽
+$order_box_padding_y : 30px;
+$order_img_box_height : 159px;
+$order_font_size_menu_name : 20px;
+$order_font_size_menu_price : 25px;
+//즐겨찾기 사이즈별 너비높이
+$favorite_size_width : 120px; //그리드아이템 1~2칸
+$favorite_size_height : 118px; //그리드아이템 1~2칸
+$lg_favorite_size_width : 106px; //그리드아이템 1~2칸
+$lg_favorite_size_height : 106px; //그리드아이템 1~2칸
+$nm_favorite_size_width : 76px; //그리드아이템 3칸
+$nm_favorite_size_height : 76px;//그리드아이템 3칸
+$sm_favorite_size_width : 57px; //그리드아이템 4칸
+$sm_favorite_size_height : 57px;//그리드아이템 4칸
+$xs_favorite_size_width : 46px;//그리드아이템 5칸
+$xs_favorite_size_height : 45px;//그리드아이템 5칸
+
+@function thumbnail_ratio($w,$h){
+	@return $h/$w*100%;
+}
+.uiItemWrap{}
+.uiItemWrap.focus{transform: scale(.97);}
+.uiItemWrap .uiItemInner{background-color: $color_white; border-radius: rem(10px); box-shadow: 2px 4px 5px rgba(103,103,112,.25); padding: 0 0 rem($box_padding_y); position: relative;}
+.uiItemWrap .uiItemInner .uiItem{}
+.uiItemWrap .uiItemInner .uiItem .uitThumb{display: block; text-align: center; height: 0; padding-bottom: thumbnail_ratio($thumbnail_width, $thumbnail_height); overflow: hidden; position: relative; border-top-left-radius: rem(10px); border-top-right-radius: rem(10px);}
+.uiItemWrap .uiItemInner .uiItem .uitThumb:before{content:''; display: inline-block; vertical-align: middle; width: 0; height: 100%;}
+.uiItemWrap .uiItemInner .uiItem .uitThumb img{max-width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.uiItemWrap .uiItemInner .uiItem .uitThumb.noimg{background: #e5e5eb;}
+.uiItemWrap .uiItemInner .uiItem .uitTxts{text-align: center;}
+.uiItemWrap .uiItemInner .uiItem .uitTxts .uitT{color: $color_black; font-size: rem($font_size_menu_name); font-weight: bold; line-height: 1; margin-top: rem(15px); margin-bottom:0; display: block; }
+.uiItemWrap .uiItemInner .uiItem .uitTxts .uitP{color: $color_gray3; font-size: rem($font_size_menu_name); font-weight: normal; line-height: 1;}
+.uiItemWrap .uiItemInner .uiItem .uitTxts .uitP .roboto{font-size: rem($font_size_menu_price); font-weight: bold;}
+.uiItemWrap .uiItemInner .uiItem .uitCount{margin: rem(30px); margin-top: rem(14px); margin-bottom: rem(8px);}
+.uiItemWrap .uiItemDelect{position: absolute; right: 0; top: 0; width: 50px; height: 50px; background: no-repeat center center url(../images/common/icoCloseGray.png);}
+.uiItemWrap.favorite .uiItemInner:after{content: '추천';position: absolute; right:rem(6px) !important; top:rem(6px) !important; font-size:rem(20px); background: $color_red; width:rem(66px) !important; height:rem(29px) !important; line-height:rem(29px); text-align: center; border-radius:rem(10px); color:#fff;  }
+
+.orderListCol5 .uiItemWrap.favorite .uiItemInner:after{font-size:rem(16px); width:rem(50px) !important; height:rem(27px) !important; line-height:rem(27px);  }
+
+
+.uiItemWrap.sm .uiItemInner .uiItem .uitThumb img{}
+.uiItemWrap.sm .uiItemInner:after{width: rem($sm_favorite_size_width); height: rem($sm_favorite_size_height); right: rem(-7px); top: rem(-4px);}
+.uiItemWrap.sm .uiItemInner .uiItem .uitTxts .uitT{font-size: rem($sm_font_size_menu_name);}
+.uiItemWrap.sm .uiItemInner .uiItem .uitTxts .uitP{font-size: rem($sm_font_size_menu_name);}
+.uiItemWrap.sm .uiItemInner .uiItem .uitTxts .uitP .roboto{font-size: rem($sm_font_size_menu_price)}
+
+.uiItemWrap.xs .uiItemInner:after{width: rem($xs_favorite_size_width); height: rem($xs_favorite_size_height); right: rem(-6px); top: rem(-4px);}
+
+.uiItemWrap.lg .uiItemInner{padding-bottom: rem($lg_box_padding_y);}
+.uiItemWrap.lg .uiItemInner:after{width: rem($lg_favorite_size_width); height: rem($lg_favorite_size_height); right: rem(-12px); top: rem(-7px);}
+.uiItemWrap.lg .uiItemInner .uiItem .uitThumb img{}
+.uiItemWrap.lg .uiItemInner .uiItem .uitTxts .uitT{font-size: rem($lg_font_size_menu_name); margin-bottom: rem(7px); padding:0 rem(15px) !important; }
+.uiItemWrap.lg .uiItemInner .uiItem .uitTxts .uitP{font-size: rem($lg_font_size_menu_name);}
+.uiItemWrap.lg .uiItemInner .uiItem .uitTxts .uitP .roboto{font-size: rem($lg_font_size_menu_price)}
+.uiItemWrap.lg .uiFormCount .rem,
+.uiItemWrap.lg .uiFormCount .add{width: rem(76px); height: rem(72px); border-radius: rem(24px);}
+.uiItemWrap.lg .uiFormCount .ufcInput{font-size: rem(76px); height: rem(76px);}
+.uiItemWrap.lg .uiItemInner .uiItem .uitCount{margin-top: rem(34px);}
+
+.uiItemWrap.row1 .uiItemInner{padding-bottom: 0;}
+.uiItemWrap.row1 .uiItemInner:after{width: rem($lg_favorite_size_width); height: rem($lg_favorite_size_height); right: rem(-12px); top: rem(-7px);}
+.uiItemWrap.row1 .uiItemInner .uiItem .uitThumb{padding-bottom: thumbnail_ratio($row1_thumbnail_width, $row1_thumbnail_height); }
+.uiItemWrap.row1 .uiItemInner .uiItem .uitTxts{overflow: hidden;}
+.uiItemWrap.row1 .uiItemInner .uiItem .uitTxts .uitT{font-size: rem(28px); line-height: rem(108px); float: left; padding-left: rem(32px) !important; margin-top: 0; margin-bottom: 0; max-width:75%}
+.uiItemWrap.row1 .uiItemInner .uiItem .uitTxts .uitP{font-size: rem(28px); line-height: rem(108px); float: right; padding-right: rem(32px);}
+.uiItemWrap.row1 .uiItemInner .uiItem .uitTxts .uitP .roboto{font-size: rem(35px);}
+
+.uiItemWrap.row11 .uiItemInner{padding-bottom: 0;}
+.uiItemWrap.row11 .uiItemInner:after{width: rem($lg_favorite_size_width); height: rem($lg_favorite_size_height); right: rem(-12px); top: rem(-7px);}
+.uiItemWrap.row11 .uiItemInner .uiItem .uitThumb{padding-bottom: thumbnail_ratio($row11_thumbnail_width, $row11_thumbnail_height); }
+.uiItemWrap.row11 .uiItemInner .uiItem .uitTxts{overflow: hidden;}
+.uiItemWrap.row11 .uiItemInner .uiItem .uitTxts .uitT{font-size: rem(28px); line-height: rem(108px); float: left; padding-left: rem(32px) !important; margin-top: 0; margin-bottom: 0; max-width:75%}
+.uiItemWrap.row11 .uiItemInner .uiItem .uitTxts .uitP{font-size: rem(28px); line-height: rem(108px); float: right; padding-right: rem(32px);}
+.uiItemWrap.row11 .uiItemInner .uiItem .uitTxts .uitP .roboto{font-size: rem(35px);}
+
+
+.uiItemWrap.order .uiItemInner{}
+.uiItemWrap.order .uiItemInner .uiItem .uitThumb img{}
+.uiItemWrap.order .uiItemInner .uiItem .uitTxts .uitT{margin-top: rem(11px); margin-bottom: 0; font-size: $order_font_size_menu_name; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.uiItemWrap.order .uiItemInner .uiItem .uitTxts{padding-left: rem(15px); padding-right: rem(15px);}
+.uiItemWrap.order .uitOpt{border: 1px solid $color_gray; border-bottom-width: 2px; padding: rem(20px) 0; border-left: none; border-right: none; margin-top: rem(11px); margin-bottom: rem(11px); height: rem(175px);}
+.uiItemWrap.order .uitOpt .tp{position: relative; padding-left: rem(20px); text-align: left; padding-right: rem(70px);}
+.uiItemWrap.order .uitOpt .tp:before{content: ''; width: rem(16px); height: rem(16px); position: absolute; left: 0; top: 0; background: url(../images/common/uiItemsOrderDot.png) no-repeat left top; background-size: 100%;}
+.uiItemWrap.order .uitOpt .tp+.tp{margin-top: rem(15px);}
+.uiItemWrap.order .uitOpt .tp .lt{font-size: rem(15px); line-height: rem(16px); color: $color_gray3; text-align: left; display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.uiItemWrap.order .uitOpt .tp .rt{font-size: rem(15px); line-height: rem(16px); color: $color_gray3; text-align: right; position: absolute; right: 0; top: 0;}
+.uiItemWrap.order .uitOpt .tp .rt .roboto{font-weight: bold; font-size: rem(16px);}
+.uiItemWrap.order .lbUitCount{position: absolute; right: rem(-5px); top: rem(-10px); min-width: rem(50px); line-height: rem(46px); border-radius: rem(15px); background: $color_yellow; color: #fff; font-size: 25px; text-align: center; font-weight: bold; padding-left: 4px; padding-right: 4px;}
+.uiItemWrap.order .lbUitCount:before{content:''; vertical-align: middle; display: inline-block; width: rem(11px); height: rem(11px); background: url(../images/common/icoCloseWhite_11.png) no-repeat center center; background-size: 100%; margin-right: 1px;}
+
+
+.orderProductList .uiItemWrap .uiItemInner .uiItem .uitTxts .uitT{padding:0 rem(10px); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.orderCartList .uiItemWrap .uiItemInner .uiItem .uitTxts .uitT {padding:0 rem(10px); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.prdPop .uiItemWrap.lg .uiItemInner .uiItem .uitTxts .uitT {padding:0 rem(20px); line-height:rem(45px);}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+/* 결제방법 공통요소 */
+$title_font_size : 35px;
+$title_color : $color_black2;
+$title_font_weight: bold;
+$top_height : 1138px;
+$bottom_height : 485px;
+$bottom_inner_height : 415px; //padding -35px 
+@mixin title(){
+	font-size: rem($title_font_size);
+	color: $title_color;
+	font-weight: $title_font_weight;
+	text-align: center;
+	display: block;
+	padding-top: rem(68px);
+	margin-bottom: rem(32px);
+}
+.paymentOption{}
+.paymentOption .payTop{border-bottom: rem(20px) solid $color_red;}
+.paymentOption .payTop .payTopInner{height: rem($top_height); position: relative;}
+.paymentOption .locTit{@include title(); padding-top:rem(81px);}
+.paymentOption .locTit.MT125{margin-top: rem(57px);}
+.paymentOption .pyoCoupon{position: absolute; left: 0; bottom: rem(75px); width: 100%;}
+.paymentOption .pyoSlide .uiSwiper{padding-bottom: rem(75px); margin-top: -10px; margin-bottom: rem(15px); position: relative;}
+.paymentOption .pyoSlide .uiSwiper .swiper-container{position: static;}
+.paymentOption .uiSwiper.type2 .uiSwiperContrPrev, .paymentOption .uiSwiper.type2 .uiSwiperContrNext{bottom: rem(0px);}
+.paymentOption .uiRow [class^="uiCol"]{padding-top: 10px; padding-bottom: 10px;}
+.shadowBox{border-radius: rem(10px); background: $color_white; box-shadow: rem(2px) rem(4px) rem(5px) 0 rgba(103, 103, 112, 0.31); padding-left: rem(65px); padding-right: rem(65px);}
+.shadowBox .list{position: relative; padding-right: 300px;}
+.shadowBox .list+.list{border-top: 1px solid $color_gray;}
+.shadowBox .list .lt,
+.shadowBox .list .rt{line-height: rem(95px); font-size: rem(28px); color: #545353; padding-left: rem(10px); padding-right: rem(10px);}
+.shadowBox .list .lt{font-weight: bold;}
+.shadowBox .list .rt{position: absolute; right: 0; top: 0; font-size: rem(36px);}
+.shadowBox .list .roboto{font-size: rem(38px);  font-weight: bold; vertical-align: middle;}
+
+.shadowBox.tp2{padding-left: rem(35px); padding-right: rem(35px);}
+.shadowBox.tp2 .list .lt,
+.shadowBox.tp2 .list .rt{line-height: rem(85px); padding-left: rem(2px); padding-right: rem(2px);}
+.shadowBox.tp2 .list .lt{color: $color_gray5;}
+.shadowBox.tp2 .list .rt{font-size: rem(30px);}
+.shadowBox.tp2 .list .roboto{font-size: rem(35px);}
+.shadowBox .list+.list.price{border-width: 3px;}
+.shadowBox .list.price{padding-right: 0;}
+.shadowBox .list.price .lt,
+.shadowBox .list.price .rt{position: static; line-height: 1;}
+.shadowBox .list.price .lt{margin-top: rem(24px); margin-bottom: rem(0px);}
+.shadowBox .list.price .rt{color: $color_red; font-size: rem(65px); margin-top: rem(5px);}
+.shadowBox .list.price .roboto{font-size: rem(80px);}
+.shadowBox .list.price .middle{vertical-align: middle; margin-top: -5px; display: inline-block;}
+.payBottom{height: rem($bottom_height); padding-top: rem(25px); padding-bottom: rem(35px); }
+.payBottom .payBottomInner{position: relative; padding-right: rem(385px); }
+.payBottom .shadowBox{height:rem(435px);}
+.payBottom .rtButtons{width: rem(357px); position: absolute; right: 0; top: 0; height:rem(435px);}
+.payBottom .rtButtons .btns{padding-left: 0; padding-right: 0;}
+.payBottom .rtButtons .btns.shadow{ height: rem(155px); line-height: rem(155px); font-size: rem(40px);}
+.payBottom .rtButtons .btns+.btns{margin-left: 0; margin-top: rem(20px);}
+.payBottom .rtButtons .btns.rtButtonCancel{margin-top: 0; position: absolute; left: 0; bottom: 0;}
+
+
+.motion01 {animation-name: motion01; animation-duration: .5s; animation-iteration-count: infinite; animation-direction: alternate;}
+
+@keyframes motion01 {
+	0% {
+	 opacity:.5;
+	}
+	100% {
+		opacity:1;
+	}
+  }
+
+
+ 

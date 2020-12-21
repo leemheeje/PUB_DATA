@@ -1,0 +1,45 @@
+@import "./utills.scss";
+
+/*탭 공통요소*/
+$tabs_height : 47px;
+$tabs_active_add_height : 16px;
+$tabs_active_height : $tabs_height + $tabs_active_add_height;
+$tabs_font_size : 19px;
+/*lg*/
+$lg_tabs_height : 90px;
+$lg_tabs_active_add_height : 20px;
+$lg_tabs_active_height : $lg_tabs_height + $lg_tabs_active_add_height;
+$lg_tabs_font_size : 30px;
+
+.uiTabs{display: table; width: 100%; border-bottom: rem(5px) solid $color_red; margin-top: rem(-$tabs_active_add_height);}
+.uiTabs .uiList{display: table-cell; vertical-align: bottom; width: 25%;}
+.uiTabs.tpLength1 .uiList{display: inline-block; width: 50%;}
+.uiTabs .uiList a{display: block; color: $color_gray4;  height: rem($tabs_height); text-align: center; cursor: pointer; font-size: rem($tabs_font_size); color: $color_gray4; height: rem($tabs_height); line-height: rem($tabs_height); background: $color_gray; position: relative;}
+.uiTabs .uiList a span {display: none;}
+.uiTabs .uiList a em {display: inline-block; vertical-align: middle; background-size:100% auto !important; position: relative; top:rem(-2px)}
+.uiTabs .uiList:nth-child(1) a em {width:rem(28px); height:rem(30px); background:url('../images/common/icoTab01.png') center no-repeat; }
+.uiTabs .uiList:nth-child(2) a em {width:rem(31px); height:rem(33px); background:url('../images/common/icoTab02.png') center no-repeat; }
+.uiTabs .uiList:nth-child(3) a em {width:rem(41px); height:rem(28px); background:url('../images/common/icoTab03.png') center no-repeat;  }
+.uiTabs .uiList:nth-child(4) a em {width:rem(39px); height:rem(28px); background:url('../images/common/icoTab04.png') center no-repeat; top:0;}
+.uiTabs .uiList+.uiList a:before{content: ''; width: rem(1px); height: 100%; background: #fff; position: absolute; left: 0; top: 0;}
+.uiTabs .uiList a.active{color: $color_white; height: rem($tabs_active_height); line-height: rem($tabs_active_height); background-color: $color_red;}
+.uiTabs .uiList a.active span {display: inline-block; vertical-align: middle; }
+.uiTabs .uiList a.active span:nth-child(1) { margin-left:rem(15px);}
+.uiTabs .uiList a.active span:nth-child(2) { margin-left:rem(7px);}
+.uiTabs .uiList a.active span:nth-child(3) { margin-left:rem(17px);}
+.uiTabs .uiList a.active span:nth-child(4) { margin-left:rem(10px);}
+.uiTabs .uiList a:after{width: rem(92px); height: 100%; background: url(../images/common/tabsListActiveShadow.png) no-repeat left top; position: absolute; right: rem(-91px); top: rem(8px); z-index: 1; pointer-events: none;}
+.uiTabs .uiList a.active:before{content:none;}
+.uiTabs .uiList a.active:after{content:'';}
+.uiTabs .uiList a.active em { top:0;}
+.uiTabs .uiList:nth-child(1) a.active em { width:rem(33px); height:rem(35px); background:url('../images/common/icoTab01_on.png') center no-repeat; }
+.uiTabs .uiList:nth-child(2) a.active em { width:rem(36px); height:rem(38px); background:url('../images/common/icoTab02_on.png') center no-repeat; }
+.uiTabs .uiList:nth-child(3) a.active em { width:rem(41px); height:rem(28px); background:url('../images/common/icoTab03_on.png') center no-repeat; }
+.uiTabs .uiList:nth-child(4) a.active em { width:rem(36px); height:rem(26px); background:url('../images/common/icoTab04_on.png') center no-repeat; }
+
+.uiTabs .uiList.last a.active:after{content: none;}
+
+.uiTabs.lg{margin-top: rem(-$lg_tabs_active_add_height);}
+.uiTabs.lg .uiList a{height: rem($lg_tabs_height); font-size: rem($lg_tabs_font_size); line-height: rem($lg_tabs_height);}
+.uiTabs.lg .uiList a.active{height: rem($lg_tabs_active_height); line-height: rem($lg_tabs_active_height);}
+.uiTabs.lg .uiList a:after{width: rem(83px); background: url(../images/common/tabsListActiveShadowLg.png) no-repeat left top; position: absolute; right: rem(-82px); top: 0; z-index: 1;}

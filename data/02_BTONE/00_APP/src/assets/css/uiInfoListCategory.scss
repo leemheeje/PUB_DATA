@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.uiInfoListCategory{}
+.uiInfoListCategory .uiInfoListCateName{background: $background_color; padding-top: rem(25px); padding-bottom: rem(25px); border: 1px solid $color_gray; border-left: none; border-right: none;}
+.uiInfoListCategory .uiInfoListCateName .uiInfoListCateNameTit{font-size: rem(30px); line-height: rem(30px); color: $color_gray5;}

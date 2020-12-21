@@ -1,0 +1,25 @@
+@import "./utills.scss";
+
+$cir_md_width : 80px;
+$cir_md_height : 80px;
+$cir_md_spacing_left : 12px;
+$cir_md_spacing_right : 12px;
+$cir_sm_width : 33px;
+$cir_sm_height : 33px;
+$cir_sm_spacing_left : 5px;
+$cir_sm_spacing_right : 5px;
+.uiReviewGrade{display: block;}
+.uiReviewGrade .inner{margin-left: rem(-$cir_md_spacing_left); margin-right: rem(-$cir_md_spacing_right); text-align: center;}
+.uiReviewGrade .grArea{display: inline-block;  vertical-align: middle; padding-left: rem($cir_md_spacing_left); padding-right: rem($cir_md_spacing_right);}
+.uiReviewGrade .grArea .txt{font-size: rem(25px); font-weight: bold; color: $color_gray5; margin-top: rem(10px); display: block;}
+.uiReviewGrade .grArea .grCir{width: rem($cir_md_width); height: rem($cir_md_height); display: block; background: none; outline: none; border: none; position: relative;}
+.uiReviewGrade .grArea .grCir img{@include absolute_center_center; width: rem($cir_md_width);}
+.uiReviewGrade .grArea .on{display: block;}
+.uiReviewGrade .grArea .active{display: none;}
+.uiReviewGrade .grArea.active .on{display: none;}
+.uiReviewGrade .grArea.active .active{display: block;}
+.uiReviewGrade .grArea.active .txt{color: $color_black2;}
+
+.uiReviewGrade.sm .inner{margin-left: rem(-$cir_sm_spacing_left); margin-right: rem(-$cir_sm_spacing_right);}
+.uiReviewGrade.sm .grArea{padding-left: rem($cir_sm_spacing_left); padding-right: rem($cir_sm_spacing_right);}
+.uiReviewGrade.sm .grArea .grCir{width: rem($cir_sm_width); height: rem($cir_sm_height);}

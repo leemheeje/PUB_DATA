@@ -1,0 +1,947 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+// common
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner {
+    padding-left: rem(64px);
+    padding-right: rem(70px);
+    text-align: center;
+
+    .paymentContents {
+        height: rem(1640px);
+    }
+}
+
+.titleWrap {
+    padding-top: rem(160px);
+    letter-spacing: -0.03em;
+
+    div {
+        &.icon {
+            img {
+                max-width: rem(80px);
+            }
+        }
+
+        &.title {
+            position: relative;
+            padding-top: rem(20px);
+            font-size: rem(40px);
+            color: $color_black2;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                bottom: rem(-22px);
+                content: '';
+                width: rem(78px);
+                height: 1px;
+                background: $color_black2;
+                transform: translateX(-50%);
+            }
+        }
+
+        &.text {
+            &.first {
+                padding-top: rem(70px);
+                padding-bottom: rem(5px);
+            }
+
+            &.txt1 {
+                font-weight: bold;
+                font-size: rem(45px);
+                color: $color_gray6;
+            }
+
+            &.txt2 {
+                font-size: rem(35px);
+                color: $color_gray3;
+            }
+
+            &.txt3 {
+                font-size: rem(35px);
+                color: $color_gray3;
+                font-weight: 700;
+            }
+        }
+
+        &.img {
+            img {
+                box-shadow: 2px 4px 5px 0px rgba(103, 103, 112, 0.31);
+            }
+        }
+
+    }
+}
+.rtButtons {
+	button{
+		border: none;
+	}
+}
+.btn {
+    border-top: rem(3px) solid $color_gray;
+    padding-top: rem(70px);
+
+    a,button {
+        display: inline-block;
+        height: rem(145px);
+        border-radius: rem(20px);
+        font-size: rem(45px);
+		line-height: rem(147px);
+
+        &.btnCancel,
+        &.btnNo,
+        &.btnBack {
+            float: left;
+            width: 23.135%;
+            border: 1px solid $color_gray4;
+            color: $color_gray5;
+        }
+
+        &.btnNext,
+        &.btnSubmit,
+        &.btnChange {
+            position: relative;
+            float: right;
+            width: 73.925%;
+            background: $color_red;
+            color: $color_white;
+        }
+
+        &.btnNext.off {
+            background: $color_gray;
+            color: #b4b4bc;
+            box-shadow: none;
+            pointer-events: none;
+        }
+
+        &.btnNo {
+            width: 28.544%;
+        }
+
+        &.btnSubmit {
+            width: 69.03%;
+        }
+
+        &.btnBack {
+            width: 44.823%;
+        }
+
+        &.btnChange {
+			border: none;
+            width: 53.174%;
+        }
+
+        &.btnPay {
+            width: rem(603px);
+            background: $color_red;
+            color: $color_white;
+        }
+    }
+}
+
+a {
+    &.shadow {
+        box-shadow: 6px 7px 24px 0px rgba(120, 120, 128, 0.58);
+    }
+}
+
+
+// paymentSaving
+.paymentSaving {
+
+    .in {
+        padding-left: rem(66px);
+        padding-right: rem(64px);
+        text-align: center;
+
+        .paySavingArea {
+
+            .paySavingBox {
+                max-width: rem(666px);
+                height: rem(1381px);
+                margin: 0 auto;
+                padding-top: rem(140px);
+
+                .payTit01 {
+                    font-size: rem(35px);
+                    color: $color_gray6;
+                    line-height: rem(60px);
+                    letter-spacing: -0.03em;
+
+                    span {
+                        font-weight: bold;
+                        font-size: rem(45px);
+                    }
+                }
+
+                .numberForm {
+                    margin-top: rem(45px);
+
+                    .numberScreen {
+                        overflow: hidden;
+                        width: 100%;
+                        height: rem(99px);
+                        font-size: rem(80px);
+                        color: $color_gray9;
+                        letter-spacing: 0.05em;
+
+                        width: 100%;
+                        border-bottom: rem(3px) solid $color_gray5;
+
+                        span {
+                            width: rem(60px);
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                    }
+
+                    .numberList {
+                        margin-top: rem(85px);
+
+                        ul {
+                            overflow: hidden;
+                            margin-left: rem(-10px);
+                            margin-right: rem(-10px);
+
+                            li {
+                                float: left;
+                                width: 33.3333%;
+                                height: rem(153px);
+                                padding-left: rem(10px);
+                                padding-right: rem(10px);
+                                margin-bottom: rem(10px);
+                                border-radius: rem(25px);
+
+                                &.btnClear {
+                                    button {
+                                        background: $color_gray;
+                                        font-family: 'Noto Sans KR', sans-serif;
+                                        font-size: rem(30px);
+                                    }
+                                }
+
+                                &.btnDelete {
+                                    button {
+                                        position: relative;
+                                        background: #ffd02a;
+
+                                        img {
+                                            position: absolute;
+                                            left: 50%;
+                                            top: 50%;
+                                            width: rem(50px);
+                                            transform: translate(-50%, -50%);
+                                        }
+                                    }
+                                }
+
+                                button {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: rem(25px);
+                                    border: none;
+                                    background: $color_white;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: bold;
+                                    font-size: rem(50px);
+                                    color: $color_gray5;
+                                    box-shadow: rem(3px) rem(5px) rem(8px) 0px rgba(120, 120, 135, 0.4);
+                                    outline: none;
+                                    transition: .3s all;
+
+                                    &:active {
+                                        transform: scale(.9);
+                                    }
+
+                                    letter-spacing: -0.03em;
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .agreeBox {
+                    margin-left: rem(4px);
+                    margin-top: rem(35px);
+                    margin-bottom: rem(108px);
+                    text-align: left;
+                    font-size: rem(17px);
+                    color: #909096;
+
+                    .line {
+                        .uiChkrdo {
+                            display: inline-block;
+                            vertical-align: middle;
+                            label {padding-left:rem(53px);}
+                            input + label:before {background: url('../images/common/radioCheck2.png') left center no-repeat; background-size:rem(40px) auto;}
+                            input:checked + label:before {background: url('../images/common/radioChecked2.png') left center no-repeat; background-size:rem(40px) auto;}
+                        }
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    a {
+                        display: inline-block;
+                        font-size: rem(17px);
+                        color: #909096;
+                        padding-bottom: 1px;
+                        border-bottom: 1px solid #909096;
+                    }
+                }
+
+            }
+
+            .btn {
+                a {
+                    &.shadow {
+                        box-shadow: 9px 11px 29px 0px rgba(120, 120, 128, 0.58);
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+// paymentCoupon
+.paymentCoupon {
+
+    .couponList {
+        overflow: hidden;
+        margin-top: rem(70px);
+        margin-left: rem(-5px);
+        margin-right: rem(-20px);
+
+        .swiper-container {
+            .swiper-wrapper {
+                margin-bottom: rem(70px);
+
+                .swiper-slide {
+                    padding-top: 30px;
+
+                    .uiChkrdo label {
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .uiSwiperContrPagination {
+                padding-left: rem(5px);
+                padding-right: rem(20px);
+                bottom: 0;
+                height: 20px;
+
+                .swiper-pagination-bullet {
+                    width: rem(19px);
+                    height: rem(19px);
+
+                    &.pagination-bullet-active {
+                        background: $color_red;
+                    }
+                }
+            }
+
+            .uiSwiperContrPrev {
+                left: rem(5px);
+                top: auto;
+                bottom: 0;
+                background: url(../images/payment/btn_prev.png);
+            }
+
+            .uiSwiperContrNext {
+                right: rem(20px);
+                top: auto;
+                bottom: 0;
+                background: url(../images/payment/btn_next.png);
+            }
+        }
+
+        .list {
+            li {
+                position: relative;
+                float: left;
+                width: 50%;
+                height: rem(249px);
+                margin-top: rem(-30px);
+                background: url('../images/payment/bg_coupon1.png') no-repeat;
+
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    visibility: hidden;
+                    text-indent: -9999em;
+                }
+
+                label {
+
+                    &::before {
+                        display: none;
+                    }
+
+                    .couponCont {
+                        height: rem(220px);
+                        padding-top: rem(30px);
+                        padding-left: rem(5px);
+                        padding-right: rem(20px);
+                        margin-top: rem(-40px);
+                        box-sizing: border-box;
+
+                        >span {
+                            display: block;
+
+                            &.caption {
+                                font-size: rem(20px);
+                                color: $color_black;
+                            }
+
+                            &.name {
+                                padding-bottom: rem(2px);
+                                font-weight: bold;
+                                font-size: rem(30px);
+                                color: $color_black2;
+                            }
+
+                            &.period {
+                                font-size: rem(18px);
+                                color: $color_gray3;
+                            }
+
+                            &.btnCoupon {
+                                width: rem(104px);
+                                height: rem(39px);
+                                margin: rem(16px) auto 0;
+                                border-radius: 10px;
+                                border: 1px solid $color_gray5;
+                                font-weight: bold;
+                                font-size: rem(23px);
+                                color: $color_gray5;
+                                line-height: rem(37px);
+                            }
+
+                        }
+                    }
+                }
+
+                input:checked {
+                    + {
+                        label {
+                            .btnCoupon {
+                                border: 1px solid $color_yellow;
+                                background: $color_yellow;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+// paymentPoint
+.paymentPoint {
+
+
+    .pointUse {
+
+        .useBox {
+            padding: 0 rem(60px);
+            margin-top: rem(75px);
+            background: $color_white;
+            border-radius: rem(10px);
+            box-sizing: border-box;
+            box-shadow: rem(2px) rem(4px) rem(5px) 0 rgba(103, 103, 112, 0.31);
+
+            .box {
+                overflow: hidden;
+                padding: rem(61px) 0;
+                font-weight: bold;
+
+                &:first-child {
+                    border-bottom: rem(3px) solid $color_gray;
+                }
+
+                &:last-child {
+                    padding: rem(60px) 0 rem(67px);
+                }
+
+                >div {
+                    &.tit {
+                        float: left;
+                        text-align-last: left;
+                        font-size: rem(35px);
+                        color: $color_gray9;
+                    }
+
+                    &.point {
+                        float: right;
+                        width: rem(338px);
+                        font-size: rem(45px);
+                        color: $color_gray3;
+                    }
+
+                    &.control {
+                        float: right;
+
+                        input {
+                            width: rem(232px);
+                            background: none;
+                            border: none;
+                            text-align: center;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: bold;
+                            font-size: rem(45px);
+                            color: $color_gray3;
+                            line-height: rem(51px);
+                        }
+
+                        button {
+                            width: rem(53px);
+                            height: rem(51px);
+                            border: none;
+                            text-indent: -9999em;
+                            outline: none;
+                            background-size: rem(53px) auto !important;
+
+                            &.plus {
+                                background: url('../images/payment/btn_plus_on.png') no-repeat;
+
+                                &:disabled {
+                                    background: url('../images/payment/btn_plus.png') no-repeat;
+                                }
+                            }
+
+                            &.minus {
+                                background: url('../images/payment/btn_minus_on.png') no-repeat;
+
+
+                                &:disabled {
+                                    background: url('../images/payment/btn_minus.png') no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .infoText {
+            padding-top: rem(16px);
+            padding-right: rem(40px);
+            text-align: right;
+            font-size: rem(20px);
+            color: $color_red;
+            height: rem(65px);
+
+            span {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    left: rem(-30px);
+                    top: rem(4px);
+                    content: '';
+                    width: rem(23px);
+                    height: rem(23px);
+                    background: url(../images/payment/ico_info.png) no-repeat;
+                    background-size: rem(23px) auto;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+// paymentFace
+.paymentFace {
+    .faceRecog {
+        padding-top: rem(526px);
+
+        img {
+            width: rem(160px);
+            height: rem(160px);
+        }
+
+        .faceTxt {
+            padding-top: rem(116px);
+            font-weight: bold;
+            font-size: rem(45px);
+            color: $color_black2;
+            line-height: rem(60px);
+            letter-spacing: -0.03em;
+        }
+    }
+}
+
+// paymentPay
+.paymentPay {
+    .creditCard {
+        .img {
+            padding-top: rem(95px);
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .kakaoPay {
+        .img {
+            padding-top: rem(195px);
+        }
+    }
+}
+
+// paymentFail
+.paymentFail {
+    .titleWrap {
+        .text {
+            &.first {
+                padding-top: rem(325px);
+            }
+        }
+    }
+
+    .btn {
+        border-top: none;
+    }
+}
+
+
+// payment_fail, payment_completion 공통
+.receiptContents {
+    width: 100%;
+    height: rem(1642px);
+    padding-top: rem(175px);
+    background: url(../images/payment/bg_receipt.png) no-repeat;
+    background-size: 100%;
+}
+
+.timeInfo {
+    padding-top: rem(90px);
+    padding-bottom: rem(132px);
+    font-weight: bold;
+    font-size: rem(35px);
+    color: $color_gray3;
+
+    .timeArea {
+        color: $color_red;
+    }
+}
+
+
+// payment_receipt
+.paymentReceipt {
+    background: $color_red;
+
+    .inner {
+        padding-left: rem(44px);
+        padding-right: rem(44px);
+
+        .receiptContents {
+
+            .titleWrap {
+                padding-top: rem(225px);
+                padding-bottom: rem(115px);
+
+                div {
+                    &.text {
+                        &.first {
+                            padding-top: rem(30px);
+                        }
+                    }
+                }
+            }
+
+            .btnReceipt {
+                button {
+                    display: block;
+                    width: rem(505px);
+                    height: rem(145px);
+                    margin: 0 auto rem(32px);
+                    background: $color_yellow;
+                    border-radius: rem(15px);
+                    border: none;
+                    font-weight: bold;
+                    font-size: rem(35px);
+                    color: $color_yellow2;
+                    line-height: rem(145px);
+                    outline: none;
+
+                    &.shadow {
+                        box-shadow: 6px 7px 24px 0px rgba(120, 120, 128, 0.58);
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+// paymentCompletion
+.paymentCompletion {
+    background: $color_red;
+
+    .inner {
+        padding-left: rem(44px);
+        padding-right: rem(44px);
+
+        .receiptContents {
+
+            .titleWrap {
+                padding-top: rem(225px);
+                padding-bottom: rem(65px);
+
+                div {
+                    &.text {
+                        &.first {
+                            padding-top: rem(30px);
+                        }
+
+                        &.txt1 {
+                            padding-bottom: rem(5px);
+                            font-size: rem(35px);
+                        }
+                    }
+                }
+            }
+
+            .btnComplete {
+                a {
+                    display: block;
+                    width: rem(603px);
+                    height: rem(147px);
+                    margin: rem(30px) auto 0;
+                    background: $color_yellow;
+                    border-radius: rem(15px);
+                    font-weight: bold;
+                    font-size: rem(45px);
+                    color: $color_yellow2;
+                    line-height: rem(145px);
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.PopupModal {
+    .popIn {
+        .multiLogin {
+            &.agreeWrap {
+                width: rem(710px);
+                padding: rem(75px) rem(37px) rem(60px) rem(37px);
+
+                .tit {
+                    font-size: rem(45px);
+                    line-height: (45px);
+                    color: #444444;
+                    font-weight: 400;
+                    margin-bottom: rem(45px);
+                }
+
+                .tit2 {
+                    font-size: rem(45px);
+                    line-height: (60px);
+                    color: #444444;
+                    font-weight: 700;
+                    margin-bottom: rem(45px);
+                }
+
+                .custom-scroll {
+                    margin-bottom: rem(60px);
+                    text-align: left;
+                    font-size: rem(17px);
+                    color: #444444;
+                    border: 1px solid #888888;
+                    padding: 30px 0 30px 15px;
+
+                    .box {
+                        margin-bottom: rem(40px);
+                        padding-right: 30px;
+                        word-break: keep-all;
+                    }
+
+                    .bold {
+                        font-weight: 700;
+                        margin-bottom: rem(15px);
+                    }
+
+                    table {
+                        margin: rem(10px) 0 rem(20px) 0;
+
+                        th {
+                            font-weight: 400;
+                            background: #f6f6fa;
+                            border: 1px solid #dbd9e4;
+                            text-align: center;
+                            padding: rem(14px) rem(10px);
+                        }
+
+                        td {
+                            padding: rem(14px) rem(10px);
+                            vertical-align: middle;
+                            border: 1px solid #dbd9e4;
+                        }
+                    }
+                }
+
+                button {
+                    display: inline-block;
+                    width: rem(450px);
+                    height: rem(115px);
+                    background: $color_red;
+                    border: none;
+                    border-radius: rem(15px);
+                    font-weight: bold;
+                    font-size: rem(35px);
+                    color: #fff;
+                    line-height: rem(115px);
+                    box-shadow: 6px 7px 24px 0px rgba(120, 120, 128, 0.58);
+                }
+            }
+        }
+    }
+}
+
+
+
+.paymentPoint .pointOption {
+    position: relative;
+}
+
+.paymentPoint .pointUse .control {
+    position: relative;
+}
+
+.paymentPoint .pointUse .openDir {
+    position: absolute;
+    left: rem(53px);
+    top: 0;
+    width:calc(100% - #{rem(106px)});
+    height: 100%;
+    text-indent: -999em;
+
+}
+
+.paymentPoint .pointOption:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.paymentPoint .pointOption .ctr {
+    float: left;
+    width: 32.8%;
+}
+
+.paymentPoint .pointOption .ctr p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.paymentPoint .pointOption .ctr p span {
+    cursor: pointer;
+    display: block;
+    height: rem(120px);
+    line-height: rem(120px);
+    text-align: center;
+    border-radius: rem(15px);
+    border: 1px solid #b4b4b9;
+    font-size: rem(45px);
+    font-weight: 700;
+    color: #909096;
+}
+
+.paymentPoint .pointOption .ctr p span.active {
+    border: none;
+    color: #fff;
+    background: #ffbf2e;
+}
+
+.paymentPoint .pointOption .numberList {
+    float: right;
+    width: 60.8%;
+
+    ul {
+        overflow: hidden;
+        margin-left: rem(-10px);
+        margin-right: rem(-10px);
+
+        li {
+            float: left;
+            width: 33.3333%;
+            height: rem(126px);
+            padding-left: rem(10px);
+            padding-right: rem(10px);
+            margin-bottom: rem(12px);
+            border-radius: rem(25px);
+
+            &.btnClear {
+                button {
+                    background: $color_gray;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: rem(30px);
+                }
+            }
+
+            &.btnDelete {
+                button {
+                    position: relative;
+                    background: #ffd02a;
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: rem(50px);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                height: 100%;
+                border-radius: rem(25px);
+                border: none;
+                background: $color_white;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: rem(45px);
+                color: $color_gray5;
+                box-shadow: rem(3px) rem(5px) rem(8px) 0px rgba(120, 120, 135, 0.4);
+                outline: none;
+                transition: .3s all;
+
+                &:active {
+                    transform: scale(.9);
+                }
+
+                letter-spacing: -0.03em;
+
+            }
+        }
+
+    }
+}

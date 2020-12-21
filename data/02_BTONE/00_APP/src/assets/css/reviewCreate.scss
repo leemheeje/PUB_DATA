@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.reviewCreate{}
+.reviewCreate .recTop{text-align: center; padding-top: rem(35px);}
+.reviewCreate .recTop .tit{font-size: rem(35px); font-weight: bold; color: $color_black2;}
+.reviewCreate .recTop .stit{font-size: rem(35px); color: $color_gray3;}
+.reviewCreate .recTop .recGrade{}
+.reviewCreate .recFot .recInputFile{}
+.reviewCreate .recFot .recInputFile .img{position: relative; width: rem(336px);}
+.reviewCreate .recFot .recInputFile .img img{max-width: 100%;}
+.reviewCreate .recFot .recInputFile .img .thumbDeleteBtn{position: absolute; right: 0; top: 0; width: rem(55px); height: rem(55px); background: none; border: none; outline: none;}
+.reviewCreate .recFot .recInputFile .img .thumbDeleteBtn img{width: rem(35px); @include absolute_center_center;}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+/*스와이퍼 공통요소*/
+.uiSwiper{position: relative; }
+.uiSwiper .swiper-slide a {display: block;}
+.uiSwiper .swiper-slide img {width: 100%;}
+.uiSwiper .swiper-pagination {bottom:rem(17px); height: 6px; }
+.uiSwiper .swiper-pagination-bullet {vertical-align: top; background: #fff; opacity:1 !important;  box-shadow: 0 rem(1px) rem(13px) rgba(120,120,128,.58); margin:0 rem(13px); width:rem(11px); height:rem(11px);}
+.uiSwiper .swiper-pagination-bullet-active {background: #e53939;}
+
+
+.btSlide  {position: relative; ; }
+.btSlide .swiper-slide {width:33.3%; padding-top:rem(40px); height:rem(260px); }
+.btSlide .swiper-slide .swInner {position: absolute; width: 171%; left:0; bottom:0; display: block;  overflow:hidden; /*transition:1s all*/}
+.btSlide .swiper-slide .swInner:after {content:''; position: absolute; left:0; top:0; width: 100%; height: 100%; background:rgba(103,103,103,.7); }
+.btSlide .swiper-slide em {position: absolute; left:-100%; bottom:0; width: 300%; z-index: 5; height: 100px; background:#000; color:#fff;;}
+.btSlide .swiper-slide img {width: 100%; }
+.btSlide .swiper-slide-active { z-index: 10; padding-top: 0; }
+.btSlide .swiper-slide-active .swInner {bottom:0; left:-84%; width:195%;  border-top-left-radius:10px;  border-top-right-radius:10px; box-shadow:3px 2px 3px rgba(0,0,0,.5)}
+.btSlide .swiper-slide-active .swInner:after {opacity:0; }
+.btSlide .swiper-slide-active em {z-index: 200; background:red;}
+.btSlide .swiper-slide-prev span {left:-130%; }
+.btSlide .moveLink {position: absolute; right:10%; top:36%; margin-top:rem(-31px); width:rem(62px); height:rem(62px); border:1px solid #909096; border-radius:rem(10px); text-indent:-999em; opacity:0; visibility:hidden;}
+.btSlide .moveLink img{@include absolute_center_center; width: rem(29px);}
+.btSlide .moveLink.true {opacity:1; visibility:visible; z-index: 30; }
+
+.detailSlide {position: relative; z-index: 10;background:#fff;  border-top:rem(3px) solid $color_red; box-shadow:-0 2px 2px rgba(0,0,0,.2);}
+.detailSlide a {position: relative; display: block;  padding:rem(23px) rem(40px) rem(10px); position: relative;transition:none !important;}
+.detailSlide a .title {font-size:rem(30px);  color:#2d2d2d; font-weight: 700; margin-bottom:rem(8px); padding-right:rem(180px);}
+.detailSlide a .info > div {display: inline-block; vertical-align: top; font-size:rem(23px); color:#a6a6ab;}
+.detailSlide a .info > div:last-child {padding-left:rem(20px); margin-left:rem(20px); position: relative; }
+.detailSlide a .info > div:last-child:after {content:''; position: absolute; left:0; top:50%; margin-top:rem(-10px); width: 1px; height:rem(20px); background: #909096; }
+.detailSlide a .info > div .num {font-family: 'Roboto', sans-serif; margin-left:rem(10px);}
+.detailSlide a .rightInfo {position: absolute; right:rem(40px); top:rem(20px);}
+.detailSlide a .rightInfo .star {margin-bottom:rem(5px); text-align: right;}
+.detailSlide a .rightInfo .star span{display: inline-block; vertical-align: top; font-size:rem(37px); line-height:rem(37px); color:#2d2d2d; font-weight: 700; padding-right:rem(45px); position: relative;}
+.detailSlide a .rightInfo .star span img{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: rem(35px);}
+.detailSlide a .rightInfo .able span{display: inline-block; vertical-align: top; font-size:rem(20px); line-height:rem(20px); padding:rem(7px) rem(12px); color:#a6a6ab; font-weight: 700; min-width:rem(125px); border:1px solid #a6a6ab; text-align: center; border-radius:rem(8px); margin-left:rem(8px);}
+
+
+.freeSlide .swiper-slide {width:60%; margin-left:rem(40px);padding:rem(7px); }
+.freeSlide .swiper-slide a {display: block; border-radius:10px; overflow:hidden; box-shadow:0 0 3px 3px rgba(0,0,0,.1);}
+.freeSlide .swiper-slide .img {width: 100%;}
+.freeSlide .swiper-slide .textBox {padding:rem(20px) rem(18px); background: #fff; }
+.freeSlide .swiper-slide .textBox .title {font-size:rem(34px); margin-bottom:rem(10px); color:#2d2d2d; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.freeSlide .swiper-slide .textBox .txt {font-size:rem(25px);  color:#909096; line-height: rem(35px); margin-bottom:rem(33px); -webkit-box-orient: vertical;    word-wrap:break-word;   overflow: hidden;   text-overflow: ellipsis;   display: -webkit-box;-webkit-line-clamp: 2;}
+.freeSlide .swiper-slide .textBox .price .num {font-size:rem(45px); line-height:rem(45px);  font-weight:700;   color:#2d2d2d;  font-family: 'Roboto', sans-serif; vertical-align: middle;}
+.freeSlide .swiper-slide .textBox .price span {font-size:rem(34px); line-height:rem(34px);  color:#2d2d2d; vertical-align: middle;}

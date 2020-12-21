@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.ScrollbarsCustom  {border:1px solid #888888;  width: 100%;}
+.ScrollbarsCustom .ScrollbarsCustom-Track {right:rem(8px) !important; background:none !important; width:rem(15px) !important;}
+.ScrollbarsCustom .ScrollbarsCustom-Track .ScrollbarsCustom-Thumb { background:#dadae3 !important;  border-radius:100px !important;}
+.ScrollbarsCustom .scText {font-size:rem(20px); color:#444444; padding:rem(20px) rem(17px); padding-right: 0;}

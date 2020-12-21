@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.mySearch{}
+.mySearch .mysTop{position: relative;}
+.mySearch .mysTop .rtTp{position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 1;}
+.mySearch .mysTop .rtTp .registListDeleteBtn{position: relative; right: rem(40px);}
+.mySearch .mysCont{}
+.mySearch .mysCont .mysRecList{}
+.mySearch .mysCont .mysRecList .mysTp{position: relative;}
+.mySearch .mysCont .mysRecList .mysTp .tit{font-size: rem(30px); min-height: rem(95px); line-height: rem(35px); padding: rem(30px) 0; color: $color_black2; text-align: left; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.mySearch .mysCont .mysRecList .mysTp .innerWrap{position: static; padding-right: rem(106px);}
+.mySearch .mysCont .mysRecList .mysTp .registDeleteBtn{width: rem(106px); height: 100%; position: absolute; right: 0; top: 0; outline: none; border: none; background: none;}
+.mySearch .mysCont .mysRecList .mysTp .registDeleteBtn img{width: rem(19px); @include absolute_center_center;}
+.mySearch .mysCont .mysLocSor{padding: rem(36px) 0;}
+.mySearch .mysCont .mysLocSor .mlInner{margin: rem(-7px);}
+.mySearch .mysCont .mysLocSor .mlSorBtn{margin: rem(7px);}
+.mySearch .mysCont .mysList{}
+.mySearch .mysCont .mysList .mysListInner{display: block; padding: rem(30px) 0;}
+.mySearch .mysCont .mysList .mysTp{}
+.mySearch .mysCont .mysList .mysTp+.mysTp{border-top: 1px solid $color_gray;}
+.mySearch .mysCont .mysList .mysTp .tit{font-size: rem(30px); color: $color_black2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.mySearch .mysCont .mysList .mysTp .mis{margin-top: rem(0px);}
+.mySearch .mysCont .mysList .mysTp .mis .mistp{text-align: left; display: inline; position: relative; vertical-align: middle;}
+.mySearch .mysCont .mysList .mysTp .mis .mistp+.mistp{margin-left: rem(30px); padding-left: rem(30px);}
+.mySearch .mysCont .mysList .mysTp .mis .mistp+.mistp:before{content: ''; width: 1px; height: 60%; top: 20%; position: absolute; left: 0; background: $color_gray;}
+.mySearch .mysCont .mysList .mysTp .mis .mistp .int{font-size: rem(30px); color: $color_gray3;}
+.mySearch .mysCont .mysList .mysTp .mis .mistp .grd{font-weight: bold; color: $color_black2; padding-right: rem(35px); display: inline-block; position: relative;}
+.mySearch .mysCont .mysList .mysTp .mis .mistp .grd img{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: rem(29px);}
+.mySearch .mysCont .mysList .mysTp .mii{font-size: rem(20px); text-align: left; color: $color_gray5; margin-top: rem(5px);}
+.mySearch .mysCont .mysList .mysTp .mic{margin: rem(-7px) rem(-15px); padding-top: rem(7px); text-align: left;}
+.mySearch .mysCont .mysList .mysTp .mic .mictp{padding: rem(7px) rem(15px); display: inline-block; vertical-align: middle; }
+.mySearch .mysCont .mysList .mysTp .mic .ico{padding-left: rem(35px); font-size: rem(23px); font-weight: bold; color: $color_black2; position: relative;}
+.mySearch .mysCont .mysList .mysTp .mic .ico img{position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 80%;}
+.mySearch .noResult{text-align: center; color: $color_black2; z-index: 1; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) }
+.mySearch .noResult .innerResult{}
+.mySearch .noResult .tit{font-size: rem(35px); font-weight: bold; padding-top: rem(145px); position: relative;}
+.mySearch .noResult .tit img{position: absolute; left: 50%; transform: translateX(-50%); top: 0; height: rem(109px);}
+.mySearch .noResult .stit{font-size: rem(35px);}

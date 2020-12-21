@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.FLR{float: right;}
+.FLL{float: left;}
+.TXTL{text-align: left;}
+.TXTR{text-align: right;}
+.TXTC{text-align: center;}
+.UNDERLINE{text-decoration: underline;}
+.clearfix:after,.clearfix:before{content: ' '; display: table;}
+.clearfix:after{clear: both;}
+.hidetxt{position: absolute; width: 0; height: 0; visibility: hidden; overflow: hidden; line-height: 0;}
+.strong{font-weight: bold !important;}
+.MT05{margin-top: rem(05px) !important;}
+.MT10{margin-top: rem(10px) !important;}
+.MT15{margin-top: rem(15px) !important;}
+.MT20{margin-top: rem(20px) !important;}
+.MT25{margin-top: rem(25px) !important;}
+.MT30{margin-top: rem(30px) !important;}
+.MT35{margin-top: rem(35px) !important;}
+.MT40{margin-top: rem(40px) !important;}
+.MT45{margin-top: rem(45px) !important;}
+.MT50{margin-top: rem(50px) !important;}
+.MT55{margin-top: rem(55px) !important;}
+.MT60{margin-top: rem(60px) !important;}
+.MT65{margin-top: rem(65px) !important;}
+.MT70{margin-top: rem(70px) !important;}
+.MT75{margin-top: rem(75px) !important;}
+.MT80{margin-top: rem(80px) !important;}
+.MT85{margin-top: rem(85px) !important;}
+.MT90{margin-top: rem(90px) !important;}
+.MT95{margin-top: rem(95px) !important;}
+.MB05{margin-bottom: rem(05px) !important;}
+.MB10{margin-bottom: rem(10px) !important;}
+.MB15{margin-bottom: rem(15px) !important;}
+.MB20{margin-bottom: rem(20px) !important;}
+.MB25{margin-bottom: rem(25px) !important;}
+.MB30{margin-bottom: rem(30px) !important;}
+.MB35{margin-bottom: rem(35px) !important;}
+.MB40{margin-bottom: rem(40px) !important;}
+.MB45{margin-bottom: rem(45px) !important;}
+.MB50{margin-bottom: rem(50px) !important;}
+.MB55{margin-bottom: rem(55px) !important;}
+.MB60{margin-bottom: rem(60px) !important;}
+.MB65{margin-bottom: rem(65px) !important;}
+.MB70{margin-bottom: rem(70px) !important;}
+.MB75{margin-bottom: rem(75px) !important;}
+.MB80{margin-bottom: rem(80px) !important;}
+.MB85{margin-bottom: rem(85px) !important;}
+.MB90{margin-bottom: rem(90px) !important;}
+.MB95{margin-bottom: rem(95px) !important;}
+.MR05{margin-right: rem(05px) !important;}
+.MR10{margin-right: rem(10px) !important;}
+.MR15{margin-right: rem(15px) !important;}
+.MR20{margin-right: rem(20px) !important;}
+.MR25{margin-right: rem(25px) !important;}
+.MR30{margin-right: rem(30px) !important;}
+.MR35{margin-right: rem(35px) !important;}
+.MR40{margin-right: rem(40px) !important;}
+.MR45{margin-right: rem(45px) !important;}
+.MR50{margin-right: rem(50px) !important;}
+.MR55{margin-right: rem(55px) !important;}
+.MR60{margin-right: rem(60px) !important;}
+.MR65{margin-right: rem(65px) !important;}
+.MR70{margin-right: rem(70px) !important;}
+.MR75{margin-right: rem(75px) !important;}
+.MR80{margin-right: rem(80px) !important;}
+.MR85{margin-right: rem(85px) !important;}
+.MR90{margin-right: rem(90px) !important;}
+.MR95{margin-right: rem(95px) !important;}
+.ML05{margin-left: rem(05px) !important;}
+.ML10{margin-left: rem(10px) !important;}
+.ML15{margin-left: rem(15px) !important;}
+.ML20{margin-left: rem(20px) !important;}
+.ML25{margin-left: rem(25px) !important;}
+.ML30{margin-left: rem(30px) !important;}
+.ML35{margin-left: rem(35px) !important;}
+.ML40{margin-left: rem(40px) !important;}
+.ML45{margin-left: rem(45px) !important;}
+.ML50{margin-left: rem(50px) !important;}
+.ML55{margin-left: rem(55px) !important;}
+.ML60{margin-left: rem(60px) !important;}
+.ML65{margin-left: rem(65px) !important;}
+.ML70{margin-left: rem(70px) !important;}
+.ML75{margin-left: rem(75px) !important;}
+.ML80{margin-left: rem(80px) !important;}
+.ML85{margin-left: rem(85px) !important;}
+.ML90{margin-left: rem(90px) !important;}
+.ML95{margin-left: rem(95px) !important;}
+
+.MT100{margin-top: rem(100px) !important;}
+.MT105{margin-top: rem(105px) !important;}
+.MT110{margin-top: rem(110px) !important;}
+.MT115{margin-top: rem(115px) !important;}
+.MT120{margin-top: rem(120px) !important;}
+.MT125{margin-top: rem(125px) !important;}
+.MT130{margin-top: rem(130px) !important;}
+.MT135{margin-top: rem(135px) !important;}
+.MT140{margin-top: rem(140px) !important;}
+.MT145{margin-top: rem(145px) !important;}
+.MT150{margin-top: rem(150px) !important;}
+.MT155{margin-top: rem(155px) !important;}
+.MT160{margin-top: rem(160px) !important;}
+.MT165{margin-top: rem(165px) !important;}
+.MT170{margin-top: rem(170px) !important;}
+.MT175{margin-top: rem(175px) !important;}
+.MT180{margin-top: rem(180px) !important;}
+.MT185{margin-top: rem(185px) !important;}
+.MT190{margin-top: rem(190px) !important;}
+.MT195{margin-top: rem(195px) !important;}
+.MT200{margin-top: rem(200px) !important;}
+.MT205{margin-top: rem(205px) !important;}
+.MT210{margin-top: rem(210px) !important;}
+.MT215{margin-top: rem(215px) !important;}
+.MT220{margin-top: rem(220px) !important;}
+.MT225{margin-top: rem(225px) !important;}
+.MT230{margin-top: rem(230px) !important;}
+.MT235{margin-top: rem(235px) !important;}
+.MB100{margin-bottom: rem(100px) !important;}
+.MB105{margin-bottom: rem(105px) !important;}
+.MB110{margin-bottom: rem(110px) !important;}
+.MB115{margin-bottom: rem(115px) !important;}
+.MB120{margin-bottom: rem(120px) !important;}
+.MB125{margin-bottom: rem(125px) !important;}
+.MB130{margin-bottom: rem(130px) !important;}
+.MB135{margin-bottom: rem(135px) !important;}
+.MB140{margin-bottom: rem(140px) !important;}
+.MB145{margin-bottom: rem(145px) !important;}
+.MB150{margin-bottom: rem(150px) !important;}
+.MB155{margin-bottom: rem(155px) !important;}
+.MB160{margin-bottom: rem(160px) !important;}
+.MB165{margin-bottom: rem(165px) !important;}
+.MB170{margin-bottom: rem(170px) !important;}
+.MB175{margin-bottom: rem(175px) !important;}
+.MB180{margin-bottom: rem(180px) !important;}
+.MB185{margin-bottom: rem(185px) !important;}
+.MB190{margin-bottom: rem(190px) !important;}
+.MB195{margin-bottom: rem(195px) !important;}
+.MB200{margin-bottom: rem(200px) !important;}
+.MB205{margin-bottom: rem(205px) !important;}
+.MB210{margin-bottom: rem(210px) !important;}
+.MB215{margin-bottom: rem(215px) !important;}
+.MB220{margin-bottom: rem(220px) !important;}
+.MB225{margin-bottom: rem(225px) !important;}
+.MB230{margin-bottom: rem(230px) !important;}
+.MB235{margin-bottom: rem(235px) !important;}
+.COLOR_RED{color: $color_red;}
+.COLOR_BLACK{color: $color_black2;}
+.COLOR_GRAY{color: $color_gray;}

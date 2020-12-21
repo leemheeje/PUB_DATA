@@ -1,0 +1,357 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+.container.mycart {
+    padding-bottom: 0;
+
+    .loginBox {
+        padding: rem(72px) 0;
+        border-bottom: 1px solid $color_gray;
+        background: $background_color;
+        text-align: center;
+        .text {
+            font-size: rem(30px);
+            span {
+                font-weight: bold;
+            }
+        }
+        .btnLogin {
+            width: rem(301px);
+            margin: rem(30px) auto 0;
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.couponToastWrap{
+    &.active {
+        display: block;
+    }
+    display: none;
+}
+.mycartWrap {
+    letter-spacing: -0.03em;
+    .storeName {
+        padding: rem(28px) rem(38px);
+        font-weight: bold;
+        font-size: rem(45px);
+        color: $color_black;
+    }
+    .cateName {
+        position: relative;
+        height: rem(80px);
+        padding: 0 rem(38px);
+        padding-right: 0;
+        background: $background_color;
+        border-top: 1px solid $color_gray;
+        border-bottom: 1px solid $color_gray;
+
+        .tit {
+            font-size: rem(30px);
+            line-height: rem(80px);
+            color: $color_gray5;
+        }
+        .icoInfo {
+            position: absolute;
+            left: rem(155px);
+            top: 52%;
+            display: inline-block;
+            width: rem(23px);
+            height: rem(23px);
+            margin-left: rem(10px);
+            transform: translateY(-52%);
+            cursor: pointer;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        .txtInfo {
+            padding-left: rem(45px);
+            font-size: rem(23px);
+            color: $color_gray7;
+            line-height: rem(80px);
+            vertical-align: top;
+        }
+    }
+    
+    .mycartListWrap {
+        color: $color_gray5;
+        font-size: rem(25px);
+
+        .subTitle {
+            padding: rem(35px) rem(38px) 0;
+            font-weight: bold;
+            font-size: rem(30px);
+            color: $color_black2;
+        }
+
+        .mycartList {
+            position: relative;
+            padding: rem(37px) rem(38px) rem(45px);
+            border-bottom: 1px solid $color_gray;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &.orderList {
+                .orderTitle {
+                    font-size: rem(30px);
+					color: $color_black2;
+					padding-right: rem(70px);
+                }
+                .control {
+                    position: absolute;
+                    right: rem(40px);
+                    bottom: rem(40px);
+                    width: rem(217px);
+                    .uiFormCount {
+                        .ufcInput {
+                            font-size: rem(40px);
+                            height: rem(50px);
+                        }
+                    }
+                }
+                .totalPrice {
+                    display: inline-block;
+                    position: relative;
+                    height: rem(40px);
+                    margin-top: rem(36px);
+                    font-size: rem(30px);
+                    color: $color_black2;
+
+                    span {
+                        position: relative;
+                        display: inline-block;
+
+                        &.won {
+                            font-size: rem(24px) !important;
+                        }
+                    }
+
+                    .price {
+                        &.active { 
+                            color: $color_gray5;
+                            &::after {
+                                position: absolute;
+                                left: 0;
+                                top: 55%;
+                                content: '';
+                                width: 100%;
+                                height: rem(2px);
+                                background: $color_black2;
+                                transform: translateY(-55%);
+                            }
+                        }
+                    }
+                    .couponApplyText {
+                        display: none;
+                        margin-left: rem(10px);
+                        &.active {
+                            display: inline-block;
+                            span {
+                                display: inline-block;
+                            }
+                            .txt1 {
+                                vertical-align: middle;
+                                font-size: rem(30px);
+                            }
+                            .txt2 {
+                                margin-left: rem(10px);
+                                font-weight: bold;
+                                font-size: rem(25px);
+                                color: $color_red;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.couponList {
+                padding: rem(15px) rem(38px) rem(45px);
+                border-bottom: none;
+
+                .couponTitle {
+                    font-size: rem(30px);
+                    color: $color_black2;
+                }
+
+                .couponPeriod {
+                    font-size: rem(23px);
+                }
+    
+                .btnApply.btnCoupon {
+                    bottom: rem(45px);
+					border: none;
+					.uiInput.radiochk .lb{
+						overflow: hidden;
+						width: rem(101px);
+						height: rem(45px);
+						padding-left: 0;
+						display: block;
+						text-align: center;
+						background: $color_white;
+						border: 1px solid $color_gray5;
+						border-radius: rem(10px);
+						font-size: rem(25px);
+						color: $color_gray5;
+						&:before{content: none;}
+						img.icoCircleChecked_27{display: none;}
+					}
+					.uiInput.radiochk input:checked+.lb{
+						border: none;
+						background: $color_yellow;
+						color: #fff;
+						img.active{display: none;}
+						.txts{display: inline-block; vertical-align: middle; }
+						img.icoCircleChecked_27{display: inline-block; width: rem(23px); vertical-align: middle; margin-left: rem(3px);}
+					}
+                }
+            }
+         
+        }
+
+        .myPont {
+            position: relative;
+            padding: rem(40px) rem(38px);
+            border-top: 1px solid $color_gray;
+            .subTitle {
+                padding: 0;
+                .allPoint {
+                    color: #434343;
+                }
+            }
+            .control {
+                margin-top: rem(30px);
+				width: 42.313%;
+				display: inline-block;
+            }
+        }
+    }
+
+    .emptyBox {
+        height: rem(216px);
+    }
+
+    .btnAddMenu {
+        height: rem(132px);
+        border-top: 1px solid $color_gray;
+        border-bottom: 1px solid $color_gray;
+        
+        button {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: none;
+            font-weight: bold;
+            font-size: rem(35px);
+            color: $color_red;
+        }
+    }
+
+    .resultWrap {
+        padding: rem(33px) rem(40px) rem(60px);
+        background: $background_color;
+        font-weight: bold;
+        font-size: rem(30px);
+        color: $color_black2;
+
+        .resultList {
+            margin-bottom: rem(25px);
+            li {
+                overflow: hidden;
+                padding-bottom: rem(15px);
+                >span {
+                    vertical-align: middle;
+                }
+                .price {
+                    float: right;
+                    font-size: rem(35px);
+                }
+				.resultList{
+					margin-top: rem(10px);
+					margin-bottom: rem(10px);
+					li{
+						width: 100%;
+						font-size: rem(25px);
+						color: #909096;
+						line-height: rem(30px);
+						padding-bottom: rem(5px);
+						.title{
+							font-weight: normal;
+						}
+						.price {
+							float: right;
+							font-weight: normal;
+							font-size: rem(30px);
+						}
+					}
+				}
+            }
+        }
+
+        .mooBottom {
+            .inner {
+                .btnType1 {
+                    .btnLeft {
+                        width: 38.5%;
+                    }
+                    .btnRight {
+                        width: 61.5%;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .btnApply {
+        overflow: hidden;
+        position: absolute;
+        right: rem(40px);
+        bottom: rem(40px);
+        width: rem(101px);
+        height: rem(45px);
+        background: $color_white;
+        border: 1px solid $color_gray5;
+        border-radius: rem(10px);
+        font-size: rem(25px);
+        color: $color_gray5;
+
+        &.active {
+            background: $color_yellow;
+            border: none;
+            color: $color_white;
+        }
+    }
+    
+}
+.mycartWrap .mycartListWrap .mycartList{position: relative;}
+.mycartWrap .mycartListWrap .mycartList .carListDeleteBtn{position: absolute; right: rem(38px); top: rem(35px); width: rem(50px); display: block; height: rem(50px); border: none; outline: none; background: none;}
+.mycartWrap .mycartListWrap .mycartList .carListDeleteBtn button{background: none; border: none;}
+.mycartWrap .mycartListWrap .mycartList .carListDeleteBtn img{width: rem(25px); @include absolute_center_center;}
+.mycartWrap .mycartListWrap .mycartList.couponList .btnApply.btnCoupon .uiInput.radiochk .lb{width: auto; height: auto; font-size: rem(25px); line-height: rem(25px); padding-top: rem(17px); padding-bottom: rem(17px);}
+.mycartWrap .mycartListWrap .myPont{padding: rem(50px) rem(40px); height: rem(314px)}
+.mycartWrap .btnApply{width: rem(156px); height: auto;}
+.mycartWrap .rtBtnsWrap{position: absolute; right: rem(40px); bottom: rem(50px);}
+.mycartWrap .rtBtnsWrap .btnApply.btns{position: static; font-size: rem(25px); line-height: rem(25px); padding-top: rem(17px); padding-bottom: rem(17px); display: block;}
+.mycartWrap .rtBtnsWrap .btnApply.btns+.btnApply.btns{margin-top: rem(30px);}
+.mycartWrap .rtBtnsWrap .btnApply.btns img{vertical-align: middle; display: none;}
+.mycartWrap .rtBtnsWrap .btnApply.btns .txt{display: inline-block; vertical-align: middle;}
+.mycartWrap .rtBtnsWrap .btnApply.active.btns{border: 1px solid #ffd029;}
+.mycartWrap .rtBtnsWrap .btnApply.btns.active img{display: inline-block; width: rem(23px); vertical-align: middle; margin-left: rem(3px);}
+.mycartWrap .mycartListWrap .myPont .pitActBtn{background: none; border: none; outline: none; vertical-align: middle; padding-left: rem(37px); font-size: rem(30px); line-height: rem(45px);}
+.mycartWrap .mycartListWrap .myPont .pitActFid{width: 42.313%; display: inline-block; vertical-align: middle; position: relative;}
+.mycartWrap .mycartListWrap .myPont .pitActFid input{font-family: 'Roboto', sans-serif; font-weight: bold; color: #5c5c5c; text-align: right; font-size: rem(40px); padding-right: 0;}
+.mycartWrap .mycartListWrap .myPont .pitActFid input::placeholder{font-size: rem(40px); color: #5c5c5c;}
+.mycartWrap .mycartListWrap .myPont .pitActFid .uiInput.field .ip{padding-right: rem(80px);}
+.mycartWrap .mycartListWrap .myPont .pitActFid .uiInput.field .ip:before{content: 'P'; position: absolute; right: rem(47px); top: 50%; transform: translateY(-50%); font-size: rem(40px); font-weight: bold; font-family: 'Roboto', sans-serif; color: #5c5c5c;}
+.mycartWrap .mycartListWrap .myPont .pitActFid .uiInput.field .errMsg{white-space: nowrap;}
+.mycartWrap .mycartListWrap .myPont .pitActFid .pitActAllDelect{background: none; outline: none; border: none; width: rem(50px); height: 100%; position: absolute; right: 0; top: 0;}
+.mycartWrap .mycartListWrap .myPont .pitActFid .pitActAllDelect img{width: rem(25px); @include absolute_center_center;}
+.mycartWrap .mycartListWrap .myPont .text{margin-bottom: rem(50px);}
+.mycartWrap .mycartListWrap .myPont .control{margin-top: rem(15.5px); margin-bottom: rem(15.5px);}
+.mycartWrap .mycartListWrap .myPont .pitActFid{margin-top: rem(5px);}

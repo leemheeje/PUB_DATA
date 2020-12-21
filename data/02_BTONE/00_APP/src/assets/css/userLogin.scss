@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.container.userLoginWrap{padding-bottom: rem(472px);}
+.container.userLoginWrap.snslogin4{padding-bottom: rem(502px);}
+.userLoginWrap .infText{text-align: center; margin-top: rem(35px); font-size: rem(28px);}
+.userLoginSns .infText{text-align: center; margin-top: rem(35px); font-size: rem(28px);}
+.userLoginWrap .colorGray{color: $color_gray5;}
+.userLoginSns .colorBlack{color: $color_black2;}
+.userLoginSns .colorRed{color: $color_red;}
+.userLogin{}
+.userLogin .innerWrap,
+.userLoginSns .innerWrap{padding-left: rem(60px); padding-right: rem(60px);}
+.userLogin .logo{text-align: center; padding: rem(58px) 0;}
+.userLogin .MT45{margin-top: rem(45px);}
+.userLogin .icoInput{position: relative;}
+.userLogin .icoInput .uiInput.field .ip{padding-left: rem(73px);}
+.userLogin .icoInput .uiInput.field .ip:before{content: ''; width: rem(73px); height: 100%; position: absolute; left: 0; top: 0;}
+.userLogin .icoInput .icos{position: absolute; left: rem(25px); top: 50%; transform: translateY(-50%);}
+.userLogin .icoInput.phone .icos{width: rem(27px);}
+.userLogin .icoInput.lock .icos{width: rem(31px);}
+.userLogin .uiInput.field .ip{padding-right: 0;}
+.userLogin .icoInput .uiInput.field .ip input{padding-left: 0;}
+.userLoginWrap+.relativeBottom{margin-top: rem(-412px);}
+.userLoginWrap.snslogin4+.relativeBottom{margin-top: rem(-472px);}
+.userLoginSns .antLoginList{}
+.userLoginSns .antLoginList .tp{padding: rem(12px) 0;}
+.userLoginSns .antLoginList .antLogin{padding-left: rem(90px); position: relative; text-align: center; border: 1px solid #a4a4a4; border-radius: rem(10px); background-color: #fff; width: 100%;}
+.userLoginSns .antLoginList .antLogin .icos{width: rem(90px); height: 100%; position: absolute; left: 0; top: 0;}
+.userLoginSns .antLoginList .antLogin .icos img{width: rem(25px); @include absolute_center_center;}
+.userLoginSns .antLoginList .antLogin .icos.kakao img{width: rem(30px);}
+.userLoginSns .antLoginList .antLogin .icos:before{content: ''; width: 1px; height: 60%; top: 20%; background: #a4a4a4; position: absolute; right: 0;}
+
+.userLoginSns .antLoginList .antLogin .txts{font-size: rem(28px); line-height: rem(64px); color: $color_gray6;}

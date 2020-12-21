@@ -1,0 +1,17 @@
+
+$init_duration : 0ms;
+$modal_duration : $init_duration;
+.transition-modal-enter {
+	transform: translateY(100%);
+}
+.transition-modal-enter-active {
+	transform: translateY(0);
+	transition: transform $modal_duration;
+}
+.transition-modal-exit {
+	transform: translateY(0);
+}
+.transition-modal-exit-active {
+	transform: translateY(100%);
+	transition: transform $modal_duration;
+}

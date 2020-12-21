@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.uiStep{}
+.uiStep .uiStepList{position: relative; display: table; table-layout: fixed; width: 100%; border-bottom: rem(2px) solid $color_gray;}
+.uiStep .uiStepList .uiStepTp{padding: 0 rem(20px); display: table-cell; width: 2%; vertical-align: middle; text-align: center; position: relative;}
+.uiStep .uiStepList .uiStepTp:first-child{padding-left: 0; padding-right: 0;}
+.uiStep .uiStepList .uiStepTp:last-child{padding-right: 0;}
+.uiStep .uiStepList .uiStepTp .uiStepTxt{font-size: rem(32px); color: #a6a6ab; display: block; font-weight: normal; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: rem(30px) 0; position: relative;}
+.uiStep .uiStepList .uiStepTp .icoArrowGray_15{display: none;}
+.uiStep .uiStepList .uiStepTp+.uiStepTp .icoArrowGray_15{display: block; width: rem(14px); position: absolute; left: 0; top: 50%; margin-top: rem(3px); transform: translateY(-50%);}
+.uiStep .uiStepList .uiStepTp.active .uiStepTxt{font-weight: bold; color: $color_black2;}
+.uiStep .uiStepList .uiStepTp.active .uiStepTxt:before{content: ''; width: 100%; height: rem(5px); position: absolute; left: 0; bottom: rem(-1px); background: $color_red;}

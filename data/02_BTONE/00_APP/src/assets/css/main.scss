@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.locationBox .ripple {position: relative; background:#f6f6fa; display: inline-block; vertical-align: top;  text-align: center;  border:none; display: block; text-align: center; width: 100%;}
+.locationBox .ripple span {display: inline-block;  font-size:rem(30px); height:rem(90px); line-height:rem(90px);  color:#2d2d2d; padding-left:rem(39px); position: relative;}
+.locationBox .ripple span img{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: rem(27px);}
+
+.btnFuncList {padding:rem(80px) rem(40px) rem(100px) rem(40px);}
+.btnFuncList ul {text-align: center; position: relative; }
+.btnFuncList ul li {display: inline-block; vertical-align: top;}
+.btnFuncList ul li:nth-child(1) {position: absolute; left:0; top:0;}
+.btnFuncList ul li:nth-child(3) {position: absolute; right:0; top:0;}
+.btnFuncList ul li a {display: block; padding-top:rem(84px); position: relative;}
+.btnFuncList ul li a .subTit {font-size:rem(20px); line-height:rem(20px); color:#909096; padding-bottom:rem(10px); }
+.btnFuncList ul li a .tit {font-size:rem(32px); line-height:rem(32px); color:#000000; font-weight: 700; }
+.btnFuncList ul li a .ico {position: absolute; left: 50%; transform: translateX(-50%); top: 0;}
+.btnFuncList ul li:nth-child(1) a .ico{width:rem(59px); top: rem(3px);}
+.btnFuncList ul li:nth-child(2) a .ico{width:rem(92px); }
+.btnFuncList ul li:nth-child(3) a .ico{width:rem(65px); }
+
+.mainSlideBox {margin-bottom:rem(100px);}
+.mainSlideBox:last-child {margin-bottom: 0;}
+.mainSlideBox .tit {margin-left:rem(40px); margin-bottom:rem(10px);}
+.mainSlideBox .tit [class^="ico"] {position: relative; display: inline-block; vertical-align: top; padding-left:rem(40px); padding-right:rem(18px); font-size:rem(28px); color:#000000; font-weight: 700;  }
+.mainSlideBox .tit [class^="ico"] .arw{position: absolute; right: 0; width: rem(9px); top: 50%; transform: translateY(-50%);}
+.mainSlideBox .tit [class^="ico"] .ic{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.mainSlideBox .tit .ico02{padding-left:rem(59px);}
+.mainSlideBox .tit .ico01 .ic{ width:rem(30px); }
+.mainSlideBox .tit .ico02 .ic{ width:rem(50px); }
+.mainSlideBox .tit .ico03 .ic{ width:rem(30px);  }
+
+
+
+.navigator {position: fixed; left:0; bottom:0; width: 100%; text-align: center; background: #e43939; height:rem(130px);  z-index: 100; }
+.navigator .loginBox {padding-top:rem(30px);}
+.navigator .loginBox p {color:#fff; font-size: rem(25px); display: inline-block; vertical-align: middle; margin-right:rem(23px);}
+.navigator .loginBox .btnType1 {display: inline-block; vertical-align: middle;}
+.navigator ul {text-align: center; }
+.navigator ul li {display: inline-block; vertical-align: top;}
+.navigator ul li a {display: block; height:rem(130px); padding-top:rem(29px);}
+.navigator ul li a span {display: inline-block; vertical-align: top; font-size:rem(20px); line-height:rem(20px); color:#facdcd; padding-top:rem(58px); position: relative;}
+.navigator ul li a span img{position: absolute; left: 50%; transform: translateX(-50%); top: 0;}
+.navigator ul li:nth-child(1) a span img{width: rem(59px);}
+.navigator ul li:nth-child(2) a span img{width: rem(50px);}
+.navigator ul li:nth-child(3) a span img{width: rem(40px);}
+.navigator ul li:nth-child(2) {margin:0 rem(190px)}
+
+

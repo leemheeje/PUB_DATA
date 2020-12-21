@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.container.alowToAccessWrap{min-height: 0; padding-bottom: rem(160px);}
+.alowToAccessWrap+.relativeBottom{position: fixed; left: 0; bottom: 0; width: 100%; padding-bottom: rem(30px); background-color: #fff;}
+// .container.alowToAccessWrap{padding-bottom: rem(160px);}
+// .alowToAccessWrap+.relativeBottom{margin-top: rem(-160px);}
+.alowToAccess{}
+.alowToAccess .innerWrap,
+.alowToAccessWrap+.relativeBottom .innerWrap{padding-left: rem(60px); padding-right: rem(60px);}
+.alowToAccess .ataTop{text-align: left;}
+.alowToAccess .ataTop .tit{font-size: rem(55px); font-weight: bold; color: $color_black2;}
+.alowToAccess .ataTop .stit{font-size: rem(30px); color: $color_black2; line-height: rem(45px); margin-top: rem(25px);}
+.alowToAccess .ataCont .alArea{border-bottom: 1px solid #d3d3d8; margin-left: rem(-20px); margin-right: rem(-20px); padding: 0 rem(20px); padding-bottom: rem(45px); }
+.alowToAccess .ataCont .chkArea{}
+.alowToAccess .ataCont .chkArea .uiInput.radiochk .lb{font-size: rem(25px);}
+.alowToAccess .ataCont .chkArea .subj{font-size: rem(20px); color: $color_gray5; margin-left: rem(70px); word-break: keep-all;}
+.alowToAccess .ataCont .chkArea .btns{margin-left: rem(70px); outline: none; border: none; background: none; font-size: rem(18px); text-decoration: underline; margin-top: rem(0px); color: $color_gray5; position: relative; padding-right: rem(18px);}
+.alowToAccess .ataCont .chkArea .btns img{position: absolute; right: 0; top: 50%; transform: translateY(-50%); margin-top: rem(2px); width: rem(8px);}
+.relativeBottom{}

@@ -1,0 +1,44 @@
+@import "./utills.scss";
+
+/*제품팝업 공통요소*/
+$pop_padding: 24px;
+$top_padding: 72px;
+$bottom_padding: 150px;
+$item_box_width: 452px;
+$item_box_height: 567px;
+$content_font_size_title: 30px;
+$content_line_height_title: 45px;
+$options_height: 1042px;
+$options_tabs_height: 711px;
+.prdPop{position: absolute; width: 100%; left: 50%;  transform: translateX(-50%); top: 0; bottom: 0; z-index: 999; background-color: $background_color; padding: 0 rem($pop_padding); max-width: 1080px; height: 1920px; overflow: hidden;}
+.prdPop .popTop{padding-top: rem($top_padding); padding-left: rem($item_box_width+62px); padding-bottom: rem($bottom_padding); position: relative; min-height: rem($item_box_height);}
+.prdPop .popTop .itemBox{position: absolute; left: 0; top: rem($top_padding); width: rem($item_box_width);}
+.prdPop .popTop .rtTxts{padding-top: rem($top_padding);}
+.prdPop .popTop .rtTxts .title{font-size: rem($content_font_size_title); color: $color_gray6; line-height: rem($content_line_height_title); font-weight: bold; word-break: keep-all; min-height: rem($content_line_height_title*3);}
+.prdPop .popTop .rtTxts .stitle{padding-top: rem(40px); margin-top: rem(70px); border-top: 1px solid #dadae3;}
+.prdPop .popTop .rtTxts .stitle .lb{font-size: rem(25px); line-height: rem(24px); display: block; margin-bottom: rem(40px); color: $color_gray3; font-weight: bold;}
+.prdPop .popTop .rtTxts .stitle .lst{}
+.prdPop .popTop .rtTxts .stitle .lst .tp{color: $color_gray5;}
+.prdPop .popTop .rtTxts .stitle .lst .tp+.tp{margin-top: rem(18px);}
+.prdPop .popTop .rtTxts .stitle .lst .tp .slb{font-size: rem(20px); line-height: rem(24px); font-weight: bold; margin-bottom: rem(10px); display: block;}
+.prdPop .popTop .rtTxts .stitle .lst .tp .txt{font-size: rem(18px); line-height: rem(23px); font-weight: normal;}
+.prdPop .popBottom{}
+.prdPop .popBottom .popBottomInner{background: #fff; box-shadow: 0 0 rem(10px) rgba(0,0,0,0.1); padding: rem(57px) rem(45px); height: rem($options_height); position: relative;}
+.prdPop .popBottom .popBottomInner .btnsWrap{padding: rem(70px) 0 rem(60px); border-top: rem(3px) solid $color_gray;}
+.prdPop .popBottom .popBottomInner .btnsGroup .btns{line-height: auto; padding: 0;}
+.prdPop .popBottom .popBottomInner .btnsGroup .roboto{font-weight: bold; font-size: rem(50px);}
+.prdPop .popBottom .popBottomInner .btnsGroup .dn,
+.prdPop .popBottom .popBottomInner .btnsGroup .prc{display: inline-block; vertical-align: top;}
+.prdPop .popBottom .popBottomInner .btnsGroup .dn{width: 38%; position: relative; font-weight: bold; font-size: rem(45px);}
+.prdPop .popBottom .popBottomInner .btnsGroup .dn:before,
+.prdPop .popBottom .popBottomInner .btnsGroup .dn:after{content: ''; width: 1px; height: 70%; background: #fff; top: 15%; position: absolute;}
+.prdPop .popBottom .popBottomInner .btnsGroup .dn:before{background: #fb9492; left: 0;}
+.prdPop .popBottom .popBottomInner .btnsGroup .dn:after{background: #640200; left: -1px;}
+.prdPop .popBottom .popBottomInner .btnsGroup .prc{width: 62%;}
+.prdPop .popBottom .popBottomInner .optionsTabs{position: relative;}
+.prdPop .popBottom .popBottomInner .uiChkrdo label{font-weight: bold; display: block;}
+.prdPop .popBottom .popBottomInner .optLabel{font-size: rem(28px); color: $color_black2; font-weight: bold; margin-bottom: rem(10px); margin-top: rem(50px);}
+.prdPop .popBottom .popBottomInner .uiChkrdo.inline{min-width: 200px;}
+.prdPop .nullmsg{font-size: rem(40px); color: $color_gray; font-weight: bold; position: absolute; left: 0; width: 100%; text-align: center; top: 50%; transform: translateY(-210px); padding-top: 122px; background: no-repeat center top url(../images/common/icoOptionsNull.png);}
+.custom-scroll .custom-scrollbar .inner-handle:hover{width: rem(20px)}
+.custom-scroll .custom-scrollbar .inner-handle:hover:after{background-color: $color_gray; width: rem(20px); border-radius: rem(20px); opacity: .9; transform: translateX(0);}

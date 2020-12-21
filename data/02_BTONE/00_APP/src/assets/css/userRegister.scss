@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.userRegister{}
+.userRegister .userRegisterStep{}
+.userRegister .userRegisterStep .innerWrap{text-align: center; margin-top: rem(185px); padding-left: rem(135px); padding-right: rem(135px);}
+.userRegister .userRegisterStep.aligncenter .innerWrap{margin-top: 0; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%;}
+.userRegister .userRegisterStep .tit{padding-top: rem(150px); font-size: rem(45px); font-weight: bold; color: $color_black2; position: relative;}
+.userRegister .userRegisterStep .tit img{position: absolute; left: 50%; transform: translateX(-50%); top: 0; height: rem(110px)}
+.userRegister .userRegisterStep .tit.icoRegisterComplete{padding-top: rem(125px);}
+.userRegister .userRegisterStep .tit.icoRegisterComplete img{height: rem(98px);}
+.userRegister .userRegisterStep .tit.sm{font-size: rem(30px); color: $color_gray3; padding-top: 0;}
+.userRegister .userRegisterStep .tit.sm .strong{font-size: rem(44px); color: $color_gray3;}
+.userRegister .userRegisterStep .stit{font-size: rem(30px); line-height: rem(40px); color: $color_gray6; margin-top: rem(10px);}
+.userRegister .userRegisterStep .btnWrap{margin-top: rem(165px);}
+.userRegister .userRegisterStep .strong{color: $color_black2; }
+.userRegister .userRegisterStep2{padding-top: rem(60px);}
+.userRegister .userRegisterStep2 .tit{font-size: rem(35px); font-weight: bold; color: $color_black2;}
+.userRegister .userRegisterStep2 .stit{font-size: rem(25px); line-height: rem(35px); font-weight: normal; color: $color_gray3; margin-top: rem(5px);}
+.userRegister .userRegisterStep2 .copyCheck{display: inline-block; vertical-align: -webkit-baseline-middle;}
+.userRegister .userRegisterStep2 .copyCheck .uiInput.radiochk .lb{color: $color_gray5;}
+.userRegister .userRegisterStep2 .copyBtn{display: inline-block; margin-left: rem(15px); vertical-align: -webkit-baseline-middle;}
+.userRegister .userRegisterStep2 .copyBtn .text{font-size: rem(18px); color: $color_gray5; position: relative; padding-right: rem(14px);}
+.userRegister .userRegisterStep2 .copyBtn .text img{width: rem(8px); position: absolute; right: 0; top: rem(11px);}

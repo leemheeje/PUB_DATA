@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* Font Link Noto */
+
+@font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 300; src:local(※), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 400; src:local(※), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 500; src:local(※), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 700; src:local(※), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans KR'; font-style: normal; font-weight: 900; src:local(※), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format("woff2"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format("woff"), url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format("opentype"); }
+
+
+/**** reset ****/
+html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,input,button,select,textarea{font-family:'Noto Sans KR',"맑은 고딕","Malgun Gothic",Sans-serif;font-size:15px;color:#1B1B1B}
+body{text-align:left; word-break:keep-all; overflow-y:scroll; }
+img,fieldset,iframe{border:0 none}
+iframe{max-width: 100%;}
+li{list-style:none}
+input,select,button{vertical-align:top}
+img{vertical-align:top; max-width:100%;}
+i,em,address{font-style:normal}
+label,button{cursor:pointer}
+a{color:#000;text-decoration:none; outline:none;}
+a:hover{text-decoration:none}
+hr{display:none}
+table{border-collapse:collapse;border-spacing:0}
+caption{font-size:0; line-height:0; height:0}
+
+* {box-sizing:border-box;}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: #2C345F; font-weight: 500; }
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #2C345F; opacity: 1; font-weight: 500; }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #2C345F; opacity: 1; font-weight: 500; }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #2C345F; font-weight: 500; }
+select { 
+    border-radius:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none 
+}
+select::-ms-expand {display:none}
+
+#app {overflow-x:hidden; min-width:1500px;}
+
+/* Skip */
+#skipnavigation{z-index:9999;position:absolute;left:0;top:0;width:100%;text-align:center}
+#skipnavigation *{list-style:none;margin:0;padding:0;}
+#skipnavigation a{display:block;width:100%;height:0;overflow:hidden;white-space:nowrap;}
+#skipnavigation a:focus,
+#skipnavigation a:active{display:block;width:100%;height:36px;color:#fff;background:#000;line-height:36px; text-decoration:underline !important;font-size:14px;}
+
+/* .fade-enter-active, .fade-leave-active {
+transition-duration: 0.3s;
+transition-property: opacity;
+transition-timing-function: ease;
+}
+
+.fade-enter,.fade-leave-active {opacity: 0} */
+
+
+.header {position: absolute; left:50%; top:28px; width: 1370px; margin-left:-685px; z-index: 10;}
+.header #nav {position: absolute; right:0; top:12px;}
+.header #nav a {position: relative; float:left; margin-left:113px; padding-bottom: 8px; font-size: 0;  }
+.header #nav a img {vertical-align: top;}
+.header #nav a.router-link-active:after {content:''; position: absolute; left:0; bottom:0; width: 100%; height: 3px; background: #1b1b1b;}
+.header #nav a:hover:after {content:''; position: absolute; left:0; bottom:0; width: 100%; height: 3px; background: #1b1b1b;}
+.header #nav.white a.router-link-active:after { background: #fff;}
+.header #nav.white a:hover:after {background: #fff;}
+
+.NotFound p{height:100vh; line-height:100vh; text-align: center; font-size: 30px;}
+
+.footer {background: #1B1B1B; height:56px; text-align: center; line-height:56px; font-size:12px; color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

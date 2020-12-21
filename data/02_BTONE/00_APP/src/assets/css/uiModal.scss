@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.uiModal{position: fixed; left: 0; top: 0; width: 100%; bottom: 0; background: #fff; z-index: 200; overflow-y: auto;}
+// .uiModal{position: fixed; left: 0; top: 0; width: 100%; bottom: 0; background: #fff; z-index: 200; transform: translateY(100%); transition: transform .8s;}
+.uiModal .uiModalInner{}
+.uiModal .uiModalInner .uiModalHeader{position: fixed; left: 0; top: 0; width: 100%; background: #fff;  z-index: 2;}
+.uiModal .uiModalInner .uiModalHeader .subHeader{position: relative; padding-left: rem(124px); padding-right: rem(124px); text-align: center; border-bottom: 1px solid $color_gray; background-color: #fff;}
+.uiModal .uiModalInner .uiModalHeader .pageName{font-size: rem(32px); font-weight: bold; line-height: rem(98px);}
+.uiModal .uiModalInner .uiModalHeader .btnClose{height: rem(98px); width: rem(124px); position: absolute; left: 0; top: 0;}
+.uiModal .uiModalInner .uiModalHeader .btnClose img{@include absolute_center_center; width: rem(37px);}
+.uiModal .uiModalInner .uiModalHeader .btnClose img.white{display: none;}
+.uiModal .uiModalInner .uiModalBox{padding-top:rem(98px); padding-bottom:rem(30px); min-height: 100vh;}
+.uiModal .uiModalInner .container{position: relative; padding-bottom: 0;}
+.uiModal .dimm{}
+
+.mycart + .uiModal {position: fixed; left: 0; top: 0; bottom: 0; z-index: 9999; width: 100%; background: none;}
+.mycart + .uiModal .dimm {position: fixed; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0,0,0,.9);}
+.mycart + .uiModal .uiModalInner {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); padding: 0; font-size: rem(30px); min-width: rem(650px); border-radius: rem(10px); background: #fff; color: #000; text-align: center; font-weight: bold; overflow: hidden;}
+.mycart + .uiModal .uiModalInner .uiDialogContBox {min-height: rem(330px); box-sizing: content-box; display: table; width: 100%;}
+.mycart + .uiModal .uiModalInner .uiDialogContBox .uiDialogCont {display: table-cell; vertical-align: middle; font-size: rem(35px); color: $color_black2;}
+.mycart + .uiModal .uiModalInner .uiDialogContBox .uiDialogCont .txt2 {font-weight: normal; font-size: rem(30px); color: $color_gray3;}
+.mycart + .uiModal .uiModalInner .btnClose,
+.mypage + .uiModal .uiModalInner .btnClose {outline: none; width: 100%; border: none; border-top: 1px solid #929295; font-size: rem(35px); color: #434343; text-align: center; font-weight: bold; padding: rem(28px) 0; display: block; width: 100%; background: #fff;}

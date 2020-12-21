@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.userNotice{}
+.userNotice .usnList{}
+.userNotice .usnList .usnTp{border-bottom: rem(1px) solid $color_gray;}
+.userNotice .usnList .usnTp+.usnTp{}
+.userNotice .usnList .usnTp .inner{display: block; outline: none; border: none; padding: rem(40px) 0; position: relative;}
+.userNotice .usnList .usnTp .inner .icoArrowGray_22{width: rem(13px); position: absolute; right: rem(40px); top: 50%; transform: translateY(-50%);}
+.userNotice .usnList .usnTp .tit{font-size: rem(25px); font-weight: normal; color: $color_black2; padding-right: rem(40px); @include ellipsis; line-height: rem(35px);}
+.userNotice .usnList .usnTp .date{font-size: rem(20px); font-weight: normal; color: $color_gray5; line-height: rem(31px); display: block; margin-top: rem(10px);}
+.userNotice .usnNull{margin-top: rem(293px); text-align: center;}
+.userNotice .usnNull .innerWrap{padding-left: rem(135px); padding-right: rem(135px);}
+.userNotice .usnNull .tit{font-size: rem(35px); font-weight: bold; color: $color_black2; padding-top: rem(150px); position: relative;}
+.userNotice .usnNull .tit img{height: rem(111px); position: absolute; left: 50%; transform: translateX(-50%); top: 0;}

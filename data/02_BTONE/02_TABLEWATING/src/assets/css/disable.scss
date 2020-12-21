@@ -1,0 +1,51 @@
+@import './utills.scss';
+
+#disable {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: $background_color;
+
+    .disableBox {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+
+        .title {
+            position: relative;
+            padding-top: rem(15px);
+            font-size: rem(42px);
+            color: $color_black2;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                bottom: rem(-26px);
+                content: '';
+                width: rem(81px);
+                height: rem(2px);
+                background: $color_black2;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .text {
+            color: $color_gray6;
+        }
+
+        .txt1 {
+            
+            font-size: rem(36px);
+        }
+        .txt2 {
+            padding-top: rem(80px);
+            font-weight: $font_weight_bold;
+            font-size: rem(45px);
+            line-height: rem(45px);
+        }
+    }
+}

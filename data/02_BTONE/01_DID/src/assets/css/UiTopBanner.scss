@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+$banner_height : 206px;
+.topBanner{position: relative;}
+.topBanner .orderSubBanner{background: #ddd no-repeat left top; background-size: 100%; height: rem($banner_height)}
+.topBanner .userWrap{position: absolute; left: rem(12px); top: rem(24px);}
+.topBanner .userWrap .logo{display: inline-block; vertical-align: top; max-width:150px;}
+.topBanner .userWrap .userPoint{display: inline-block; vertical-align: top;}
+.topBanner .userWrap .userPoint .pointBox{color: #362727; font-size: rem(20px);  top:rem(-8px);  text-align: left; padding-left: rem(27px); margin-left: rem(15px); position: relative;}
+.topBanner .userWrap .userPoint .pointBox:before{content: ''; width: rem(22px); height: rem(22px); background: no-repeat center center url(../images/common/icoInfoRed.png); position: absolute; left: 0; top: 50%; transform: translateY(-44%);}
+.topBanner .home{position: absolute; right: 0; top: 0; background: url(../images/common/icoHomeRed.png) no-repeat center center; width: rem(60px); height: rem(75px); text-indent: -999em;}
+.topBanner .strong{font-weight: bold;}
+.orderTabs .uiTabs .uiList a{cursor: auto;}

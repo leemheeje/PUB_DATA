@@ -1,0 +1,22 @@
+@charset 'utf-8';
+@import './utills.scss';
+
+/*공통요소*/
+$color : $color_gray6;
+@mixin positionCenter{
+	position: absolute; left: 50%; transform: translate(-50%,-50%); top: 50%;
+}
+.informationArea{position: relative; height: $height;}
+.informationArea .infoLinkBtn{position: absolute; left: 0; top: 0; width: rem(101px); height: rem(92px); background: no-repeat center center url(../images/common/icoHomeRed.png); background-size: rem(53px); outline: none; border: none;}
+.informationArea .infoInner{@include positionCenter; width: 85%;}
+.informationArea .infoInner .infHd{text-align: center;}
+.informationArea .infoInner .infHd .tit{font-size: rem(55px); color: $color; font-weight: bold;}
+.informationArea .infoInner .infHd .stit{font-size: rem(29px); color: $color; font-weight: 500; margin-top: rem(5px);}
+.informationArea .infoInner .infMd{margin: rem(80px) 0 rem(50px); border: rem(3px) solid $color_gray; border-left: none; border-right: none; height: rem(540px); position: relative;}
+.informationArea .infoInner .infMd .lst{@include positionCenter;}
+.informationArea .infoInner .infMd .lst .tp{position: relative; padding-left: rem(370px); text-align: right;}
+.informationArea .infoInner .infMd .lst .tp .lb{color: $color; font-weight: bold; font-size: rem(50px); position: absolute; left: 0; top: 50%; transform: translateY(-50%); text-align: left;}
+.informationArea .infoInner .infMd .lst .tp .vl{color: $color; font-weight: 500; font-size: rem(100px); white-space: nowrap;}
+.informationArea .infoInner .infMd .lst .tp .vl .roboto{font-size: rem(110px); line-height: rem(190px); font-weight: bold;}
+.informationArea .infoInner .infFt{text-align: center;}
+.informationArea .infoInner .infFt .cp{font-size: rem(26px); color: $color_gray5; line-height: rem(34px);}

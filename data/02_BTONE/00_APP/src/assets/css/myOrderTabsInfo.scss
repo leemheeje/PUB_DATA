@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+
+.myOrderTabsInfo{}
+.myOrderTabsInfo .motiLst{padding-bottom: rem(50px);}
+.myOrderTabsInfo .motiLst .motiLstTp{position: relative; padding-left: rem(140px); text-align: left;}
+.myOrderTabsInfo .motiLst .motiLstTp+.motiLstTp{margin-top: rem(30px);}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListDt{font-size: rem(25px); line-height: rem(40px); width: rem(140px); margin-left: rem(-140px); display: inline-block; color: $color_black2; font-weight: bold; word-break: keep-all; vertical-align: top;}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListDd{font-size: rem(25px); line-height: rem(40px); color: $color_gray5; display: inline-block; vertical-align: top; width: 100%;}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListDd.rt{padding-right: rem(100px);}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListDd .rt{position: absolute; right: 0; top: 0;}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListDd .rt .btnType1{min-width: rem(80px);}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListMap{margin-left: rem(-140px); display: block; margin-top: rem(30px); margin-bottom: rem(40px); height: rem(346px);}
+.myOrderTabsInfo .motiLst .motiLstTp .motiListMap .mapWrap{height: 100%;}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+
+.orderWrap{}
+.orderWrap .orderTop{}
+.orderWrap .orderTop .orderTopSlide{}
+.orderWrap .orderTopInfo{text-align: center; padding-top: rem(75px); padding-bottom: rem(75px);}
+.orderWrap .orderTopInfo .tit{font-size: rem(45px); color: $color_black2; font-weight: bold; line-height: 1;}
+.orderWrap .orderTopInfo .review{display: block; text-align: center; margin-top: rem(25px);}
+.orderWrap .orderTopInfo .review .grade{font-size: rem(32px); font-weight: bold; color: $color_black2; position: relative; padding-right: rem(40px); display: inline-block; vertical-align: middle; position: relative;}
+.orderWrap .orderTopInfo .review .grade img{width: rem(29px); position: absolute; right: 0; top: 50%; transform: translateY(-50%); margin-top: rem(-3px);}
+.orderWrap .orderTopInfo .review .grade+.point{margin-left: rem(30px); padding-left: rem(30px); position: relative;}
+.orderWrap .orderTopInfo .review .grade+.point:before{content: ''; width: 1px; height: 70%; top: 15%; left: 0; background: #a6a6ab; position: absolute;}
+.orderWrap .orderTopInfo .review .point{vertical-align: middle; display: inline-block; color: $color_gray3; font-size: 0;}
+.orderWrap .orderTopInfo .review .point .lb{font-size: rem(25px); display: inline-block; vertical-align: middle; line-height: rem(30px);}
+.orderWrap .orderTopInfo .review .point .roboto{font-size: rem(30px); display: inline-block; vertical-align: middle; margin-left: rem(13px); line-height: rem(30px);}
+.orderWrap .orderTopInfo .storeService{margin-top: rem(35px); text-align: center;}
+.orderWrap .orderTopInfo .storeService .lst{display: inline-block;}
+.orderWrap .orderTopInfo .storeService .lst	.sstp:first-child{margin-left: 0;}
+.orderWrap .orderTopInfo .storeService .lst	.sstp{margin-left: rem(50px); display: inline-block;}
+.orderWrap .orderTopInfo .storeService .opt{display: inline-block; font-size: rem(28px); font-weight: normal; color: $color_gray2; padding-left: rem(36px); position: relative; line-height: rem(31px); white-space: nowrap;}
+.orderWrap .orderTopInfo .storeService .opt.active{color: #000; font-weight: bold;}
+.orderWrap .orderTopInfo .storeService .opt img{width: rem(26px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.orderWrap .orderTabs{}
+.orderWrap .orderTabs .baseTab{margin-bottom: rem(88px);}
+.fixedTabs .header .in{border-color: #fff;}
+.fixedTabs .orderWrap .orderTabs .baseTab{position: fixed; left: 0; top: rem(98px); width: 100%; margin-bottom: 0; z-index: 100; background: #fff;}
+.fixedTabs .orderWrap .orderTabs{padding-top: rem(171px);}
+.orderWrap .orderCart{position: fixed; right: rem(38px); bottom: rem(44px); width: rem(130px); height: rem(130px); border-radius: 50%; background: $color_red; z-index: 1; box-shadow: 13px 13px 21px rgba(24,24,53,.34);}
+.orderWrap .orderCart img{width: rem(72px); @include absolute_center_center;}
+.inBottomBtns .orderWrap .orderCart{bottom: rem(190px)}
+.scrollBottom .orderWrap .orderCart{bottom: rem(170px)}
+.orderWrap .orderCart .inner{width: rem(40px); height: rem(40px); position: absolute; right: rem(16px); top: rem(15px); color: #000; text-align: center; line-height: rem(30px); border-radius: 50%; border: 3px solid #000; background: $color_yellow; font-weight: bold; font-size: rem(20px);}
+.orderWrap .bottomBtnsWrap{position: fixed; left: 0; width: 100%; bottom: 0; padding-bottom: rem(35px); z-index: 1; background: #fff;}
+.orderWrap .bottomBtnsWrap .smpd{padding-top: rem(22px); padding-bottom: rem(21px);}
+.orderWrap .bottomBtnsWrap .FWN{line-height: 1; vertical-align: middle; display: inline-block; margin-top: rem(-10px);}
+.orderWrap .bottomBtnsWrap .FWN span{display: block; font-size: rem(25px); font-weight: normal; margin-top: rem(8px);}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+.userCopyright{padding-top: rem(45px);}
+.userCopyright .innerWrap{padding-left: rem(60px); padding-right: rem(60px);}
+.userCopyright .ucTit{font-size: rem(35px); font-weight: bold;}
+.userCopyright .ucContBox{margin-top: rem(15px);}
+.userCopyright .ucBtnWrap{margin-top: rem(115px);}
+.myOrderReservationCopyright{padding-top: rem(45px);}
+.myOrderReservationCopyright .innerWrap{padding-left: rem(60px); padding-right: rem(60px);}
+.myOrderReservationCopyright .ucTit{font-size: rem(35px); font-weight: bold;}
+.myOrderReservationCopyright .ucContBox{margin-top: rem(15px);}
+.myOrderReservationCopyright .ucBtnWrap{margin-top: rem(115px);}
+.userCopyright{
+	.text {
+		color: #444444;
+		margin-top: rem(20px);
+  
+		p {
+		  font-size: rem(25px);
+		  color: #444444;
+		}
+  
+		div {
+		  em {
+			font-size: rem(40px);
+			font-style: italic;
+		  }
+  
+		  .percent {
+			font-size: rem(34px);
+			visibility: hidden;
+			font-style: italic;
+		  }
+		}
+	  }
+	  .box {
+		margin-bottom: rem(40px);
+					padding-right: 30px;
+					word-break:keep-all;
+	  }
+	  .bold {
+		font-weight: 700;
+		margin-bottom: rem(15px);
+		}
+		table {
+			margin:rem(10px) 0 rem(20px) 0;
+			th {font-weight:400; background: #f6f6fa; border:1px solid #dbd9e4; text-align: center; padding:rem(14px) rem(10px); }
+			td { padding:rem(14px) rem(10px); vertical-align: middle;  border:1px solid #dbd9e4; }
+		}
+}

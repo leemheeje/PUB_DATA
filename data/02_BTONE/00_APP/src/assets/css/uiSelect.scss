@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+
+/**/
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select::-ms-expand { display: none; }
+.uiSelect{position: relative;}
+.uiSelect .lb{}
+.uiSelect .ip{text-align: left; border: 1px solid #a4a4a4; border-radius: rem(15px); display: block; padding-right: rem(50px);}
+.uiSelect .ip .icoSortingOff{width: rem(18px); position: absolute; right: rem(32px); top: 50%; transform: translateY(-50%);}
+.uiSelect .ip .innt{font-size: rem(28px); height: rem(96px); line-height: rem(96px); padding-left: rem(24px); display: block; width: 100%; color: $color_gray6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.uiSelect select{position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; font-size: rem(28px);}
+.uiSelect .errMsg, .uiSelect .sucMsg{line-height: rem(43px); font-size: rem(23px); position: absolute; left: 0; top: 100%; padding-left: rem(33px); font-weight: normal;}
+.uiSelect .errMsg{color: $color_red;}
+.uiSelect .sucMsg{color: $color_black2;}
+.uiSelect .errMsg img, .uiSelect .sucMsg img{width: rem(21px); position: absolute; left: 0; top: 50%; transform: translateY(-50%);}

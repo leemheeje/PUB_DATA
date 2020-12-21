@@ -1,0 +1,83 @@
+{
+	"item" : [
+		{
+			"name":"문재인1번가",
+			"year":"2019",
+			"category":"매체",
+			"text":"새로운 대한민국 출발을 위한 최초 정책 쇼핑몰 문재인1번가 온라인 쇼핑몰 컨셉을 차용하여 접근성을 높여 정책을 쉽고 빠르게 확인할 수 있으며 정책 외에도 1번가홈쇼핑, 어버이날캠페인 등 다양한 컨텐츠들을 제공하여 국민들과의 소통의 창구로 운영",
+			"logo":"http://makeulike.com/new/images/work_detail/brand/b37_logo.png",
+			"thumbnail":"http://makeulike.com/new/images/work_detail/brand/b37_m1.jpg",
+			"dv": ["web","mobile","media"],			
+			"assets":
+			{
+				"web":[
+					"http://makeulike.com/new/images/work_detail/brand/b37_p1.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_p2.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_p3.jpg"
+				],
+				"mobile":[
+					"http://makeulike.com/new/images/work_detail/brand/b37_m1.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_m2.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_m3.jpg"
+				],
+				"media":[
+					"tmqJ8FTCAVs",
+					"8mKZ9xM1Hvs",
+					"e1tV2UnV1Y4"
+				]
+			},
+			"banner":
+			{
+				"group":{
+					"title" : "베너1",
+					"img" : [
+						"http://makeulike.com/new/images/work_detail/brand/b37_p1.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p2.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p3.jpg"
+					]
+				},
+				"group":{
+					"title" : "베너2",
+					"img" : [
+						"http://makeulike.com/new/images/work_detail/brand/b37_p1.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p2.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p3.jpg"
+					]
+				},
+				"group":{
+					"title" : "베너3",
+					"img" : [
+						"http://makeulike.com/new/images/work_detail/brand/b37_p1.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p2.jpg",
+						"http://makeulike.com/new/images/work_detail/brand/b37_p3.jpg"
+					]
+				}
+			}
+		},
+		{
+			"name":"문재인222번가",
+			"text":"새로운 대한민국 출발을 위한 최초 정책 쇼핑몰 문재인1번가 온라인 쇼핑몰 컨셉을 차용하여 접근성을 높여 정책을 쉽고 빠르게 확인할 수 있으며 정책 외에도 1번가홈쇼핑, 어버이날캠페인 등 다양한 컨텐츠들을 제공하여 국민들과의 소통의 창구로 운영",
+			"logo":"http://makeulike.com/new/images/work_detail/brand/b37_logo.png",
+			"dv": ["web","mobile","media"],			
+			"assets":
+			{
+				"web":[
+					"http://makeulike.com/new/images/work_detail/brand/b37_p1.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_p2.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_p3.jpg"
+				],
+				"mobile":[
+					"http://makeulike.com/new/images/work_detail/brand/b37_m1.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_m2.jpg",
+					"http://makeulike.com/new/images/work_detail/brand/b37_m3.jpg"
+				],
+				"media":[
+					"tmqJ8FTCAVs",
+					"8mKZ9xM1Hvs",
+					"e1tV2UnV1Y4"
+				]
+			}
+			
+		}
+	]
+}

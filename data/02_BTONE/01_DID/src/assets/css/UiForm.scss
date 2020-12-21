@@ -1,0 +1,12 @@
+@import "./utills.scss";
+
+
+/*라디오&체크박스 공통요소*/
+$chkrdo_width : 50px;
+$chkrdo_height : 50px;
+.uiChkrdo{}
+.uiChkrdo.inline{display: inline-block; vertical-align: middle;}
+.uiChkrdo input{position: absolute; width: 0; height: 0; opacity: 0;}
+.uiChkrdo label{font-size: rem(28px); padding-left: rem($chkrdo_width + 17px); color: $color_black; position: relative; line-height: rem($chkrdo_height);}
+.uiChkrdo label:before{content: ''; width: rem($chkrdo_width); height: rem($chkrdo_height); position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url(../images/common/radioCheck.png) no-repeat center center; background-size: 100%;}
+.uiChkrdo input:checked+label:before{background-image: url(../images/common/radioChecked.png);}

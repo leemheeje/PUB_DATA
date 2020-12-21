@@ -1,0 +1,19 @@
+@import "./utills.scss";
+
+/*아이템박스 공통요소*/
+$font-size: 35px;
+$font-height: 118px;
+$font-weight: bold;
+$font-color: $color_gray2;
+$font-active-color: $color_red;
+
+.uiCategory{}
+.uiCategory .uiCategoryItem{font-size: rem($font-size); display: block; text-align: center; font-weight: $font-weight; color: $font-color; line-height: $font-height; width:auto; }
+.uiCategory .uiCategoryItem span {position: relative; padding:0 rem(8px);}
+.uiCategory .notSlide{text-align: center;}
+.uiCategory .notSlide .uiCategoryItem{display: inline-block;}
+.uiCategory .uiSwiper .swiper-container{margin-left: rem($innerWrap); margin-right: rem($innerWrap); position: static;}
+.uiCategory .uiCategoryItem.active{color: $font-active-color;}
+.uiCategory .uiCategoryItem.active span:after {content:''; position: absolute; left:0; bottom:rem(-13px); width:100%; background: $color_red; height:rem(5px); border-radius:15px;}
+.uiCategory .uiSwiper .uiSwiperContrPrev{width: rem($innerWrap);}
+.uiCategory .uiSwiper .uiSwiperContrPext{width: rem($innerWrap);}

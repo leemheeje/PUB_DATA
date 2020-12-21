@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "./utills.scss";
+
+.mapWrap {
+    width: 100%;
+
+    #address {
+        padding-top: rem(45px);
+    
+        #addrName {
+            font-size: rem(27px);
+            color: $color_black2;
+        }
+        #roadName {
+            padding-top: rem(4px);
+            font-size: rem(24px);
+            color: $color_gray5;
+    
+            span {
+                display: inline-block;
+                padding: 0 rem(8px);
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: rem(20px);
+            }
+        }
+        
+    }
+}

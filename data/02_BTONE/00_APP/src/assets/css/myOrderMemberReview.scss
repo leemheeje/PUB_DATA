@@ -1,0 +1,18 @@
+@charset "uft-8";
+@import "./utills.scss";
+
+.myOrderMemberReview{}
+.myOrderMemberReview .mmrTop{position: relative; padding: rem(90px) 0; padding-left: rem(105px); border-bottom: 1px solid $color_gray;}
+.myOrderMemberReview .mmrTop .uiReviewList{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: rem(72px); height: rem(72px); border-radius: 50%; border: 1px solid $color_gray5; overflow: hidden; background: $background_color;}
+.myOrderMemberReview .mmrTop .uiReviewList img{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.myOrderMemberReview .mmrTop .uiReviewList img.default{ width: rem(30px); height: rem(40px);}
+.myOrderMemberReview .mmrTop .txts{}
+.myOrderMemberReview .mmrTop .txts .tit{font-size: rem(30px); color: $color_black2; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.1; padding-top: rem(3px);}
+.myOrderMemberReview .mmrTop .txts .stit{font-size: rem(30px); color: $color_gray5; line-height: 1; margin-top: rem(7px);}
+.myOrderMemberReview .mmrCont{}
+.myOrderMemberReview .mmrCont .mmrContList{padding: rem(60px) 0 rem(30px);}
+.myOrderMemberReview .mmrCont .mmrContList .mmrContTp{}
+.myOrderMemberReview .mmrCont .mmrContList .mmrContTp+.mmrContTp{padding-top: rem(90px);}
+.myOrderMemberReview .mmrCont .mmrContList .mmrContTp .uiReviewList .urvTop{padding: 0;}
+.myOrderMemberReview .mmrCont .mmrContList .mmrContTp .uiReviewList .urvTop .thumb{display: none;}
+.myOrderMemberReview .mmrCont .mmrContList .mmrContTp .uiReviewList .urvTop .urvDeleteBtn{display: none;}

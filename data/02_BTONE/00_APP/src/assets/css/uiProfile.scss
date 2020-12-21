@@ -1,0 +1,49 @@
+@import "./utills.scss";
+
+.profileImgBox {
+    position: relative;
+    overflow: hidden;
+    width: rem(124px);
+    height: rem(124px);
+    border-radius: 50%;
+    background: $background_color;
+    border: rem(4px) solid $color_gray5;
+
+    .profileImg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+
+        &.default {
+            width: rem(61px);
+            height: rem(80px);
+        }
+    }
+}
+
+.mypageWrap {
+    .profileImgBox {
+        position: absolute;
+        right: rem(67px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.myReviewWrap {
+    .profileImgBox {
+        width: rem(72px);
+        height: rem(72px);
+        border: 1px solid $color_gray5;
+    
+        .profileImg {
+            &.default {
+                width: rem(30px);
+                height: rem(40px);
+            }
+        }
+    }
+}

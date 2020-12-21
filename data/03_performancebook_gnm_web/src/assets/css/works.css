@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.worksMain {background: #F5F5F5; padding:143px 0 90px 0;}
+.worksMain .topVisual {position: relative; padding-bottom:65px; margin-bottom:75px;}
+.worksMain .topVisual:after {content:''; position: absolute; left:0; bottom:0; width:0; height: 1px; background: #aaa; transition:1s all;}
+.worksMain .topVisual .in {width:1280px; margin:0 auto;}
+.worksMain .topVisual .tit01 {transition:1s all; opacity:0; transform:translate(0,50px); position: relative; padding-left: ;font-size:17px; line-height: 17px; font-weight:700; color:#2F3F92; padding-left:54px; margin-bottom:30px; }
+.worksMain .topVisual .tit01:after {content:''; position: absolute; left:0; top:50%; width: 42px; height: 3px; margin-top:-2px; background: #2F3F92;}
+.worksMain .topVisual .tit02 {transition:1s all; opacity:0; transform:translate(0,50px);  transition-delay:200ms; margin-bottom:60px;}
+.worksMain .topVisual .tit03{transition:1s all; opacity:0; transform:translate(0,50px);   transition-delay:400ms; font-size:18px; color:#1B1B1B; line-height:31px;}
+.worksMain .topVisual .tit03{position: relative; font-size:18px; color:#1B1B1B; line-height:31px;}
+.worksMain .topVisual .tit03 .btnDetail {transition:1s all;  transition-delay:600ms; opacity:0; position: absolute; right:0; bottom:0; width: 204px; height: 50px; line-height: 47px; text-align: center; border:2px solid #1B1B1B; font-size:15px; color:#1B1B1B; font-weight:500;}
+.worksMain.active .topVisual:after {width: 100%;}
+.worksMain.active .topVisual .tit01 {opacity:1; transform:translate(0,0); }
+.worksMain.active .topVisual .tit02 {opacity:1; transform:translate(0,0); }
+.worksMain.active .topVisual .tit03 {opacity:1; transform:translate(0,0); }
+.worksMain.active .topVisual .tit03 .btnDetail {opacity:1; transform:translate(0,0); }
+.worksMain.active .workList {opacity:1; transform:translate(0,0); }
+
+
+.worksMain .workList {width:1280px; margin:0 auto; transition:1s all; opacity:0; transition-delay:1000ms;}
+.worksMain .workList .title{padding-left:380px;font-size:18px; font-weight: 700; color:#1B1B1B; line-height:18px; margin-bottom:90px;}
+.worksMain .workList ul li {margin-bottom:20px;}
+.worksMain .workList ul li:after {content:''; display: block; clear:both;}
+.worksMain .workList ul li .name {float:left;height:60px; line-height:60px;}
+.worksMain .workList ul li .name img {vertical-align: middle;}
+.worksMain .workList ul li .lst {margin-left:380px; }
+.worksMain .workList ul li .lst a {position: relative; float:left; width: 190px; height:60px; line-height:60px;}
+.worksMain .workList ul li .lst a.widthAuto {width:auto;}
+.worksMain .workList ul li .lst a img {vertical-align: middle;}
+.worksMain .workList ul li .lst a .on {position: absolute; left:0; top:0; height:60px; line-height:60px; opacity:0; transition:.3s all;}
+.worksMain .workList ul li .lst a:hover .on {opacity:1;}
+

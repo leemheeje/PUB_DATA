@@ -1,0 +1,20 @@
+@import "./utills.scss";
+
+/*스와이퍼 공통요소*/
+$contr_width : 55px;
+$contr_height : 55px;
+.uiSwiper{position: relative; }
+.uiSwiper .swiper-container{min-height: rem($contr_height); }
+.uiSwiper .swiper-container .swiper-wrapper{}
+.swiper-container-horizontal > .uiSwiperContrPagination{padding-left: rem(55px); padding-right: rem(55px); text-align: center; bottom: rem(40px); position: absolute;}
+.swiper-container-horizontal > .uiSwiperContrPagination .swiper-pagination-bullet{width: rem(19px); height: rem(19px); background-color: $color_gray; opacity: 1;}
+.swiper-container-horizontal > .uiSwiperContrPagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: $color_red;}
+.uiSwiper .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{margin-left: rem(10px); margin-right: rem(10px);}
+.uiSwiper .uiSwiperContrPrev,
+.uiSwiper .uiSwiperContrNext{width: rem($contr_width); height: rem($contr_height); position: absolute; top: 50%; margin-top: rem(-$contr_height / 2); background: no-repeat center center; z-index: 1; background-size: rem(16px);}
+.uiSwiper .uiSwiperContrPrev{background-image: url(../images/common/uiSwiperContrPrev_default.png); left: 0;}
+.uiSwiper .uiSwiperContrNext{background-image: url(../images/common/uiSwiperContrNext_default.png); right: 0;}
+.uiSwiper.type2 .uiSwiperContrPrev,
+.uiSwiper.type2 .uiSwiperContrNext{top: auto; margin-top: 0; bottom: rem(25px); background-color: #b9b9c3; border-radius: rem(15px);}
+.uiSwiper.type2 .uiSwiperContrPrev{background-image: url(../images/common/uiSwiperContrPrev_white.png);}
+.uiSwiper.type2 .uiSwiperContrNext{background-image: url(../images/common/uiSwiperContrNext_white.png);}
