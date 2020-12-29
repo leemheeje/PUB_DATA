@@ -62,7 +62,8 @@
 				],
 				"tit": "비티원 - DID(KIOSK)",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
-				"mode": "react,redux,js,IE9++",
+				"mode": "react,redux,IE9++",
+				"href":"https://github.com/leemheeje/PUB_DATA/tree/master/data/02_BTONE/01_DID",
 				"chat": 100
 			},
 			{
@@ -81,6 +82,7 @@
 				"tit": "비티원 - TABLE WAITING",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
 				"mode": "react,redux,js,IE9++",
+				"href":"https://github.com/leemheeje/PUB_DATA/tree/master/data/02_BTONE/02_TABLEWATING",
 				"chat": 100
 			},
 			{
@@ -109,6 +111,7 @@
 				"tit": "비티원 - WEBAPP",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
 				"mode": "react,redux,js,IE9++",
+				"href":"https://github.com/leemheeje/PUB_DATA/tree/master/data/02_BTONE/00_APP",
 				"chat": 100
 			},
 			{
@@ -132,6 +135,7 @@
 				"tit": "비티원 - PARTHER-POS",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
 				"mode": "react,redux,js,IE9++",
+				"href":"javascript:alert('관리자에 의해 접근이 거부 되었습니다.');",
 				"chat": 100
 			},
 			{
@@ -267,6 +271,7 @@
 				],
 				"tit": "플레이위드-로한m",
 				"subj": "게임사이트 퍼블리싱\n 사용프로그램 : Visual Studio Code, Photoshop, git, SourceTree\n 사용기술 : html/css/js, jQuery, 사전가입API 연동",
+				"href":"javascript:alert('관리자에 의해 접근이 거부 되었습니다.');",
 				"mode": "js,IE9++",
 				"chat": 100
 			},
@@ -312,6 +317,7 @@
 				"tit": "카카오게임즈-테라클래식",
 				"subj": "게임사이트 퍼블리싱\n 사용프로그램 : Visual Studio Code, Photoshop, git, SourceTree\n 사용기술 : html/css/js, jQuery, 사전가입&서버선점API 연동",
 				"mode": "js,IE9++",
+				"href":"javascript:alert('관리자에 의해 접근이 거부 되었습니다.');",
 				"chat": 70
 			},
 			{
@@ -425,6 +431,7 @@
 				"tit": "에픽게임즈-포트나이트",
 				"subj": "전 세계 플레이어 2억 명의 세계 NO.1 배틀로얄 게임 포트나이트가 대한민국에 본격 런칭합니다! 크리스 프랫이 등장하는 TVCF 감상하시고, 11월 8일부터 PC방에서 진행되는 다양한 이벤트도 참여해보세요!",
 				"mode": "cms,js,IE10++",
+				"href":"javascript:alert('관리자에 의해 접근이 거부 되었습니다.');",
 				"chat": 100
 			},
 			{
