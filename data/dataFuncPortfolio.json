@@ -81,7 +81,7 @@
 				],
 				"tit": "비티원 - TABLE WAITING",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
-				"mode": "react,redux,js,IE9++",
+				"mode": "react,redux,IE9++",
 				"href":"https://github.com/leemheeje/PUB_DATA/tree/master/data/02_BTONE/02_TABLEWATING",
 				"chat": 100
 			},
@@ -110,7 +110,7 @@
 				],
 				"tit": "비티원 - WEBAPP",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
-				"mode": "react,redux,js,IE9++",
+				"mode": "react,redux,IE9++",
 				"href":"https://github.com/leemheeje/PUB_DATA/tree/master/data/02_BTONE/00_APP",
 				"chat": 100
 			},
@@ -134,7 +134,7 @@
 				],
 				"tit": "비티원 - PARTHER-POS",
 				"subj": "/ 태블릿 웨이팅 / 사용자 App / 파트너 POS / 브랜드사이트\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, Slack\n 사용기술 : html/css/js, React,Redux, SPA, REST API",
-				"mode": "react,redux,js,IE9++",
+				"mode": "react,redux,IE9++",
 				"href":"javascript:alert('관리자에 의해 접근이 거부 되었습니다.');",
 				"chat": 100
 			},
@@ -154,7 +154,7 @@
 				],
 				"tit": "GnM퍼포먼스 & 퍼포먼스Book ",
 				"subj": "구축 및 운영\n 사용프로그램 : Visual Studio Code, Photoshop, AdobeXD, git, SourceTree\n 사용기술 : html/css/js, Vue(3.0), Vuex, SPA, REST API",
-				"mode": "js,IE10++,vue",
+				"mode": "IE10++,vue",
 				"href": "http://www.gnmpm.com/",
 				"chat": 100
 			},
